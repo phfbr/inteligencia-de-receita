@@ -114,23 +114,40 @@ A revisão dos dashboards foi informada como concluída, mas o registro formal d
 
 ## Dashboards no Power BI
 
-O relatório foi organizado em quatro páginas interativas, cada uma dedicada a uma perspectiva do desempenho comercial e financeiro.
+O relatório está organizado em quatro páginas interativas, com análises de desempenho comercial, comportamento dos clientes e medidas financeiras disponíveis na base.
 
-As análises utilizam filtros de ano, período e unidade federativa, permitindo explorar os indicadores em diferentes contextos.
+As páginas permitem explorar diferentes recortes temporais e geográficos, respeitando as regras de negócio e a granularidade dos indicadores.
 
 ### 1. Visão Executiva
 
-Apresenta os principais indicadores do negócio, incluindo quantidade de pedidos, pedidos entregues, valores de produtos, frete e pagamentos registrados.
+Apresenta uma visão consolidada dos principais indicadores do negócio, incluindo:
 
-A página também permite acompanhar a evolução mensal do valor dos produtos, a distribuição dos pedidos por status e os destaques de categorias, vendedores e formas de pagamento.
+- Quantidade de pedidos e pedidos entregues.
+- Valores de produtos, frete e pagamentos registrados.
+- Evolução mensal do valor dos produtos.
+- Distribuição dos pedidos por status.
+- Participação de categorias e vendedores.
+- Composição dos pagamentos por forma de pagamento.
+
+A página permite acompanhar os principais resultados comerciais e identificar padrões na distribuição dos pedidos e valores registrados.
 
 ![Visão Executiva — Inteligência de Receita](docs/imagens/visao-geral.png)
 
 ### 2. Desempenho Comercial
 
-Explora o desempenho comercial a partir de produtos, categorias, vendedores e regiões.
+Explora o desempenho comercial considerando produtos, categorias, vendedores e localização dos clientes.
 
-Reúne indicadores de valor dos produtos, quantidade de itens, pedidos com itens e valores médios, além de análises de participação por categoria, concentração por vendedor e distribuição geográfica.
+A página apresenta:
+
+- Valor total dos produtos.
+- Quantidade de itens comercializados.
+- Quantidade de pedidos com itens.
+- Indicadores médios de valor.
+- Participação das categorias no valor dos produtos.
+- Concentração comercial por vendedor.
+- Distribuição geográfica do valor dos produtos.
+
+As análises geográficas consideram a localização associada ao cliente no pedido. Unidades federativas sem registros no contexto selecionado podem aparecer sem preenchimento de dados.
 
 ![Desempenho Comercial — Inteligência de Receita](docs/imagens/desempenho-comercial.png)
 
@@ -140,17 +157,46 @@ Analisa o comportamento de compra dos clientes, considerando frequência de pedi
 
 Os indicadores de recompra seguem a regra RN07, que exige pelo menos dois pedidos entregues em dias civis de compra distintos.
 
-A página também apresenta a evolução da base de clientes, perfis de frequência e detalhamento das classificações utilizadas.
+A página apresenta:
+
+- **Clientes Elegíveis:** população de clientes considerada conforme as regras analíticas.
+- **Clientes com Recompra:** clientes classificados como recorrentes pela RN07.
+- **Taxa de Recompra:** proporção de clientes elegíveis que atendem à RN07.
+- **Pedidos por Cliente:** média de pedidos por cliente no contexto analisado.
+- **Valor dos Produtos por Cliente:** valor médio dos produtos por cliente.
+- **Evolução da Base de Clientes:** acompanhamento mensal de clientes novos e existentes no contexto selecionado.
+- **Frequência de Pedidos:** distribuição dos clientes conforme a quantidade de pedidos.
+- **Perfil de Recompra:** distinção entre pedido único, múltiplos pedidos no mesmo dia e recompra em dias distintos.
+- **Recompra por UF:** distribuição geográfica dos clientes elegíveis e recorrentes.
+- **Detalhamento de Clientes:** consulta das classificações de recorrência.
+
+O gráfico de evolução preserva os períodos exibidos pela dimensão calendário, inclusive meses com valores zero.
+
+Esses valores representam o resultado das medidas no respectivo contexto temporal e não devem ser interpretados automaticamente como queda no desempenho comercial.
+
+A análise diferencia frequência de pedidos e recompra: um cliente pode realizar múltiplos pedidos no mesmo dia sem atender à regra RN07.
 
 ![Clientes e Recompra — Inteligência de Receita](docs/imagens/clientes-recompra.png)
 
 ### 4. Análise Financeira
 
-Apresenta a composição dos valores de produtos, frete e pagamentos registrados, respeitando as diferenças entre essas medidas.
+Apresenta as medidas financeiras disponíveis na base, preservando a distinção entre valores de produtos, frete e pagamentos registrados.
 
-Inclui evolução temporal, participação das formas de pagamento, parcelamento dos pedidos, distribuição do frete por UF e detalhamento mensal.
+A página reúne:
 
-Os valores de pagamento não são interpretados automaticamente como recebimento efetivo ou receita contábil.
+- Valor total dos produtos.
+- Valor total do frete.
+- Valor dos pagamentos registrados.
+- Participação do frete em relação ao valor dos produtos.
+- Valor médio dos pagamentos por pedido.
+- Evolução mensal das medidas financeiras.
+- Composição dos pagamentos por forma de pagamento.
+- Distribuição dos registros por quantidade de parcelas.
+- Distribuição geográfica dos valores de frete.
+
+Os indicadores não representam, necessariamente, receita contábil, recebimentos efetivos, custos ou lucro.
+
+A interpretação das séries temporais deve considerar a cobertura dos dados disponíveis, especialmente em períodos sem registros ou com cobertura parcial.
 
 ![Análise Financeira — Inteligência de Receita](docs/imagens/analise-financeira.png)
 
@@ -158,9 +204,11 @@ Os valores de pagamento não são interpretados automaticamente como recebimento
 
 O arquivo `.pbix` permite abrir o relatório no Power BI Desktop.
 
-Para reproduzir a atualização de dados, é necessário configurar a conexão com um banco PostgreSQL preparado com as tabelas do projeto. Caminhos e credenciais locais não fazem parte da documentação pública.
+O repositório também contém artefatos do projeto Power BI em formato PBIP, incluindo definições do relatório e do modelo semântico.
 
-O repositório também contém os arquivos do projeto Power BI em formato PBIP, incluindo as definições do relatório e do modelo semântico.
+Para reproduzir a atualização de dados, é necessário configurar a conexão com um banco PostgreSQL preparado com as tabelas do projeto.
+
+Caminhos e credenciais locais não fazem parte da documentação pública.
 
 ## Organização do repositório
 
@@ -179,7 +227,7 @@ docs/
   regras_negocio/         # Definições e restrições analíticas
   qualidade/              # Relatórios e evidências de execução
   powerbi/                # Documentação do modelo semântico
-  imagens/                # Capturas das quatro páginas do dashboard
+  imagens/                # Capturas das páginas do dashboard
 powerbi/                  # Artefatos do Power BI
 ```
 
