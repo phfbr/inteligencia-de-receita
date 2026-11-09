@@ -114,27 +114,53 @@ A revisão dos dashboards foi informada como concluída, mas o registro formal d
 
 ## Dashboards no Power BI
 
-O relatório está organizado em quatro páginas:
+O relatório foi organizado em quatro páginas interativas, cada uma dedicada a uma perspectiva do desempenho comercial e financeiro.
 
-### 1. Visão Geral
+As análises utilizam filtros de ano, período e unidade federativa, permitindo explorar os indicadores em diferentes contextos.
 
-Indicadores de pedidos, valores de produtos, frete, pagamentos e evolução comercial.
+### 1. Visão Executiva
+
+Apresenta os principais indicadores do negócio, incluindo quantidade de pedidos, pedidos entregues, valores de produtos, frete e pagamentos registrados.
+
+A página também permite acompanhar a evolução mensal do valor dos produtos, a distribuição dos pedidos por status e os destaques de categorias, vendedores e formas de pagamento.
+
+![Visão Executiva — Inteligência de Receita](docs/imagens/visao-geral.png)
 
 ### 2. Desempenho Comercial
 
-Exploração dos resultados por dimensões comerciais.
+Explora o desempenho comercial a partir de produtos, categorias, vendedores e regiões.
+
+Reúne indicadores de valor dos produtos, quantidade de itens, pedidos com itens e valores médios, além de análises de participação por categoria, concentração por vendedor e distribuição geográfica.
+
+![Desempenho Comercial — Inteligência de Receita](docs/imagens/desempenho-comercial.png)
 
 ### 3. Clientes e Recompra
 
-Análise de clientes e comportamento de compra conforme as regras definidas.
+Analisa o comportamento de compra dos clientes, considerando frequência de pedidos, recorrência e distribuição geográfica.
+
+Os indicadores de recompra seguem a regra RN07, que exige pelo menos dois pedidos entregues em dias civis de compra distintos.
+
+A página também apresenta a evolução da base de clientes, perfis de frequência e detalhamento das classificações utilizadas.
+
+![Clientes e Recompra — Inteligência de Receita](docs/imagens/clientes-recompra.png)
 
 ### 4. Análise Financeira
 
-Comparação e interpretação das medidas financeiras disponíveis, sem presumir lucro ou recebimento.
+Apresenta a composição dos valores de produtos, frete e pagamentos registrados, respeitando as diferenças entre essas medidas.
+
+Inclui evolução temporal, participação das formas de pagamento, parcelamento dos pedidos, distribuição do frete por UF e detalhamento mensal.
+
+Os valores de pagamento não são interpretados automaticamente como recebimento efetivo ou receita contábil.
+
+![Análise Financeira — Inteligência de Receita](docs/imagens/analise-financeira.png)
+
+### Acesso ao relatório
 
 O arquivo `.pbix` permite abrir o relatório no Power BI Desktop.
 
 Para reproduzir a atualização de dados, é necessário configurar a conexão com um banco PostgreSQL preparado com as tabelas do projeto. Caminhos e credenciais locais não fazem parte da documentação pública.
+
+O repositório também contém os arquivos do projeto Power BI em formato PBIP, incluindo as definições do relatório e do modelo semântico.
 
 ## Organização do repositório
 
@@ -153,6 +179,7 @@ docs/
   regras_negocio/         # Definições e restrições analíticas
   qualidade/              # Relatórios e evidências de execução
   powerbi/                # Documentação do modelo semântico
+  imagens/                # Capturas das quatro páginas do dashboard
 powerbi/                  # Artefatos do Power BI
 ```
 
