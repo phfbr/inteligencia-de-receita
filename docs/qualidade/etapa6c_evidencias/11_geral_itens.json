@@ -1,0 +1,16 @@
+[
+  {
+    "escopo": "delivered",
+    "linhas": 110197,
+    "pedidos": 96478,
+    "price": "13221498.11",
+    "freight_value": "2198275.64"
+  },
+  {
+    "escopo": "geral",
+    "linhas": 112650,
+    "pedidos": 98666,
+    "price": "13591643.70",
+    "freight_value": "2251909.54"
+  }
+]

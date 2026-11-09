@@ -1,0 +1,744 @@
+table Medidas
+	lineageTag: e21ecb6c-7fde-4dd6-8de4-636927bb537e
+
+	measure Pedidos = ```
+			
+			DISTINCTCOUNT(fato_pedidos[order_id])
+			
+			```
+		formatString: #,0
+		displayFolder: O1 - Indicadores Gerais
+		lineageTag: 9284dd27-fdba-427e-8d62-ad0fb1ea75da
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Pedidos Entregues' = ```
+			
+			CALCULATE(
+			    [Pedidos],
+			    KEEPFILTERS(
+			        fato_pedidos[order_status] = "delivered"
+			    )
+			)
+			
+			```
+		formatString: #,0
+		displayFolder: O1 - Indicadores Gerais
+		lineageTag: 739cf242-f9b3-4d7b-8440-b41575a9b8d0
+
+		annotation PBI_FormatHint = {"isDecimal":true}
+
+	measure 'Valor dos Produtos' = ```
+			
+			SUM(fato_itens_pedido[price])
+			
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: O1 - Indicadores Gerais
+		lineageTag: 727dc5a5-c17e-41b6-b18b-ec412ccea1f1
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure Frete = ```
+			
+			SUM(fato_itens_pedido[freight_value])
+			
+			```
+		formatString: #,0.00
+		displayFolder: 04 - Análise Financeira
+		lineageTag: d3126a86-9f66-426f-bee3-93a8154cb7ed
+
+	measure 'Valor Registrado em Pagamentos' = ```
+			
+			SUM(fato_pagamentos[payment_value])
+			
+			```
+		formatString: #,0.00
+		displayFolder: O1 - Indicadores Gerais
+		lineageTag: 50447b56-6fbe-4b22-b8ba-1dce86fb832d
+
+	measure 'Participação Pedidos Status' = ```
+			
+			DIVIDE(
+			    [Pedidos],
+			    CALCULATE(
+			        [Pedidos],
+			        REMOVEFILTERS(fato_pedidos[order_status])
+			    )
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: O1 - Indicadores Gerais
+		lineageTag: 22ce9a88-2240-415a-bea3-4efee5d83407
+
+	measure 'Itens de Pedido' =
+			
+			COUNTROWS(fato_itens_pedido)
+		formatString: #,0
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: 8d07f94f-2209-415c-a69b-57a106537797
+
+	measure 'Pedidos com Itens' =
+			
+			DISTINCTCOUNT(fato_itens_pedido[order_id])
+		formatString: #,0
+		displayFolder: O1 - Indicadores Gerais
+		lineageTag: f3f2f645-1b4b-42b5-9f1d-15219b031802
+
+	measure 'Valor Médio por Item' =
+			
+			DIVIDE(
+			    [Valor dos Produtos],
+			    [Itens de Pedido]
+			)
+		formatString: #,0.00
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: ef542148-2ce1-483d-a724-f6d1f4ccbf47
+
+	measure 'Valor Médio por Pedido' =
+			
+			DIVIDE(
+			    [Valor dos Produtos],
+			    [Pedidos com Itens]
+			)
+		formatString: #,0.00
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: 090d11ab-f561-4fae-8fb4-e99ad29af534
+
+	measure 'Participação Categoria no Valor dos Produtos' =
+			
+			DIVIDE(
+			    [Valor dos Produtos],
+			    CALCULATE(
+			        [Valor dos Produtos],
+			        REMOVEFILTERS(dim_produtos[categoria_exibicao])
+			    )
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: 9b5000f1-be5f-4176-859b-fd9a65e57603
+
+	measure 'Participação Vendedor no Valor dos Produtos' =
+			
+			DIVIDE(
+			    [Valor dos Produtos],
+			    CALCULATE(
+			        [Valor dos Produtos],
+			        REMOVEFILTERS(dim_vendedores[vendedor_exibicao])
+			    )
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: e72ad3cf-3e98-47fa-9993-76c26b3870a5
+
+	measure 'Concentração Top 10 Vendedores' =
+			
+			VAR TopVendedores =
+			    TOPN(
+			        10,
+			        ALL(dim_vendedores[vendedor_sk]),
+			        [Valor dos Produtos], DESC,
+			        dim_vendedores[vendedor_sk], ASC
+			    )
+			VAR ValorTop10 =
+			    CALCULATE(
+			        [Valor dos Produtos],
+			        KEEPFILTERS(TopVendedores)
+			    )
+			VAR ValorTotal =
+			    CALCULATE(
+			        [Valor dos Produtos],
+			        REMOVEFILTERS(dim_vendedores[vendedor_sk])
+			    )
+			RETURN
+			    DIVIDE(
+			        ValorTop10,
+			        ValorTotal
+			    )
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: 3c33d32f-858d-4b15-bc94-fb2fc2ff1f5b
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Valor dos Produtos por Faixa' = ```
+			
+			VAR Base =
+			    FILTER (
+			        ADDCOLUMNS (
+			            VALUES ( dim_vendedores[vendedor_sk] ),
+			            "@Itens",
+			                CALCULATE (
+			                    COUNTROWS ( fato_itens_pedido )
+			                ),
+			            "@Valor",
+			                CALCULATE ( [Valor dos Produtos] )
+			        ),
+			        [@Itens] > 0
+			    )
+			
+			VAR Top10 =
+			    TOPN (
+			        10,
+			        Base,
+			        IF ( ISBLANK ( [@Valor] ), 0, 1 ), DESC,
+			        [@Valor], DESC,
+			        dim_vendedores[vendedor_sk], ASC
+			    )
+			
+			VAR Top50 =
+			    TOPN (
+			        50,
+			        Base,
+			        IF ( ISBLANK ( [@Valor] ), 0, 1 ), DESC,
+			        [@Valor], DESC,
+			        dim_vendedores[vendedor_sk], ASC
+			    )
+			
+			VAR Top100 =
+			    TOPN (
+			        100,
+			        Base,
+			        IF ( ISBLANK ( [@Valor] ), 0, 1 ), DESC,
+			        [@Valor], DESC,
+			        dim_vendedores[vendedor_sk], ASC
+			    )
+			
+			VAR ChavesBase =
+			    SELECTCOLUMNS (
+			        Base,
+			        "@SK", dim_vendedores[vendedor_sk]
+			    )
+			
+			VAR Chaves10 =
+			    SELECTCOLUMNS (
+			        Top10,
+			        "@SK", dim_vendedores[vendedor_sk]
+			    )
+			
+			VAR Chaves50 =
+			    SELECTCOLUMNS (
+			        Top50,
+			        "@SK", dim_vendedores[vendedor_sk]
+			    )
+			
+			VAR Chaves100 =
+			    SELECTCOLUMNS (
+			        Top100,
+			        "@SK", dim_vendedores[vendedor_sk]
+			    )
+			
+			VAR Classificacao =
+			    UNION (
+			        ADDCOLUMNS ( Chaves10, "@Faixa", 1 ),
+			        ADDCOLUMNS (
+			            EXCEPT ( Chaves50, Chaves10 ),
+			            "@Faixa", 2
+			        ),
+			        ADDCOLUMNS (
+			            EXCEPT ( Chaves100, Chaves50 ),
+			            "@Faixa", 3
+			        ),
+			        ADDCOLUMNS (
+			            EXCEPT ( ChavesBase, Chaves100 ),
+			            "@Faixa", 4
+			        )
+			    )
+			
+			VAR OrdensSelecionadas =
+			    VALUES ( 'Faixas Concentração'[Ordem] )
+			
+			VAR ChavesDasFaixas =
+			    SELECTCOLUMNS (
+			        FILTER (
+			            Classificacao,
+			            [@Faixa] IN OrdensSelecionadas
+			        ),
+			        "@SK", [@SK]
+			    )
+			
+			RETURN
+			    IF (
+			        ISEMPTY ( Base ),
+			        BLANK (),
+			        IF (
+			            ISEMPTY ( ChavesDasFaixas ),
+			            0,
+			            CALCULATE (
+			                [Valor dos Produtos],
+			                KEEPFILTERS (
+			                    TREATAS (
+			                        ChavesDasFaixas,
+			                        dim_vendedores[vendedor_sk]
+			                    )
+			                )
+			            )
+			        )
+			    )
+			
+			```
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: c3703e8f-8c7a-4225-8bf7-89a1b9ff877a
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor dos Produtos Total Concentração' = ```
+			
+			CALCULATE (
+			    [Valor dos Produtos],
+			    REMOVEFILTERS ( 'Faixas Concentração' )
+			)
+			
+			```
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: 779a2d71-b0e9-4038-83fc-db93f269a62b
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Participação dos Produtos por Faixa' = ```
+			
+			VAR TotalContexto =
+			    [Valor dos Produtos Total Concentração]
+			RETURN
+			    IF (
+			        TotalContexto > 0,
+			        DIVIDE (
+			            [Valor dos Produtos por Faixa],
+			            TotalContexto
+			        ),
+			        BLANK ()
+			    )
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 02 - Desempenho Comercial
+		lineageTag: 27405be7-afc0-4712-b411-aac3fc408c62
+
+	measure 'Diferença de Reconciliação das Faixas' = ```
+			
+			CALCULATE (
+			    [Valor dos Produtos por Faixa],
+			    REMOVEFILTERS ( 'Faixas Concentração' )
+			)
+			    - [Valor dos Produtos Total Concentração]
+			
+			```
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: 05 - Medidas Auxiliares
+		lineageTag: 67074ad1-ea61-4608-87c3-bf8f5260b40e
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Clientes Elegíveis Contextuais' = ```
+			
+			COALESCE (
+			    CALCULATE (
+			        DISTINCTCOUNT ( fato_pedidos[cliente_sk] ),
+			        KEEPFILTERS (
+			            fato_pedidos[order_status] = "delivered"
+			        ),
+			        KEEPFILTERS (
+			            dim_clientes[membro_tipo] = "regular"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: #,0
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: 813f0e68-303d-45f8-870e-3b47bffa6849
+
+	measure 'Clientes com Recompra Contextual' = ```
+			
+			VAR ClienteDias =
+			    CALCULATETABLE (
+			        SUMMARIZE (
+			            fato_pedidos,
+			            dim_clientes[cliente_sk],
+			            dim_calendario[dia]
+			        ),
+			        KEEPFILTERS (
+			            fato_pedidos[order_status] = "delivered"
+			        ),
+			        KEEPFILTERS (
+			            dim_clientes[membro_tipo] = "regular"
+			        ),
+			        KEEPFILTERS (
+			            NOT ISBLANK ( dim_calendario[dia] )
+			        )
+			    )
+			VAR Perfil =
+			    GROUPBY (
+			        ClienteDias,
+			        dim_clientes[cliente_sk],
+			        "@Dias",
+			            COUNTX ( CURRENTGROUP (), 1 )
+			    )
+			RETURN
+			    COALESCE (
+			        COUNTROWS (
+			            FILTER ( Perfil, [@Dias] >= 2 )
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: #,0
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: c859c4d1-582c-4e9e-a05b-02e171eeeb83
+
+	measure 'Taxa de Recompra Contextual' = ```
+			
+			DIVIDE (
+			    [Clientes com Recompra Contextual],
+			    [Clientes Elegíveis Contextuais]
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: 53a0d5cd-32b8-456e-8fa3-852eab403236
+
+	measure 'Pedidos Entregues Elegíveis' = ```
+			
+			COALESCE (
+			    CALCULATE (
+			        DISTINCTCOUNT ( fato_pedidos[order_id] ),
+			        KEEPFILTERS (
+			            fato_pedidos[order_status] = "delivered"
+			        ),
+			        KEEPFILTERS (
+			            dim_clientes[membro_tipo] = "regular"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: 5559e750-a6e9-41a6-92c4-dd5f43644f65
+
+	measure 'Pedidos por Cliente' = ```
+			
+			DIVIDE (
+			    [Pedidos Entregues Elegíveis],
+			    [Clientes Elegíveis Contextuais]
+			)
+			
+			```
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: 10efe33a-659d-4562-b06f-10bebce9f0b9
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Valor dos Produtos Entregues Elegíveis' = ```
+			
+			VAR PedidosElegiveis =
+			    CALCULATETABLE (
+			        VALUES ( fato_pedidos[order_id] ),
+			        KEEPFILTERS (
+			            fato_pedidos[order_status] = "delivered"
+			        ),
+			        KEEPFILTERS (
+			            dim_clientes[membro_tipo] = "regular"
+			        )
+			    )
+			RETURN
+			    CALCULATE (
+			        SUM ( fato_itens_pedido[price] ),
+			        KEEPFILTERS (
+			            TREATAS (
+			                PedidosElegiveis,
+			                fato_itens_pedido[order_id]
+			            )
+			        )
+			    )
+			
+			```
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: be486aea-2388-4e95-a34f-22f76bf9df62
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor dos Produtos por Cliente' =
+			
+			DIVIDE (
+			    [Valor dos Produtos Entregues Elegíveis],
+			    [Clientes Elegíveis Contextuais]
+			)
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: 8c769575-fc88-4708-9743-9cc71d524cfb
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Clientes Novos Contextuais' = ```
+			
+			VAR DataInicial =
+			    MIN ( dim_calendario[dia] )
+			VAR DataFinal =
+			    MAX ( dim_calendario[dia] )
+			VAR ClientesAtivos =
+			    CALCULATETABLE (
+			        VALUES ( fato_pedidos[cliente_sk] ),
+			        KEEPFILTERS (
+			            fato_pedidos[order_status] = "delivered"
+			        ),
+			        KEEPFILTERS (
+			            dim_clientes[membro_tipo] = "regular"
+			        )
+			    )
+			RETURN
+			    COALESCE (
+			        SUMX (
+			            ClientesAtivos,
+			            VAR ClienteAtual = fato_pedidos[cliente_sk]
+			            VAR PrimeiraCompra =
+			                CALCULATE (
+			                    MIN ( fato_pedidos[order_purchase_timestamp] ),
+			                    REMOVEFILTERS ( dim_calendario ),
+			                    REMOVEFILTERS ( dim_localizacao ),
+			                    REMOVEFILTERS ( fato_pedidos ),
+			                    fato_pedidos[cliente_sk] = ClienteAtual,
+			                    fato_pedidos[order_status] = "delivered",
+			                    dim_clientes[membro_tipo] = "regular"
+			                )
+			            RETURN
+			                IF (
+			                    NOT ISBLANK ( PrimeiraCompra )
+			                        && INT ( PrimeiraCompra ) >= DataInicial
+			                        && INT ( PrimeiraCompra ) <= DataFinal,
+			                    1,
+			                    0
+			                )
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: #,0
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: 5df3d21e-1be4-448e-a50c-9fd6d206ae07
+
+	measure 'Clientes Existentes Contextuais' = ```
+			
+			VAR ClientesAtivos =
+			    [Clientes Elegíveis Contextuais]
+			VAR ClientesNovos =
+			    [Clientes Novos Contextuais]
+			RETURN
+			    MAX (
+			        0,
+			        ClientesAtivos - ClientesNovos
+			    )
+			
+			```
+		formatString: 0
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: ad839bd6-23f6-48d2-9d98-27f7bd57e71c
+
+	measure 'Clientes por Frequencia' = ```
+			
+			VAR MinimoPedidos =
+			    SELECTEDVALUE ( 'Faixas Frequencia'[Minimo] )
+			VAR MaximoPedidos =
+			    SELECTEDVALUE ( 'Faixas Frequencia'[Maximo] )
+			
+			VAR PedidosPorCliente =
+			    CALCULATETABLE (
+			        SUMMARIZE (
+			            fato_pedidos,
+			            fato_pedidos[cliente_sk],
+			            "@Pedidos",
+			                DISTINCTCOUNT ( fato_pedidos[order_id] )
+			        ),
+			        KEEPFILTERS (
+			            fato_pedidos[order_status] = "delivered"
+			        ),
+			        KEEPFILTERS (
+			            dim_clientes[membro_tipo] = "regular"
+			        )
+			    )
+			
+			RETURN
+			    IF (
+			        ISBLANK ( MinimoPedidos )
+			            || ISBLANK ( MaximoPedidos ),
+			        BLANK (),
+			        COALESCE (
+			            COUNTROWS (
+			                FILTER (
+			                    PedidosPorCliente,
+			                    [@Pedidos] >= MinimoPedidos
+			                        && [@Pedidos] <= MaximoPedidos
+			                )
+			            ),
+			            0
+			        )
+			    )
+			
+			```
+		formatString: #,0
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: c1d3d32c-7abb-45c8-82bf-47429ddb352a
+
+	measure 'Clientes por Perfil de Recompra' = ```
+			
+			VAR PerfilSelecionado =
+			    SELECTEDVALUE ( 'Faixas Perfil Recompra'[Ordem] )
+			
+			VAR ClientesPedidoUnico =
+			    CALCULATE (
+			        [Clientes por Frequencia],
+			        REMOVEFILTERS ( 'Faixas Frequencia' ),
+			        'Faixas Frequencia'[Ordem] = 1
+			    )
+			
+			VAR ClientesRecompra =
+			    [Clientes com Recompra Contextual]
+			
+			VAR ClientesMultiplosMesmoDia =
+			    [Clientes Elegíveis Contextuais]
+			        - ClientesPedidoUnico
+			        - ClientesRecompra
+			
+			RETURN
+			    SWITCH (
+			        PerfilSelecionado,
+			        1, ClientesPedidoUnico,
+			        2, ClientesMultiplosMesmoDia,
+			        3, ClientesRecompra,
+			        BLANK ()
+			    )
+			
+			```
+		formatString: #,0
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: 2aff3c9c-ee34-42fd-92dd-54573031fa79
+
+	measure 'Dias Distintos de Compra' = ```
+			
+			VAR PedidosElegiveis =
+			    CALCULATETABLE (
+			        SELECTCOLUMNS (
+			            fato_pedidos,
+			            "@DataCompra",
+			                INT ( fato_pedidos[order_purchase_timestamp] )
+			        ),
+			        KEEPFILTERS (
+			            fato_pedidos[order_status] = "delivered"
+			        ),
+			        KEEPFILTERS (
+			            dim_clientes[membro_tipo] = "regular"
+			        ),
+			        KEEPFILTERS (
+			            NOT ISBLANK ( fato_pedidos[order_purchase_timestamp] )
+			        )
+			    )
+			RETURN
+			    COALESCE (
+			        COUNTROWS (
+			            DISTINCT ( PedidosElegiveis )
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: 0
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: 306c8c83-f9cd-4d5a-b2aa-8404c779760e
+
+	measure 'Classificacao de Recompra Cliente' = ```
+			
+			VAR Pedidos =
+			    [Pedidos Entregues Elegíveis]
+			VAR Dias =
+			    [Dias Distintos de Compra]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        Pedidos = 0, BLANK (),
+			        Pedidos = 1, "Pedido único",
+			        Dias >= 2, "Recompra RN07",
+			        Pedidos >= 2 && Dias = 1, "Múltiplos no mesmo dia",
+			        "Verificar classificação"
+			    )
+			
+			```
+		displayFolder: 03 - Clientes e Recompra
+		lineageTag: e7ac3e40-e849-4aa1-a4c3-b6297b92f9c3
+
+	measure 'Valor do Frete' = ```
+			
+			SUM ( fato_itens_pedido[freight_value] )
+			
+			```
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: 04 - Análise Financeira
+		lineageTag: 706943aa-d924-47ab-b79a-c2d9f02261f9
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Valor dos Pagamentos' = ```
+			
+			SUM ( fato_pagamentos[payment_value] )
+			
+			```
+		formatString: "R$"\ #,0.###############;-"R$"\ #,0.###############;"R$"\ #,0.###############
+		displayFolder: 04 - Análise Financeira
+		lineageTag: da87cc67-8cf9-4af7-a2d2-e4efdc21badf
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure 'Frete sobre Produtos (%)' = ```
+			
+			DIVIDE (
+			    [Valor do Frete],
+			    [Valor dos Produtos]
+			)
+			
+			```
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: 04 - Análise Financeira
+		lineageTag: 5c3be84d-53fe-4f77-854e-689cebef1fc3
+
+	measure 'Pedidos com Pagamento' = ```
+			
+			DISTINCTCOUNT ( fato_pagamentos[order_id] )
+			
+			```
+		formatString: #,0
+		displayFolder: 04 - Análise Financeira
+		lineageTag: 03ade030-6fbb-45a2-9155-55ee7a38f54b
+
+	measure 'Pagamento Médio por Pedido' = ```
+			
+			DIVIDE (
+			    [Valor dos Pagamentos],
+			    [Pedidos com Pagamento]
+			)
+			
+			```
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		displayFolder: 04 - Análise Financeira
+		lineageTag: 70c8df4c-990a-477e-abd2-db577366d473
+
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+

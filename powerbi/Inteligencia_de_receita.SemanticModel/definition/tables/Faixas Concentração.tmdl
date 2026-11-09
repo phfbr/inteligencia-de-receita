@@ -1,0 +1,49 @@
+table 'Faixas Concentração'
+	lineageTag: e200c023-f1a8-4170-90a4-758bcaffaab3
+
+	column Ordem
+		formatString: 0
+		lineageTag: ac740a5b-4874-4721-aa66-81ee268e150e
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ordem]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Faixa
+		lineageTag: e89f4ecf-1fad-4f16-896f-205b4332d8fe
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Faixa]
+		sortByColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Contexto
+		lineageTag: 6a4537c7-d812-46cb-a877-883e428722be
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Contexto]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Faixas Concentração' = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE (
+				    "Ordem", INTEGER,
+				    "Faixa", STRING,
+				    "Contexto", STRING,
+				    {
+				        { 1, "Top 10", "Seleção atual" },
+				        { 2, "Posições 11 a 50", "Seleção atual" },
+				        { 3, "Posições 51 a 100", "Seleção atual" },
+				        { 4, "Demais vendedores", "Seleção atual" }
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = d25c5e3f5f2245a6830a0a1bdacc1883
+

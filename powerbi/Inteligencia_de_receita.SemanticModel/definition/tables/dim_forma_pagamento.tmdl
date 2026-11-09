@@ -1,0 +1,67 @@
+table dim_forma_pagamento
+	lineageTag: 704c92b5-1fc1-4f61-9e78-94da3119574c
+
+	column forma_pagamento_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 4d2a250d-19e2-465a-b63e-ee0f6d86bf5f
+		summarizeBy: none
+		sourceColumn: forma_pagamento_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_type
+		dataType: string
+		lineageTag: e5b0ae6d-83b1-4aec-a012-cf0b9b83b19c
+		summarizeBy: none
+		sourceColumn: payment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column membro_tipo
+		dataType: string
+		lineageTag: 1864ea6a-91c8-4896-9f8e-078a388e5603
+		summarizeBy: none
+		sourceColumn: membro_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column forma_pagamento_exibicao =
+			
+			SWITCH(
+			    TRUE(),
+			    dim_forma_pagamento[membro_tipo] = "nao_informado",
+			        "Não Informado",
+			    dim_forma_pagamento[membro_tipo] = "referencia_nao_encontrada",
+			        "Referência Não Encontrada",
+			    dim_forma_pagamento[payment_type] = "credit_card",
+			        "Cartão de Crédito",
+			    dim_forma_pagamento[payment_type] = "debit_card",
+			        "Cartão de Débito",
+			    dim_forma_pagamento[payment_type] = "boleto",
+			        "Boleto",
+			    dim_forma_pagamento[payment_type] = "voucher",
+			        "Voucher",
+			    dim_forma_pagamento[payment_type] = "not_defined",
+			        "Não Definido",
+			    dim_forma_pagamento[payment_type]
+			)
+		lineageTag: 97ead7d5-2ddb-430b-b94a-40afbcb72ad1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_forma_pagamento = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("localhost:5432", "inteligencia_receita_db"),
+				    gold_dim_forma_pagamento = Fonte{[Schema="gold",Item="dim_forma_pagamento"]}[Data],
+				    #"Outras Colunas Removidas" = Table.SelectColumns(gold_dim_forma_pagamento,{"forma_pagamento_sk", "payment_type", "membro_tipo"})
+				in
+				    #"Outras Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

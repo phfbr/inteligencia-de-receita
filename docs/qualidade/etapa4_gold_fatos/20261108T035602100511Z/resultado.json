@@ -1,0 +1,2547 @@
+{
+  "status": "completed_verified",
+  "mode": "run",
+  "started_utc": "2026-11-08T03:56:02.101232+00:00",
+  "errors": [],
+  "runs": {
+    "first": {
+      "status": "committed",
+      "results": [
+        {
+          "fact": "fato_pedidos",
+          "silver_rows": 99441,
+          "rows": 99441,
+          "money": {},
+          "fk_members": {
+            "cliente_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "localizacao_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_compra_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_aprovacao_sk": {
+              "nao_informado": 160,
+              "referencia_nao_encontrada": 0
+            },
+            "data_transportadora_sk": {
+              "nao_informado": 1783,
+              "referencia_nao_encontrada": 0
+            },
+            "data_entrega_sk": {
+              "nao_informado": 2965,
+              "referencia_nao_encontrada": 0
+            },
+            "data_previsao_entrega_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            }
+          },
+          "fingerprint": "1cab7d18eaa5cdce0012b78fc9a639a8c88377d4d0a04118001d8175f4086298"
+        },
+        {
+          "fact": "fato_pedidos",
+          "statuses": {
+            "unavailable": 609,
+            "delivered": 96478,
+            "processing": 301,
+            "invoiced": 314,
+            "created": 5,
+            "approved": 2,
+            "canceled": 625,
+            "shipped": 1107
+          }
+        },
+        {
+          "fact": "fato_itens_pedido",
+          "silver_rows": 112650,
+          "rows": 112650,
+          "money": {
+            "price": "13591643.70",
+            "freight_value": "2251909.54"
+          },
+          "fk_members": {
+            "cliente_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "localizacao_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "produto_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "vendedor_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_compra_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_limite_envio_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            }
+          },
+          "fingerprint": "1e591f5628eb8e94150a540b9bf2bb35216eb845dd63e9f70cb45734f4d242ab"
+        },
+        {
+          "fact": "fato_itens_pedido",
+          "statuses": {
+            "unavailable": 7,
+            "delivered": 110197,
+            "processing": 357,
+            "invoiced": 359,
+            "approved": 3,
+            "canceled": 542,
+            "shipped": 1185
+          }
+        },
+        {
+          "fact": "fato_pagamentos",
+          "silver_rows": 103886,
+          "rows": 103886,
+          "money": {
+            "payment_value": "16008872.12"
+          },
+          "fk_members": {
+            "cliente_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "localizacao_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "forma_pagamento_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_compra_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            }
+          },
+          "fingerprint": "90ebf0a7f7239a90a290930ed65e873451e1425cc8eb37df7bef22cbe6aa2042"
+        },
+        {
+          "fact": "fato_pagamentos",
+          "statuses": {
+            "unavailable": 649,
+            "delivered": 100756,
+            "processing": 319,
+            "invoiced": 325,
+            "created": 5,
+            "approved": 2,
+            "canceled": 664,
+            "shipped": 1166
+          }
+        },
+        {
+          "reconciliation_orders": 99441,
+          "without_items": 775,
+          "without_payments": 1,
+          "compared": 98665,
+          "over_one_cent": 303,
+          "positive": 264,
+          "negative": 39,
+          "min_delta": "-51.62",
+          "max_delta": "182.81"
+        },
+        {
+          "divergent_status": "canceled",
+          "orders": 2
+        },
+        {
+          "divergent_status": "delivered",
+          "orders": 299
+        },
+        {
+          "divergent_status": "shipped",
+          "orders": 2
+        }
+      ]
+    },
+    "second": {
+      "status": "committed",
+      "results": [
+        {
+          "fact": "fato_pedidos",
+          "silver_rows": 99441,
+          "rows": 99441,
+          "money": {},
+          "fk_members": {
+            "cliente_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "localizacao_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_compra_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_aprovacao_sk": {
+              "nao_informado": 160,
+              "referencia_nao_encontrada": 0
+            },
+            "data_transportadora_sk": {
+              "nao_informado": 1783,
+              "referencia_nao_encontrada": 0
+            },
+            "data_entrega_sk": {
+              "nao_informado": 2965,
+              "referencia_nao_encontrada": 0
+            },
+            "data_previsao_entrega_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            }
+          },
+          "fingerprint": "1cab7d18eaa5cdce0012b78fc9a639a8c88377d4d0a04118001d8175f4086298"
+        },
+        {
+          "fact": "fato_pedidos",
+          "statuses": {
+            "unavailable": 609,
+            "delivered": 96478,
+            "processing": 301,
+            "invoiced": 314,
+            "created": 5,
+            "approved": 2,
+            "canceled": 625,
+            "shipped": 1107
+          }
+        },
+        {
+          "fact": "fato_itens_pedido",
+          "silver_rows": 112650,
+          "rows": 112650,
+          "money": {
+            "price": "13591643.70",
+            "freight_value": "2251909.54"
+          },
+          "fk_members": {
+            "cliente_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "localizacao_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "produto_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "vendedor_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_compra_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_limite_envio_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            }
+          },
+          "fingerprint": "1e591f5628eb8e94150a540b9bf2bb35216eb845dd63e9f70cb45734f4d242ab"
+        },
+        {
+          "fact": "fato_itens_pedido",
+          "statuses": {
+            "unavailable": 7,
+            "delivered": 110197,
+            "processing": 357,
+            "invoiced": 359,
+            "approved": 3,
+            "canceled": 542,
+            "shipped": 1185
+          }
+        },
+        {
+          "fact": "fato_pagamentos",
+          "silver_rows": 103886,
+          "rows": 103886,
+          "money": {
+            "payment_value": "16008872.12"
+          },
+          "fk_members": {
+            "cliente_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "localizacao_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "forma_pagamento_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            },
+            "data_compra_sk": {
+              "nao_informado": 0,
+              "referencia_nao_encontrada": 0
+            }
+          },
+          "fingerprint": "90ebf0a7f7239a90a290930ed65e873451e1425cc8eb37df7bef22cbe6aa2042"
+        },
+        {
+          "fact": "fato_pagamentos",
+          "statuses": {
+            "unavailable": 649,
+            "delivered": 100756,
+            "processing": 319,
+            "invoiced": 325,
+            "created": 5,
+            "approved": 2,
+            "canceled": 664,
+            "shipped": 1166
+          }
+        },
+        {
+          "reconciliation_orders": 99441,
+          "without_items": 775,
+          "without_payments": 1,
+          "compared": 98665,
+          "over_one_cent": 303,
+          "positive": 264,
+          "negative": 39,
+          "min_delta": "-51.62",
+          "max_delta": "182.81"
+        },
+        {
+          "divergent_status": "canceled",
+          "orders": 2
+        },
+        {
+          "divergent_status": "delivered",
+          "orders": 299
+        },
+        {
+          "divergent_status": "shipped",
+          "orders": 2
+        }
+      ]
+    },
+    "rollback": {
+      "status": "expected_failure",
+      "sqlstate": "22012"
+    }
+  },
+  "preflight": [
+    {
+      "database": "inteligencia_receita_db",
+      "version": "18.6",
+      "isolated": true
+    },
+    {
+      "fact": "fato_pedidos",
+      "silver_rows": 99441,
+      "source_distinct": 99441
+    },
+    {
+      "fact": "fato_itens_pedido",
+      "silver_rows": 112650,
+      "source_distinct": 112650
+    },
+    {
+      "fact": "fato_pagamentos",
+      "silver_rows": 103886,
+      "source_distinct": 103886
+    },
+    {
+      "dimension": "dim_clientes",
+      "source_distinct": 96096
+    },
+    {
+      "dimension": "dim_clientes",
+      "rows": 96098,
+      "regular": 96096,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "f6ff05c04a87d734ff0b2f933665cc7e62b3ad0b6f1459f466d39ef4e094d21c"
+    },
+    {
+      "dimension": "dim_produtos",
+      "source_distinct": 32951
+    },
+    {
+      "dimension": "dim_produtos",
+      "rows": 32953,
+      "regular": 32951,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "ddc394330f6a2c1fa7044c08cd7b0ed515439fa0feb8cb860cabcc34c106e7cb"
+    },
+    {
+      "dimension": "dim_vendedores",
+      "source_distinct": 3095
+    },
+    {
+      "dimension": "dim_vendedores",
+      "rows": 3097,
+      "regular": 3095,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "9cd1fb10c74c867835d4498b31bb5933b9033d548d7229f409cbb23858b11681"
+    },
+    {
+      "dimension": "dim_calendario",
+      "source_distinct": 1314
+    },
+    {
+      "dimension": "dim_calendario",
+      "rows": 1316,
+      "regular": 1314,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "9169db24f31ef5396bc9246a981f8921f6b81cb9fcb30205fa4faf75d776b3bb"
+    },
+    {
+      "dimension": "dim_localizacao",
+      "source_distinct": 15034
+    },
+    {
+      "dimension": "dim_localizacao",
+      "rows": 15036,
+      "regular": 15034,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "7c311f339cfb46bd6eb1751ba85bd472a8e6ca05874a6e7989f911b31f7de952"
+    },
+    {
+      "dimension": "dim_forma_pagamento",
+      "source_distinct": 5
+    },
+    {
+      "dimension": "dim_forma_pagamento",
+      "rows": 7,
+      "regular": 5,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "fd689e8d32ef12ce1cec24a413b8b7158ad699e45d947434517d28d4687249b8"
+    },
+    {
+      "calendar_min": "2016-09-04",
+      "calendar_max": "2020-04-09",
+      "observed_distinct_days": 720
+    },
+    {
+      "products_category_null": 610,
+      "products_translation_missing": 13
+    },
+    {
+      "partial_locations": 0
+    },
+    {
+      "resolution": "pedidos_cliente",
+      "rows": 99441,
+      "regular": 99441,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "pedidos_localizacao",
+      "rows": 99441,
+      "regular": 99441,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "pagamentos_forma",
+      "rows": 103886,
+      "regular": 103886,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "itens_produto",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "itens_vendedor",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "itens_cliente",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "itens_localizacao",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_compra_itens",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "pagamentos_cliente",
+      "rows": 103886,
+      "regular": 103886,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "pagamentos_localizacao",
+      "rows": 103886,
+      "regular": 103886,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_compra_pagamentos",
+      "rows": 103886,
+      "regular": 103886,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_purchase_timestamp",
+      "rows": 99441,
+      "regular": 99441,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_approved_at",
+      "rows": 99441,
+      "regular": 99281,
+      "nao_informado": 160,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_delivered_carrier_date",
+      "rows": 99441,
+      "regular": 97658,
+      "nao_informado": 1783,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_delivered_customer_date",
+      "rows": 99441,
+      "regular": 96476,
+      "nao_informado": 2965,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_estimated_delivery_date",
+      "rows": 99441,
+      "regular": 99441,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_shipping_limit_date",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "upstream_tables": [
+        {
+          "schema": "gold",
+          "name": "dim_calendario",
+          "oid": 17220,
+          "filenode": 17220
+        },
+        {
+          "schema": "gold",
+          "name": "dim_clientes",
+          "oid": 17184,
+          "filenode": 17184
+        },
+        {
+          "schema": "gold",
+          "name": "dim_forma_pagamento",
+          "oid": 17244,
+          "filenode": 17244
+        },
+        {
+          "schema": "gold",
+          "name": "dim_localizacao",
+          "oid": 17232,
+          "filenode": 17232
+        },
+        {
+          "schema": "gold",
+          "name": "dim_produtos",
+          "oid": 17196,
+          "filenode": 17196
+        },
+        {
+          "schema": "gold",
+          "name": "dim_vendedores",
+          "oid": 17208,
+          "filenode": 17208
+        },
+        {
+          "schema": "silver",
+          "name": "olist_customers_dataset",
+          "oid": 17019,
+          "filenode": 17019
+        },
+        {
+          "schema": "silver",
+          "name": "olist_geolocation_dataset",
+          "oid": 17031,
+          "filenode": 17031
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_items_dataset",
+          "oid": 17055,
+          "filenode": 17055
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_payments_dataset",
+          "oid": 17067,
+          "filenode": 17067
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_reviews_dataset",
+          "oid": 17079,
+          "filenode": 17079
+        },
+        {
+          "schema": "silver",
+          "name": "olist_orders_dataset",
+          "oid": 17043,
+          "filenode": 17043
+        },
+        {
+          "schema": "silver",
+          "name": "olist_products_dataset",
+          "oid": 17091,
+          "filenode": 17091
+        },
+        {
+          "schema": "silver",
+          "name": "olist_sellers_dataset",
+          "oid": 17103,
+          "filenode": 17103
+        },
+        {
+          "schema": "silver",
+          "name": "product_category_name_translation",
+          "oid": 17115,
+          "filenode": 17115
+        }
+      ]
+    },
+    {
+      "dimension_columns": [
+        {
+          "table": "dim_calendario",
+          "name": "data_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_calendario",
+          "name": "dia",
+          "type": "date",
+          "not_null": false
+        },
+        {
+          "table": "dim_calendario",
+          "name": "ano",
+          "type": "integer",
+          "not_null": false
+        },
+        {
+          "table": "dim_calendario",
+          "name": "mes",
+          "type": "integer",
+          "not_null": false
+        },
+        {
+          "table": "dim_calendario",
+          "name": "dia_mes",
+          "type": "integer",
+          "not_null": false
+        },
+        {
+          "table": "dim_calendario",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_clientes",
+          "name": "cliente_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_clientes",
+          "name": "customer_unique_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_clientes",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "name": "forma_pagamento_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "name": "payment_type",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "localizacao_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "customer_zip_code_prefix",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "customer_city",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "customer_state",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_produtos",
+          "name": "produto_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_category_name",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_name_lenght",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_description_lenght",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_photos_qty",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_weight_g",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_length_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_height_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_width_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_category_name_english",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "vendedor_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "seller_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "seller_zip_code_prefix",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "seller_city",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "seller_state",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        }
+      ]
+    },
+    {
+      "dimension_constraints": [
+        {
+          "table": "dim_calendario",
+          "kind": "c",
+          "definition": "CHECK ((((data_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (dia IS NULL) AND (ano IS NULL) AND (mes IS NULL) AND (dia_mes IS NULL)) OR ((data_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (dia IS NULL) AND (ano IS NULL) AND (mes IS NULL) AND (dia_mes IS NULL)) OR ((data_sk > 0) AND (membro_tipo = 'regular'::text) AND (dia IS NOT NULL))))"
+        },
+        {
+          "table": "dim_calendario",
+          "kind": "n",
+          "definition": "NOT NULL data_sk"
+        },
+        {
+          "table": "dim_calendario",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_calendario",
+          "kind": "p",
+          "definition": "PRIMARY KEY (data_sk)"
+        },
+        {
+          "table": "dim_calendario",
+          "kind": "u",
+          "definition": "UNIQUE (dia)"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "c",
+          "definition": "CHECK ((((cliente_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (customer_unique_id IS NULL)) OR ((cliente_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (customer_unique_id IS NULL)) OR ((cliente_sk > 0) AND (membro_tipo = 'regular'::text) AND (customer_unique_id IS NOT NULL))))"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "n",
+          "definition": "NOT NULL cliente_sk"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "p",
+          "definition": "PRIMARY KEY (cliente_sk)"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "u",
+          "definition": "UNIQUE (customer_unique_id)"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "c",
+          "definition": "CHECK ((((forma_pagamento_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (payment_type IS NULL)) OR ((forma_pagamento_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (payment_type IS NULL)) OR ((forma_pagamento_sk > 0) AND (membro_tipo = 'regular'::text) AND (payment_type IS NOT NULL))))"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "n",
+          "definition": "NOT NULL forma_pagamento_sk"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "p",
+          "definition": "PRIMARY KEY (forma_pagamento_sk)"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "u",
+          "definition": "UNIQUE (payment_type)"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "c",
+          "definition": "CHECK ((((localizacao_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (customer_zip_code_prefix IS NULL) AND (customer_city IS NULL) AND (customer_state IS NULL)) OR ((localizacao_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (customer_zip_code_prefix IS NULL) AND (customer_city IS NULL) AND (customer_state IS NULL)) OR ((localizacao_sk > 0) AND (membro_tipo = 'regular'::text) AND (customer_zip_code_prefix IS NOT NULL) AND (customer_city IS NOT NULL) AND (customer_state IS NOT NULL))))"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "n",
+          "definition": "NOT NULL localizacao_sk"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "p",
+          "definition": "PRIMARY KEY (localizacao_sk)"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "u",
+          "definition": "UNIQUE (customer_zip_code_prefix, customer_city, customer_state)"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "c",
+          "definition": "CHECK ((((produto_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (product_id IS NULL) AND (product_category_name IS NULL) AND (product_name_lenght IS NULL) AND (product_description_lenght IS NULL) AND (product_photos_qty IS NULL) AND (product_weight_g IS NULL) AND (product_length_cm IS NULL) AND (product_height_cm IS NULL) AND (product_width_cm IS NULL) AND (product_category_name_english IS NULL)) OR ((produto_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (product_id IS NULL) AND (product_category_name IS NULL) AND (product_name_lenght IS NULL) AND (product_description_lenght IS NULL) AND (product_photos_qty IS NULL) AND (product_weight_g IS NULL) AND (product_length_cm IS NULL) AND (product_height_cm IS NULL) AND (product_width_cm IS NULL) AND (product_category_name_english IS NULL)) OR ((produto_sk > 0) AND (membro_tipo = 'regular'::text) AND (product_id IS NOT NULL))))"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "n",
+          "definition": "NOT NULL produto_sk"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "p",
+          "definition": "PRIMARY KEY (produto_sk)"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "u",
+          "definition": "UNIQUE (product_id)"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "c",
+          "definition": "CHECK ((((vendedor_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (seller_id IS NULL) AND (seller_zip_code_prefix IS NULL) AND (seller_city IS NULL) AND (seller_state IS NULL)) OR ((vendedor_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (seller_id IS NULL) AND (seller_zip_code_prefix IS NULL) AND (seller_city IS NULL) AND (seller_state IS NULL)) OR ((vendedor_sk > 0) AND (membro_tipo = 'regular'::text) AND (seller_id IS NOT NULL))))"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "n",
+          "definition": "NOT NULL vendedor_sk"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "p",
+          "definition": "PRIMARY KEY (vendedor_sk)"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "u",
+          "definition": "UNIQUE (seller_id)"
+        }
+      ]
+    }
+  ],
+  "after": [
+    {
+      "fact": "fato_pedidos",
+      "silver_rows": 99441,
+      "rows": 99441,
+      "money": {},
+      "fk_members": {
+        "cliente_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "localizacao_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_compra_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_aprovacao_sk": {
+          "nao_informado": 160,
+          "referencia_nao_encontrada": 0
+        },
+        "data_transportadora_sk": {
+          "nao_informado": 1783,
+          "referencia_nao_encontrada": 0
+        },
+        "data_entrega_sk": {
+          "nao_informado": 2965,
+          "referencia_nao_encontrada": 0
+        },
+        "data_previsao_entrega_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        }
+      },
+      "fingerprint": "1cab7d18eaa5cdce0012b78fc9a639a8c88377d4d0a04118001d8175f4086298"
+    },
+    {
+      "fact": "fato_pedidos",
+      "statuses": {
+        "shipped": 1107,
+        "unavailable": 609,
+        "invoiced": 314,
+        "created": 5,
+        "approved": 2,
+        "processing": 301,
+        "delivered": 96478,
+        "canceled": 625
+      }
+    },
+    {
+      "fact": "fato_itens_pedido",
+      "silver_rows": 112650,
+      "rows": 112650,
+      "money": {
+        "price": "13591643.70",
+        "freight_value": "2251909.54"
+      },
+      "fk_members": {
+        "cliente_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "localizacao_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "produto_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "vendedor_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_compra_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_limite_envio_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        }
+      },
+      "fingerprint": "1e591f5628eb8e94150a540b9bf2bb35216eb845dd63e9f70cb45734f4d242ab"
+    },
+    {
+      "fact": "fato_itens_pedido",
+      "statuses": {
+        "shipped": 1185,
+        "unavailable": 7,
+        "invoiced": 359,
+        "approved": 3,
+        "processing": 357,
+        "delivered": 110197,
+        "canceled": 542
+      }
+    },
+    {
+      "fact": "fato_pagamentos",
+      "silver_rows": 103886,
+      "rows": 103886,
+      "money": {
+        "payment_value": "16008872.12"
+      },
+      "fk_members": {
+        "cliente_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "localizacao_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "forma_pagamento_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_compra_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        }
+      },
+      "fingerprint": "90ebf0a7f7239a90a290930ed65e873451e1425cc8eb37df7bef22cbe6aa2042"
+    },
+    {
+      "fact": "fato_pagamentos",
+      "statuses": {
+        "shipped": 1166,
+        "unavailable": 649,
+        "invoiced": 325,
+        "created": 5,
+        "approved": 2,
+        "processing": 319,
+        "delivered": 100756,
+        "canceled": 664
+      }
+    },
+    {
+      "reconciliation_orders": 99441,
+      "without_items": 775,
+      "without_payments": 1,
+      "compared": 98665,
+      "over_one_cent": 303,
+      "positive": 264,
+      "negative": 39,
+      "min_delta": "-51.62",
+      "max_delta": "182.81"
+    },
+    {
+      "divergent_status": "canceled",
+      "orders": 2
+    },
+    {
+      "divergent_status": "delivered",
+      "orders": 299
+    },
+    {
+      "divergent_status": "shipped",
+      "orders": 2
+    },
+    {
+      "dimension": "dim_clientes",
+      "source_distinct": 96096
+    },
+    {
+      "dimension": "dim_clientes",
+      "rows": 96098,
+      "regular": 96096,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "f6ff05c04a87d734ff0b2f933665cc7e62b3ad0b6f1459f466d39ef4e094d21c"
+    },
+    {
+      "dimension": "dim_produtos",
+      "source_distinct": 32951
+    },
+    {
+      "dimension": "dim_produtos",
+      "rows": 32953,
+      "regular": 32951,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "ddc394330f6a2c1fa7044c08cd7b0ed515439fa0feb8cb860cabcc34c106e7cb"
+    },
+    {
+      "dimension": "dim_vendedores",
+      "source_distinct": 3095
+    },
+    {
+      "dimension": "dim_vendedores",
+      "rows": 3097,
+      "regular": 3095,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "9cd1fb10c74c867835d4498b31bb5933b9033d548d7229f409cbb23858b11681"
+    },
+    {
+      "dimension": "dim_calendario",
+      "source_distinct": 1314
+    },
+    {
+      "dimension": "dim_calendario",
+      "rows": 1316,
+      "regular": 1314,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "9169db24f31ef5396bc9246a981f8921f6b81cb9fcb30205fa4faf75d776b3bb"
+    },
+    {
+      "dimension": "dim_localizacao",
+      "source_distinct": 15034
+    },
+    {
+      "dimension": "dim_localizacao",
+      "rows": 15036,
+      "regular": 15034,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "7c311f339cfb46bd6eb1751ba85bd472a8e6ca05874a6e7989f911b31f7de952"
+    },
+    {
+      "dimension": "dim_forma_pagamento",
+      "source_distinct": 5
+    },
+    {
+      "dimension": "dim_forma_pagamento",
+      "rows": 7,
+      "regular": 5,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "fd689e8d32ef12ce1cec24a413b8b7158ad699e45d947434517d28d4687249b8"
+    },
+    {
+      "calendar_min": "2016-09-04",
+      "calendar_max": "2020-04-09",
+      "observed_distinct_days": 720
+    },
+    {
+      "products_category_null": 610,
+      "products_translation_missing": 13
+    },
+    {
+      "partial_locations": 0
+    },
+    {
+      "resolution": "pedidos_cliente",
+      "rows": 99441,
+      "regular": 99441,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "pedidos_localizacao",
+      "rows": 99441,
+      "regular": 99441,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "pagamentos_forma",
+      "rows": 103886,
+      "regular": 103886,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "itens_produto",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "itens_vendedor",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "itens_cliente",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "itens_localizacao",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_compra_itens",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "pagamentos_cliente",
+      "rows": 103886,
+      "regular": 103886,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "pagamentos_localizacao",
+      "rows": 103886,
+      "regular": 103886,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_compra_pagamentos",
+      "rows": 103886,
+      "regular": 103886,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_purchase_timestamp",
+      "rows": 99441,
+      "regular": 99441,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_approved_at",
+      "rows": 99441,
+      "regular": 99281,
+      "nao_informado": 160,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_delivered_carrier_date",
+      "rows": 99441,
+      "regular": 97658,
+      "nao_informado": 1783,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_delivered_customer_date",
+      "rows": 99441,
+      "regular": 96476,
+      "nao_informado": 2965,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_order_estimated_delivery_date",
+      "rows": 99441,
+      "regular": 99441,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "resolution": "calendario_shipping_limit_date",
+      "rows": 112650,
+      "regular": 112650,
+      "nao_informado": 0,
+      "referencia_nao_encontrada": 0
+    },
+    {
+      "upstream_tables": [
+        {
+          "schema": "gold",
+          "name": "dim_calendario",
+          "oid": 17220,
+          "filenode": 17220
+        },
+        {
+          "schema": "gold",
+          "name": "dim_clientes",
+          "oid": 17184,
+          "filenode": 17184
+        },
+        {
+          "schema": "gold",
+          "name": "dim_forma_pagamento",
+          "oid": 17244,
+          "filenode": 17244
+        },
+        {
+          "schema": "gold",
+          "name": "dim_localizacao",
+          "oid": 17232,
+          "filenode": 17232
+        },
+        {
+          "schema": "gold",
+          "name": "dim_produtos",
+          "oid": 17196,
+          "filenode": 17196
+        },
+        {
+          "schema": "gold",
+          "name": "dim_vendedores",
+          "oid": 17208,
+          "filenode": 17208
+        },
+        {
+          "schema": "silver",
+          "name": "olist_customers_dataset",
+          "oid": 17019,
+          "filenode": 17019
+        },
+        {
+          "schema": "silver",
+          "name": "olist_geolocation_dataset",
+          "oid": 17031,
+          "filenode": 17031
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_items_dataset",
+          "oid": 17055,
+          "filenode": 17055
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_payments_dataset",
+          "oid": 17067,
+          "filenode": 17067
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_reviews_dataset",
+          "oid": 17079,
+          "filenode": 17079
+        },
+        {
+          "schema": "silver",
+          "name": "olist_orders_dataset",
+          "oid": 17043,
+          "filenode": 17043
+        },
+        {
+          "schema": "silver",
+          "name": "olist_products_dataset",
+          "oid": 17091,
+          "filenode": 17091
+        },
+        {
+          "schema": "silver",
+          "name": "olist_sellers_dataset",
+          "oid": 17103,
+          "filenode": 17103
+        },
+        {
+          "schema": "silver",
+          "name": "product_category_name_translation",
+          "oid": 17115,
+          "filenode": 17115
+        }
+      ]
+    },
+    {
+      "dimension_columns": [
+        {
+          "table": "dim_calendario",
+          "name": "data_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_calendario",
+          "name": "dia",
+          "type": "date",
+          "not_null": false
+        },
+        {
+          "table": "dim_calendario",
+          "name": "ano",
+          "type": "integer",
+          "not_null": false
+        },
+        {
+          "table": "dim_calendario",
+          "name": "mes",
+          "type": "integer",
+          "not_null": false
+        },
+        {
+          "table": "dim_calendario",
+          "name": "dia_mes",
+          "type": "integer",
+          "not_null": false
+        },
+        {
+          "table": "dim_calendario",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_clientes",
+          "name": "cliente_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_clientes",
+          "name": "customer_unique_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_clientes",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "name": "forma_pagamento_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "name": "payment_type",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "localizacao_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "customer_zip_code_prefix",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "customer_city",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "customer_state",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_localizacao",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_produtos",
+          "name": "produto_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_category_name",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_name_lenght",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_description_lenght",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_photos_qty",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_weight_g",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_length_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_height_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_width_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "product_category_name_english",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_produtos",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "vendedor_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "seller_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "seller_zip_code_prefix",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "seller_city",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "seller_state",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "dim_vendedores",
+          "name": "membro_tipo",
+          "type": "text",
+          "not_null": true
+        }
+      ]
+    },
+    {
+      "dimension_constraints": [
+        {
+          "table": "dim_calendario",
+          "kind": "c",
+          "definition": "CHECK ((((data_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (dia IS NULL) AND (ano IS NULL) AND (mes IS NULL) AND (dia_mes IS NULL)) OR ((data_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (dia IS NULL) AND (ano IS NULL) AND (mes IS NULL) AND (dia_mes IS NULL)) OR ((data_sk > 0) AND (membro_tipo = 'regular'::text) AND (dia IS NOT NULL))))"
+        },
+        {
+          "table": "dim_calendario",
+          "kind": "n",
+          "definition": "NOT NULL data_sk"
+        },
+        {
+          "table": "dim_calendario",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_calendario",
+          "kind": "p",
+          "definition": "PRIMARY KEY (data_sk)"
+        },
+        {
+          "table": "dim_calendario",
+          "kind": "u",
+          "definition": "UNIQUE (dia)"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "c",
+          "definition": "CHECK ((((cliente_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (customer_unique_id IS NULL)) OR ((cliente_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (customer_unique_id IS NULL)) OR ((cliente_sk > 0) AND (membro_tipo = 'regular'::text) AND (customer_unique_id IS NOT NULL))))"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "n",
+          "definition": "NOT NULL cliente_sk"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "p",
+          "definition": "PRIMARY KEY (cliente_sk)"
+        },
+        {
+          "table": "dim_clientes",
+          "kind": "u",
+          "definition": "UNIQUE (customer_unique_id)"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "c",
+          "definition": "CHECK ((((forma_pagamento_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (payment_type IS NULL)) OR ((forma_pagamento_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (payment_type IS NULL)) OR ((forma_pagamento_sk > 0) AND (membro_tipo = 'regular'::text) AND (payment_type IS NOT NULL))))"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "n",
+          "definition": "NOT NULL forma_pagamento_sk"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "p",
+          "definition": "PRIMARY KEY (forma_pagamento_sk)"
+        },
+        {
+          "table": "dim_forma_pagamento",
+          "kind": "u",
+          "definition": "UNIQUE (payment_type)"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "c",
+          "definition": "CHECK ((((localizacao_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (customer_zip_code_prefix IS NULL) AND (customer_city IS NULL) AND (customer_state IS NULL)) OR ((localizacao_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (customer_zip_code_prefix IS NULL) AND (customer_city IS NULL) AND (customer_state IS NULL)) OR ((localizacao_sk > 0) AND (membro_tipo = 'regular'::text) AND (customer_zip_code_prefix IS NOT NULL) AND (customer_city IS NOT NULL) AND (customer_state IS NOT NULL))))"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "n",
+          "definition": "NOT NULL localizacao_sk"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "p",
+          "definition": "PRIMARY KEY (localizacao_sk)"
+        },
+        {
+          "table": "dim_localizacao",
+          "kind": "u",
+          "definition": "UNIQUE (customer_zip_code_prefix, customer_city, customer_state)"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "c",
+          "definition": "CHECK ((((produto_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (product_id IS NULL) AND (product_category_name IS NULL) AND (product_name_lenght IS NULL) AND (product_description_lenght IS NULL) AND (product_photos_qty IS NULL) AND (product_weight_g IS NULL) AND (product_length_cm IS NULL) AND (product_height_cm IS NULL) AND (product_width_cm IS NULL) AND (product_category_name_english IS NULL)) OR ((produto_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (product_id IS NULL) AND (product_category_name IS NULL) AND (product_name_lenght IS NULL) AND (product_description_lenght IS NULL) AND (product_photos_qty IS NULL) AND (product_weight_g IS NULL) AND (product_length_cm IS NULL) AND (product_height_cm IS NULL) AND (product_width_cm IS NULL) AND (product_category_name_english IS NULL)) OR ((produto_sk > 0) AND (membro_tipo = 'regular'::text) AND (product_id IS NOT NULL))))"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "n",
+          "definition": "NOT NULL produto_sk"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "p",
+          "definition": "PRIMARY KEY (produto_sk)"
+        },
+        {
+          "table": "dim_produtos",
+          "kind": "u",
+          "definition": "UNIQUE (product_id)"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "c",
+          "definition": "CHECK ((((vendedor_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (seller_id IS NULL) AND (seller_zip_code_prefix IS NULL) AND (seller_city IS NULL) AND (seller_state IS NULL)) OR ((vendedor_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (seller_id IS NULL) AND (seller_zip_code_prefix IS NULL) AND (seller_city IS NULL) AND (seller_state IS NULL)) OR ((vendedor_sk > 0) AND (membro_tipo = 'regular'::text) AND (seller_id IS NOT NULL))))"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "n",
+          "definition": "NOT NULL membro_tipo"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "n",
+          "definition": "NOT NULL vendedor_sk"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "p",
+          "definition": "PRIMARY KEY (vendedor_sk)"
+        },
+        {
+          "table": "dim_vendedores",
+          "kind": "u",
+          "definition": "UNIQUE (seller_id)"
+        }
+      ]
+    },
+    {
+      "columns": [
+        {
+          "table": "fato_itens_pedido",
+          "name": "order_id",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "order_item_id",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "product_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "seller_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "shipping_limit_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "price",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "freight_value",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "customer_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "order_status",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "order_purchase_timestamp",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "cliente_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "localizacao_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "produto_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "vendedor_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "data_compra_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "data_limite_envio_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "order_id",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "payment_sequential",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "payment_type",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "payment_installments",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "payment_value",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "customer_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "order_status",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "order_purchase_timestamp",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "cliente_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "localizacao_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "forma_pagamento_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "data_compra_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "order_id",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "customer_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "order_status",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "order_purchase_timestamp",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "order_approved_at",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "order_delivered_carrier_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "order_delivered_customer_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "order_estimated_delivery_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "cliente_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "localizacao_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "data_compra_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "data_aprovacao_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "data_transportadora_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "data_entrega_sk",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "data_previsao_entrega_sk",
+          "type": "bigint",
+          "not_null": true
+        }
+      ]
+    },
+    {
+      "constraints": [
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_cliente_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL cliente_sk"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_data_compra_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL data_compra_sk"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_data_limite_envio_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL data_limite_envio_sk"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_localizacao_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL localizacao_sk"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_order_id_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL order_id"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_order_item_id_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL order_item_id"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_pkey",
+          "kind": "p",
+          "target": null,
+          "validated": true,
+          "definition": "PRIMARY KEY (order_id, order_item_id)"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_produto_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL produto_sk"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fato_itens_pedido_vendedor_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL vendedor_sk"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fip_cliente_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_clientes",
+          "validated": true,
+          "definition": "FOREIGN KEY (cliente_sk) REFERENCES gold.dim_clientes(cliente_sk)"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fip_data_compra_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_calendario",
+          "validated": true,
+          "definition": "FOREIGN KEY (data_compra_sk) REFERENCES gold.dim_calendario(data_sk)"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fip_data_limite_envio_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_calendario",
+          "validated": true,
+          "definition": "FOREIGN KEY (data_limite_envio_sk) REFERENCES gold.dim_calendario(data_sk)"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fip_localizacao_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_localizacao",
+          "validated": true,
+          "definition": "FOREIGN KEY (localizacao_sk) REFERENCES gold.dim_localizacao(localizacao_sk)"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fip_produto_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_produtos",
+          "validated": true,
+          "definition": "FOREIGN KEY (produto_sk) REFERENCES gold.dim_produtos(produto_sk)"
+        },
+        {
+          "table": "fato_itens_pedido",
+          "name": "fip_vendedor_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_vendedores",
+          "validated": true,
+          "definition": "FOREIGN KEY (vendedor_sk) REFERENCES gold.dim_vendedores(vendedor_sk)"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fato_pagamentos_cliente_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL cliente_sk"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fato_pagamentos_data_compra_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL data_compra_sk"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fato_pagamentos_forma_pagamento_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL forma_pagamento_sk"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fato_pagamentos_localizacao_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL localizacao_sk"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fato_pagamentos_order_id_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL order_id"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fato_pagamentos_payment_sequential_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL payment_sequential"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fato_pagamentos_pkey",
+          "kind": "p",
+          "target": null,
+          "validated": true,
+          "definition": "PRIMARY KEY (order_id, payment_sequential)"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fpg_cliente_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_clientes",
+          "validated": true,
+          "definition": "FOREIGN KEY (cliente_sk) REFERENCES gold.dim_clientes(cliente_sk)"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fpg_data_compra_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_calendario",
+          "validated": true,
+          "definition": "FOREIGN KEY (data_compra_sk) REFERENCES gold.dim_calendario(data_sk)"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fpg_forma_pagamento_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_forma_pagamento",
+          "validated": true,
+          "definition": "FOREIGN KEY (forma_pagamento_sk) REFERENCES gold.dim_forma_pagamento(forma_pagamento_sk)"
+        },
+        {
+          "table": "fato_pagamentos",
+          "name": "fpg_localizacao_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_localizacao",
+          "validated": true,
+          "definition": "FOREIGN KEY (localizacao_sk) REFERENCES gold.dim_localizacao(localizacao_sk)"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_cliente_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL cliente_sk"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_data_aprovacao_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL data_aprovacao_sk"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_data_compra_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL data_compra_sk"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_data_entrega_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL data_entrega_sk"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_data_previsao_entrega_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL data_previsao_entrega_sk"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_data_transportadora_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL data_transportadora_sk"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_localizacao_sk_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL localizacao_sk"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_order_id_not_null",
+          "kind": "n",
+          "target": null,
+          "validated": true,
+          "definition": "NOT NULL order_id"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fato_pedidos_pkey",
+          "kind": "p",
+          "target": null,
+          "validated": true,
+          "definition": "PRIMARY KEY (order_id)"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fp_cliente_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_clientes",
+          "validated": true,
+          "definition": "FOREIGN KEY (cliente_sk) REFERENCES gold.dim_clientes(cliente_sk)"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fp_data_aprovacao_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_calendario",
+          "validated": true,
+          "definition": "FOREIGN KEY (data_aprovacao_sk) REFERENCES gold.dim_calendario(data_sk)"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fp_data_compra_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_calendario",
+          "validated": true,
+          "definition": "FOREIGN KEY (data_compra_sk) REFERENCES gold.dim_calendario(data_sk)"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fp_data_entrega_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_calendario",
+          "validated": true,
+          "definition": "FOREIGN KEY (data_entrega_sk) REFERENCES gold.dim_calendario(data_sk)"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fp_data_previsao_entrega_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_calendario",
+          "validated": true,
+          "definition": "FOREIGN KEY (data_previsao_entrega_sk) REFERENCES gold.dim_calendario(data_sk)"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fp_data_transportadora_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_calendario",
+          "validated": true,
+          "definition": "FOREIGN KEY (data_transportadora_sk) REFERENCES gold.dim_calendario(data_sk)"
+        },
+        {
+          "table": "fato_pedidos",
+          "name": "fp_localizacao_sk_fk",
+          "kind": "f",
+          "target": "gold.dim_localizacao",
+          "validated": true,
+          "definition": "FOREIGN KEY (localizacao_sk) REFERENCES gold.dim_localizacao(localizacao_sk)"
+        }
+      ]
+    },
+    {
+      "table": "olist_customers_dataset",
+      "rows": 99441,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_geolocation_dataset",
+      "rows": 1000163,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_orders_dataset",
+      "rows": 99441,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_order_items_dataset",
+      "rows": 112650,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_order_payments_dataset",
+      "rows": 103886,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_order_reviews_dataset",
+      "rows": 99224,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_products_dataset",
+      "rows": 32951,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_sellers_dataset",
+      "rows": 3095,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "product_category_name_translation",
+      "rows": 71,
+      "conversion_error_rows": 0
+    },
+    {
+      "reference": "orders.customer_id->customers.customer_id",
+      "orphans": 0
+    },
+    {
+      "reference": "items.order_id->orders.order_id",
+      "orphans": 0
+    },
+    {
+      "reference": "payments.order_id->orders.order_id",
+      "orphans": 0
+    },
+    {
+      "reference": "reviews.order_id->orders.order_id",
+      "orphans": 0
+    },
+    {
+      "reference": "items.product_id->products.product_id",
+      "orphans": 0
+    },
+    {
+      "reference": "items.seller_id->sellers.seller_id",
+      "orphans": 0
+    },
+    {
+      "reference": "products.product_category_name->translation.product_category_name",
+      "orphans": 13
+    },
+    {
+      "reconciliation_compared": 98665,
+      "over_one_cent": 303,
+      "positive": 264,
+      "negative": 39
+    }
+  ],
+  "idempotence": true,
+  "rollback_confirmed": true,
+  "dimensions_preserved": true,
+  "upstream_catalog_preserved": true,
+  "silver_preserved": true,
+  "bronze_preserved": true,
+  "finished_utc": "2026-11-08T03:57:52.870253+00:00"
+}

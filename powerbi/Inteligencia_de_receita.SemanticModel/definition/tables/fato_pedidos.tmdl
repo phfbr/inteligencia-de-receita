@@ -1,0 +1,174 @@
+table fato_pedidos
+	lineageTag: 2f48af98-c91b-4d4d-94c3-1496ada48af2
+
+	column order_id
+		dataType: string
+		lineageTag: 8c6920ad-4418-4568-828c-0fb09504b981
+		summarizeBy: none
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_id
+		dataType: string
+		lineageTag: c2bf7192-9321-4541-82cf-39743d1f05a3
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_status
+		dataType: string
+		lineageTag: a006df58-b0a2-4875-80e7-9c6c8d121187
+		summarizeBy: none
+		sourceColumn: order_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_purchase_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a5f61630-2955-4dba-a47a-a2aef8ad8900
+		summarizeBy: none
+		sourceColumn: order_purchase_timestamp
+
+		variation Variation
+			isDefault
+			relationship: 2ea1cde9-176b-46ae-b174-91811fe6d64a
+			defaultHierarchy: LocalDateTable_fd6d5fea-1869-498a-b559-031605b29ccc.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_approved_at
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 5dac9c35-55b0-45e7-ae06-a1b04df6e8d0
+		summarizeBy: none
+		sourceColumn: order_approved_at
+
+		variation Variation
+			isDefault
+			relationship: a9dd547e-5f59-47d0-b1d8-f7830e66067d
+			defaultHierarchy: LocalDateTable_cb60c6d3-23d5-4fd7-a5bd-06741ab19fbb.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_delivered_carrier_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 44914cfc-07d2-4290-9f59-2d5e81431e31
+		summarizeBy: none
+		sourceColumn: order_delivered_carrier_date
+
+		variation Variation
+			isDefault
+			relationship: f0acbef7-a10a-4fbf-a29b-3fcef648eeac
+			defaultHierarchy: LocalDateTable_89683071-c5cb-40ec-8371-b8cb8de688a2.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_delivered_customer_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: e9283038-2100-4b44-ab3b-f73081198dcd
+		summarizeBy: none
+		sourceColumn: order_delivered_customer_date
+
+		variation Variation
+			isDefault
+			relationship: 6794f9d3-8c0e-473c-bce1-ed1168720fdf
+			defaultHierarchy: LocalDateTable_d7a772b9-c27c-400c-ae4f-bd1a6b45ec3a.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_estimated_delivery_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: c18eeb4f-212a-4fe2-b31e-22d0d7ee3331
+		summarizeBy: none
+		sourceColumn: order_estimated_delivery_date
+
+		variation Variation
+			isDefault
+			relationship: 5f566d34-b3d1-4db0-8f10-8ede8f476db3
+			defaultHierarchy: LocalDateTable_5a970585-067e-4dad-8eed-69f512a8a6d4.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: c0ac0d7b-10af-45ec-a0e1-1139c5f138d7
+		summarizeBy: none
+		sourceColumn: cliente_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column localizacao_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 8b996a5e-e0b0-4a18-8671-c807250798b8
+		summarizeBy: none
+		sourceColumn: localizacao_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_compra_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 389763a7-65f0-46e3-95db-cf95bf945a43
+		summarizeBy: none
+		sourceColumn: data_compra_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_aprovacao_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 6d36577a-5f19-48e7-9938-e701779a023f
+		summarizeBy: sum
+		sourceColumn: data_aprovacao_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_transportadora_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 681e919e-279f-4754-a623-8bb290e3002e
+		summarizeBy: sum
+		sourceColumn: data_transportadora_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_entrega_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: f381bd7e-a583-4573-a9c4-6494905275b9
+		summarizeBy: sum
+		sourceColumn: data_entrega_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_previsao_entrega_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 1af20af3-867e-4757-975b-d8a885c4df0e
+		summarizeBy: sum
+		sourceColumn: data_previsao_entrega_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_pedidos = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("localhost:5432", "inteligencia_receita_db"),
+				    gold_fato_pedidos = Fonte{[Schema="gold",Item="fato_pedidos"]}[Data],
+				    #"Outras Colunas Removidas" = Table.SelectColumns(gold_fato_pedidos,{"gold.dim_localizacao", "order_id", "customer_id", "order_status", "order_purchase_timestamp", "order_approved_at", "order_delivered_carrier_date", "order_delivered_customer_date", "order_estimated_delivery_date", "cliente_sk", "localizacao_sk", "data_compra_sk", "data_aprovacao_sk", "data_transportadora_sk", "data_entrega_sk", "data_previsao_entrega_sk"})
+				in
+				    #"Outras Colunas Removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

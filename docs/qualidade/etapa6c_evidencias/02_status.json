@@ -1,0 +1,50 @@
+[
+  {
+    "status": "approved",
+    "pedidos": 1,
+    "percentual": "0.00563063063063063063",
+    "denominador": 17760
+  },
+  {
+    "status": "canceled",
+    "pedidos": 132,
+    "percentual": "0.74324324324324324324",
+    "denominador": 17760
+  },
+  {
+    "status": "created",
+    "pedidos": 1,
+    "percentual": "0.00563063063063063063",
+    "denominador": 17760
+  },
+  {
+    "status": "delivered",
+    "pedidos": 17071,
+    "percentual": "96.1204954954954955",
+    "denominador": 17760
+  },
+  {
+    "status": "invoiced",
+    "pedidos": 79,
+    "percentual": "0.44481981981981981982",
+    "denominador": 17760
+  },
+  {
+    "status": "processing",
+    "pedidos": 102,
+    "percentual": "0.57432432432432432432",
+    "denominador": 17760
+  },
+  {
+    "status": "shipped",
+    "pedidos": 170,
+    "percentual": "0.95720720720720720721",
+    "denominador": 17760
+  },
+  {
+    "status": "unavailable",
+    "pedidos": 204,
+    "percentual": "1.1486486486486486",
+    "denominador": 17760
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "AC",
+    "linhas": 80,
+    "pedidos": 80
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "AL",
+    "linhas": 397,
+    "pedidos": 397
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "AM",
+    "linhas": 145,
+    "pedidos": 145
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "AP",
+    "linhas": 67,
+    "pedidos": 67
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "BA",
+    "linhas": 3256,
+    "pedidos": 3256
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "CE",
+    "linhas": 1279,
+    "pedidos": 1279
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "DF",
+    "linhas": 2080,
+    "pedidos": 2080
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "ES",
+    "linhas": 1995,
+    "pedidos": 1995
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "GO",
+    "linhas": 1957,
+    "pedidos": 1957
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "MA",
+    "linhas": 717,
+    "pedidos": 717
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "MG",
+    "linhas": 11354,
+    "pedidos": 11354
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "MS",
+    "linhas": 701,
+    "pedidos": 701
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "MT",
+    "linhas": 886,
+    "pedidos": 886
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PA",
+    "linhas": 946,
+    "pedidos": 946
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PB",
+    "linhas": 517,
+    "pedidos": 517
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PE",
+    "linhas": 1593,
+    "pedidos": 1593
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PI",
+    "linhas": 476,
+    "pedidos": 476
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PR",
+    "linhas": 4923,
+    "pedidos": 4923
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RJ",
+    "linhas": 12350,
+    "pedidos": 12350
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RN",
+    "linhas": 474,
+    "pedidos": 474
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RO",
+    "linhas": 243,
+    "pedidos": 243
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RR",
+    "linhas": 41,
+    "pedidos": 41
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RS",
+    "linhas": 5345,
+    "pedidos": 5345
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "SC",
+    "linhas": 3546,
+    "pedidos": 3546
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "SE",
+    "linhas": 335,
+    "pedidos": 335
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "SP",
+    "linhas": 40501,
+    "pedidos": 40501
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "TO",
+    "linhas": 274,
+    "pedidos": 274
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "AC",
+    "linhas": 81,
+    "pedidos": 81
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "AL",
+    "linhas": 413,
+    "pedidos": 413
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "AM",
+    "linhas": 148,
+    "pedidos": 148
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "AP",
+    "linhas": 68,
+    "pedidos": 68
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "BA",
+    "linhas": 3380,
+    "pedidos": 3380
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "CE",
+    "linhas": 1336,
+    "pedidos": 1336
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "DF",
+    "linhas": 2140,
+    "pedidos": 2140
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "ES",
+    "linhas": 2033,
+    "pedidos": 2033
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "GO",
+    "linhas": 2020,
+    "pedidos": 2020
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "MA",
+    "linhas": 747,
+    "pedidos": 747
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "MG",
+    "linhas": 11635,
+    "pedidos": 11635
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "MS",
+    "linhas": 715,
+    "pedidos": 715
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "MT",
+    "linhas": 907,
+    "pedidos": 907
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PA",
+    "linhas": 975,
+    "pedidos": 975
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PB",
+    "linhas": 536,
+    "pedidos": 536
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PE",
+    "linhas": 1652,
+    "pedidos": 1652
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PI",
+    "linhas": 495,
+    "pedidos": 495
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PR",
+    "linhas": 5045,
+    "pedidos": 5045
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RJ",
+    "linhas": 12852,
+    "pedidos": 12852
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RN",
+    "linhas": 485,
+    "pedidos": 485
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RO",
+    "linhas": 253,
+    "pedidos": 253
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RR",
+    "linhas": 46,
+    "pedidos": 46
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RS",
+    "linhas": 5466,
+    "pedidos": 5466
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "SC",
+    "linhas": 3637,
+    "pedidos": 3637
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "SE",
+    "linhas": 350,
+    "pedidos": 350
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "SP",
+    "linhas": 41746,
+    "pedidos": 41746
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "TO",
+    "linhas": 280,
+    "pedidos": 280
+  }
+]

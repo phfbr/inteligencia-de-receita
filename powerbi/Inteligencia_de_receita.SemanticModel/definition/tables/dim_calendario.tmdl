@@ -1,0 +1,112 @@
+table dim_calendario
+	lineageTag: 9a3c9920-cdd5-46e4-bb6f-c2468486e91c
+
+	column data_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 0a374703-c2f1-458f-a753-6c4b7c87d2e8
+		summarizeBy: none
+		sourceColumn: data_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: a76226e5-fc8a-4bcb-85b3-3bc6860593d4
+		summarizeBy: none
+		sourceColumn: dia
+
+		variation Variation
+			isDefault
+			relationship: 5c9fcb87-864f-4299-bf00-d960cb2e8dcd
+			defaultHierarchy: LocalDateTable_53e0b85b-2daa-4696-ba3a-45e2d440419e.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column ano
+		dataType: int64
+		formatString: 0
+		lineageTag: f5892b44-1b5b-4828-9dc2-f980118b2a8d
+		summarizeBy: sum
+		sourceColumn: ano
+
+		annotation SummarizationSetBy = Automatic
+
+	column mes
+		dataType: int64
+		formatString: 0
+		lineageTag: 9ba898ce-8dba-4d59-bb35-7d6f25023b11
+		summarizeBy: sum
+		sourceColumn: mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column dia_mes
+		dataType: int64
+		formatString: 0
+		lineageTag: f23feffd-e854-4b4e-89ac-23a1f490d33d
+		summarizeBy: sum
+		sourceColumn: dia_mes
+
+		annotation SummarizationSetBy = Automatic
+
+	column membro_tipo
+		dataType: string
+		lineageTag: 68c932e2-a65c-4c12-888f-5f422cf65c64
+		summarizeBy: none
+		sourceColumn: membro_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column AnoMes = ```
+			
+			IF(
+			    ISBLANK(dim_calendario[dia]),
+			    BLANK(),
+			    FORMAT(dim_calendario[dia], "MMM/yyyy", "pt-BR")
+			)
+			
+			```
+		lineageTag: 621993cf-f6be-4e34-b4bc-2fe0ddbf376d
+		summarizeBy: none
+		sortByColumn: AnoMesOrdem
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column AnoMesOrdem = ```
+			
+			IF(
+			    ISBLANK(dim_calendario[dia]),
+			    BLANK(),
+			    YEAR(dim_calendario[dia]) * 100
+			        + MONTH(dim_calendario[dia])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: f1c2e2fd-7741-4e8c-be6a-5a8b3915ef83
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_calendario = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("localhost:5432", "inteligencia_receita_db"),
+				    gold_dim_calendario = Fonte{[Schema="gold",Item="dim_calendario"]}[Data],
+				    #"Outras Colunas Removidas" = Table.SelectColumns(gold_dim_calendario,{"data_sk", "dia", "ano", "mes", "dia_mes", "membro_tipo"})
+				in
+				    #"Outras Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

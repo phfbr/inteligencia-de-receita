@@ -1,0 +1,56 @@
+[
+  {
+    "escopo": "delivered",
+    "order_status": "delivered",
+    "linhas": 96478,
+    "pedidos": 96478
+  },
+  {
+    "escopo": "geral",
+    "order_status": "approved",
+    "linhas": 2,
+    "pedidos": 2
+  },
+  {
+    "escopo": "geral",
+    "order_status": "canceled",
+    "linhas": 625,
+    "pedidos": 625
+  },
+  {
+    "escopo": "geral",
+    "order_status": "created",
+    "linhas": 5,
+    "pedidos": 5
+  },
+  {
+    "escopo": "geral",
+    "order_status": "delivered",
+    "linhas": 96478,
+    "pedidos": 96478
+  },
+  {
+    "escopo": "geral",
+    "order_status": "invoiced",
+    "linhas": 314,
+    "pedidos": 314
+  },
+  {
+    "escopo": "geral",
+    "order_status": "processing",
+    "linhas": 301,
+    "pedidos": 301
+  },
+  {
+    "escopo": "geral",
+    "order_status": "shipped",
+    "linhas": 1107,
+    "pedidos": 1107
+  },
+  {
+    "escopo": "geral",
+    "order_status": "unavailable",
+    "linhas": 609,
+    "pedidos": 609
+  }
+]

@@ -1,0 +1,100 @@
+table dim_produtos
+	lineageTag: 1f80ddbf-77fb-4ce4-ac76-0e2c97e32465
+
+	column produto_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 582f638b-10b2-4bde-a741-a7a953b77cff
+		summarizeBy: none
+		sourceColumn: produto_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_id
+		dataType: string
+		lineageTag: 89c04c13-2e05-455c-acd2-53c26f70e074
+		summarizeBy: none
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_category_name
+		dataType: string
+		lineageTag: b9ce6068-17e8-4c51-b9f0-a1f7a5298f83
+		summarizeBy: none
+		sourceColumn: product_category_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_category_name_english
+		dataType: string
+		lineageTag: 662bfa02-cf6b-4ac9-b366-e52c2ab10428
+		summarizeBy: none
+		sourceColumn: product_category_name_english
+
+		annotation SummarizationSetBy = Automatic
+
+	column membro_tipo
+		dataType: string
+		lineageTag: 28ae9ed7-c93c-44ca-9298-b63b5500ed81
+		summarizeBy: none
+		sourceColumn: membro_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	column categoria_exibicao =
+			
+			VAR CategoriaOriginal =
+			    dim_produtos[product_category_name]
+			RETURN
+			    SWITCH(
+			        TRUE(),
+			        ISBLANK(CategoriaOriginal), "Sem categoria",
+			        CategoriaOriginal = "beleza_saude", "Beleza e Saúde",
+			        CategoriaOriginal = "relogios_presentes", "Relógios e Presentes",
+			        CategoriaOriginal = "cama_mesa_banho", "Cama, Mesa e Banho",
+			        CategoriaOriginal = "esporte_lazer", "Esporte e Lazer",
+			        CategoriaOriginal = "informatica_acessorios", "Informática e Acessórios",
+			        CategoriaOriginal = "moveis_decoracao", "Móveis e Decoração",
+			        CategoriaOriginal = "cool_stuff", "Cool Stuff",
+			        CategoriaOriginal = "utilidades_domesticas", "Utilidades Domésticas",
+			        CategoriaOriginal = "automotivo", "Automotivo",
+			        CategoriaOriginal = "ferramentas_jardim", "Ferramentas e Jardim",
+			        CategoriaOriginal = "brinquedos", "Brinquedos",
+			        CategoriaOriginal = "telefonia", "Telefonia",
+			        CategoriaOriginal = "perfumaria", "Perfumaria",
+			        CategoriaOriginal = "bebes", "Bebês",
+			        CategoriaOriginal = "eletronicos", "Eletrônicos",
+			        CategoriaOriginal = "fashion_bolsas_e_acessorios", "Moda, Bolsas e Acessórios",
+			        CategoriaOriginal = "pet_shop", "Pet Shop",
+			        CategoriaOriginal = "moveis_escritorio", "Móveis de Escritório",
+			        CategoriaOriginal = "eletrodomesticos", "Eletrodomésticos",
+			        CategoriaOriginal = "construcao_ferramentas_construcao", "Construção e Ferramentas",
+			        CategoriaOriginal = "papelaria", "Papelaria",
+			        CategoriaOriginal = "malas_acessorios", "Malas e Acessórios",
+			        CategoriaOriginal = "consoles_games", "Consoles e Games",
+			        CategoriaOriginal = "alimentos_bebidas", "Alimentos e Bebidas",
+			        CategoriaOriginal = "livros_interesse_geral", "Livros de Interesse Geral",
+			        CategoriaOriginal = "artes", "Artes",
+			        CategoriaOriginal = "casa_construcao", "Casa e Construção",
+			        SUBSTITUTE(CategoriaOriginal, "_", " ")
+			    )
+		lineageTag: 402b7ef9-8d90-48e9-9847-6ee282ac3d70
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_produtos = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("localhost:5432", "inteligencia_receita_db"),
+				    gold_dim_produtos = Fonte{[Schema="gold",Item="dim_produtos"]}[Data],
+				    #"Outras Colunas Removidas" = Table.SelectColumns(gold_dim_produtos,{"produto_sk", "product_id", "product_category_name", "product_category_name_english", "membro_tipo"})
+				in
+				    #"Outras Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

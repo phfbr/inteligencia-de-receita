@@ -1,0 +1,378 @@
+[
+  {
+    "escopo": "delivered",
+    "mes": "2016-09-01",
+    "linhas": 3,
+    "pedidos": 1,
+    "price": "134.97",
+    "freight_value": "8.49"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2016-10-01",
+    "linhas": 313,
+    "pedidos": 265,
+    "price": "40325.11",
+    "freight_value": "6165.55"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2016-12-01",
+    "linhas": 1,
+    "pedidos": 1,
+    "price": "10.90",
+    "freight_value": "8.72"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-01-01",
+    "linhas": 913,
+    "pedidos": 750,
+    "price": "111798.36",
+    "freight_value": "15684.01"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-02-01",
+    "linhas": 1858,
+    "pedidos": 1653,
+    "price": "234223.40",
+    "freight_value": "37015.92"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-03-01",
+    "linhas": 2897,
+    "pedidos": 2546,
+    "price": "359198.85",
+    "freight_value": "55132.10"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-04-01",
+    "linhas": 2569,
+    "pedidos": 2303,
+    "price": "340669.68",
+    "freight_value": "50142.72"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-05-01",
+    "linhas": 4004,
+    "pedidos": 3546,
+    "price": "489338.25",
+    "freight_value": "77513.15"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-06-01",
+    "linhas": 3489,
+    "pedidos": 3135,
+    "price": "421923.37",
+    "freight_value": "68127.00"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-07-01",
+    "linhas": 4416,
+    "pedidos": 3872,
+    "price": "481604.52",
+    "freight_value": "84694.56"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-08-01",
+    "linhas": 4797,
+    "pedidos": 4193,
+    "price": "554699.70",
+    "freight_value": "91132.66"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-09-01",
+    "linhas": 4737,
+    "pedidos": 4150,
+    "price": "607399.67",
+    "freight_value": "93677.82"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-10-01",
+    "linhas": 5214,
+    "pedidos": 4478,
+    "price": "648247.65",
+    "freight_value": "102869.36"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-11-01",
+    "linhas": 8475,
+    "pedidos": 7289,
+    "price": "987765.37",
+    "freight_value": "165598.83"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-12-01",
+    "linhas": 6187,
+    "pedidos": 5513,
+    "price": "726033.19",
+    "freight_value": "117045.10"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-01-01",
+    "linhas": 8037,
+    "pedidos": 7069,
+    "price": "924645.00",
+    "freight_value": "153242.46"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-02-01",
+    "linhas": 7518,
+    "pedidos": 6555,
+    "price": "826437.13",
+    "freight_value": "139731.28"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-03-01",
+    "linhas": 8017,
+    "pedidos": 7003,
+    "price": "953356.25",
+    "freight_value": "167241.99"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-04-01",
+    "linhas": 7827,
+    "pedidos": 6798,
+    "price": "973534.09",
+    "freight_value": "159344.84"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-05-01",
+    "linhas": 7810,
+    "pedidos": 6749,
+    "price": "977544.69",
+    "freight_value": "151229.83"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-06-01",
+    "linhas": 7010,
+    "pedidos": 6099,
+    "price": "856077.86",
+    "freight_value": "155900.43"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-07-01",
+    "linhas": 6963,
+    "pedidos": 6159,
+    "price": "867953.46",
+    "freight_value": "159853.82"
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-08-01",
+    "linhas": 7142,
+    "pedidos": 6351,
+    "price": "838576.64",
+    "freight_value": "146915.00"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2016-09-01",
+    "linhas": 6,
+    "pedidos": 3,
+    "price": "267.36",
+    "freight_value": "87.39"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2016-10-01",
+    "linhas": 363,
+    "pedidos": 308,
+    "price": "49507.66",
+    "freight_value": "7301.18"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2016-12-01",
+    "linhas": 1,
+    "pedidos": 1,
+    "price": "10.90",
+    "freight_value": "8.72"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-01-01",
+    "linhas": 955,
+    "pedidos": 789,
+    "price": "120312.87",
+    "freight_value": "16875.62"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-02-01",
+    "linhas": 1951,
+    "pedidos": 1733,
+    "price": "247303.02",
+    "freight_value": "38977.60"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-03-01",
+    "linhas": 3000,
+    "pedidos": 2641,
+    "price": "374344.30",
+    "freight_value": "57704.29"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-04-01",
+    "linhas": 2684,
+    "pedidos": 2391,
+    "price": "359927.23",
+    "freight_value": "52495.01"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-05-01",
+    "linhas": 4136,
+    "pedidos": 3660,
+    "price": "506071.14",
+    "freight_value": "80119.81"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-06-01",
+    "linhas": 3583,
+    "pedidos": 3217,
+    "price": "433038.60",
+    "freight_value": "69924.44"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-07-01",
+    "linhas": 4519,
+    "pedidos": 3969,
+    "price": "498031.48",
+    "freight_value": "86940.14"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-08-01",
+    "linhas": 4910,
+    "pedidos": 4293,
+    "price": "573971.68",
+    "freight_value": "94232.92"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-09-01",
+    "linhas": 4831,
+    "pedidos": 4243,
+    "price": "624401.69",
+    "freight_value": "95997.22"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-10-01",
+    "linhas": 5322,
+    "pedidos": 4568,
+    "price": "664219.43",
+    "freight_value": "105092.94"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-11-01",
+    "linhas": 8665,
+    "pedidos": 7451,
+    "price": "1010271.37",
+    "freight_value": "168872.40"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-12-01",
+    "linhas": 6308,
+    "pedidos": 5624,
+    "price": "743914.17",
+    "freight_value": "119633.06"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-01-01",
+    "linhas": 8208,
+    "pedidos": 7220,
+    "price": "950030.36",
+    "freight_value": "157271.53"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-02-01",
+    "linhas": 7672,
+    "pedidos": 6694,
+    "price": "844178.71",
+    "freight_value": "142730.25"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-03-01",
+    "linhas": 8217,
+    "pedidos": 7188,
+    "price": "983213.44",
+    "freight_value": "171913.38"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-04-01",
+    "linhas": 7975,
+    "pedidos": 6934,
+    "price": "996647.75",
+    "freight_value": "163050.29"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-05-01",
+    "linhas": 7925,
+    "pedidos": 6853,
+    "price": "996517.68",
+    "freight_value": "153264.14"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-06-01",
+    "linhas": 7078,
+    "pedidos": 6160,
+    "price": "865124.31",
+    "freight_value": "157552.80"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-07-01",
+    "linhas": 7092,
+    "pedidos": 6273,
+    "price": "895507.22",
+    "freight_value": "163220.81"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-08-01",
+    "linhas": 7248,
+    "pedidos": 6452,
+    "price": "854686.33",
+    "freight_value": "148622.14"
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-09-01",
+    "linhas": 1,
+    "pedidos": 1,
+    "price": "145.00",
+    "freight_value": "21.46"
+  }
+]

@@ -1,0 +1,39 @@
+table 'Faixas Perfil Recompra'
+	lineageTag: ba798fe2-aabd-42b4-997a-f4cc81625e9f
+
+	column Perfil
+		lineageTag: e31a12c5-c708-4129-8ded-b740b4129755
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Perfil]
+		sortByColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordem
+		formatString: 0
+		lineageTag: 5d04489d-485b-4b1e-bb74-41ef431bdda0
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ordem]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Faixas Perfil Recompra' = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE (
+				    "Perfil", STRING,
+				    "Ordem", INTEGER,
+				    {
+				        { "Pedido único", 1 },
+				        { "Múltiplos no mesmo dia", 2 },
+				        { "Recompra em dias distintos", 3 }
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = 4b6b28ef5921452ab584555e4cfd5404
+

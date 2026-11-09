@@ -1,0 +1,100 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.1.0/schema.json",
+  "name": "b78f468dc803b28e227a",
+  "displayName": "Visão Geral",
+  "displayOption": "FitToPage",
+  "height": 1080,
+  "width": 1920,
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Dashboard Executivo de Inteligência de Receita (1).png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "Dashboard_Executivo_de_Intelig5059355513965916.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fill'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "200L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visualInteractions": [
+    {
+      "source": "6cf4c13c5093669038ac",
+      "target": "52dea8fd037361678898",
+      "type": "NoFilter"
+    },
+    {
+      "source": "6cf4c13c5093669038ac",
+      "target": "e64b245fc9c8d009dd36",
+      "type": "NoFilter"
+    },
+    {
+      "source": "6cf4c13c5093669038ac",
+      "target": "4aad059f69a6542dc1ab",
+      "type": "NoFilter"
+    },
+    {
+      "source": "9a5df44771217b905a7d",
+      "target": "e64b245fc9c8d009dd36",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9a5df44771217b905a7d",
+      "target": "52dea8fd037361678898",
+      "type": "DataFilter"
+    },
+    {
+      "source": "9a5df44771217b905a7d",
+      "target": "4aad059f69a6542dc1ab",
+      "type": "DataFilter"
+    },
+    {
+      "source": "6cf4c13c5093669038ac",
+      "target": "9a5df44771217b905a7d",
+      "type": "NoFilter"
+    }
+  ]
+}

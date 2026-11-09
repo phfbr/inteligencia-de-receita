@@ -1,0 +1,166 @@
+{
+  "status": "committed",
+  "results": [
+    {
+      "fact": "fato_pedidos",
+      "silver_rows": 99441,
+      "rows": 99441,
+      "money": {},
+      "fk_members": {
+        "cliente_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "localizacao_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_compra_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_aprovacao_sk": {
+          "nao_informado": 160,
+          "referencia_nao_encontrada": 0
+        },
+        "data_transportadora_sk": {
+          "nao_informado": 1783,
+          "referencia_nao_encontrada": 0
+        },
+        "data_entrega_sk": {
+          "nao_informado": 2965,
+          "referencia_nao_encontrada": 0
+        },
+        "data_previsao_entrega_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        }
+      },
+      "fingerprint": "1cab7d18eaa5cdce0012b78fc9a639a8c88377d4d0a04118001d8175f4086298"
+    },
+    {
+      "fact": "fato_pedidos",
+      "statuses": {
+        "unavailable": 609,
+        "delivered": 96478,
+        "processing": 301,
+        "invoiced": 314,
+        "created": 5,
+        "approved": 2,
+        "canceled": 625,
+        "shipped": 1107
+      }
+    },
+    {
+      "fact": "fato_itens_pedido",
+      "silver_rows": 112650,
+      "rows": 112650,
+      "money": {
+        "price": "13591643.70",
+        "freight_value": "2251909.54"
+      },
+      "fk_members": {
+        "cliente_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "localizacao_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "produto_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "vendedor_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_compra_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_limite_envio_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        }
+      },
+      "fingerprint": "1e591f5628eb8e94150a540b9bf2bb35216eb845dd63e9f70cb45734f4d242ab"
+    },
+    {
+      "fact": "fato_itens_pedido",
+      "statuses": {
+        "unavailable": 7,
+        "delivered": 110197,
+        "processing": 357,
+        "invoiced": 359,
+        "approved": 3,
+        "canceled": 542,
+        "shipped": 1185
+      }
+    },
+    {
+      "fact": "fato_pagamentos",
+      "silver_rows": 103886,
+      "rows": 103886,
+      "money": {
+        "payment_value": "16008872.12"
+      },
+      "fk_members": {
+        "cliente_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "localizacao_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "forma_pagamento_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        },
+        "data_compra_sk": {
+          "nao_informado": 0,
+          "referencia_nao_encontrada": 0
+        }
+      },
+      "fingerprint": "90ebf0a7f7239a90a290930ed65e873451e1425cc8eb37df7bef22cbe6aa2042"
+    },
+    {
+      "fact": "fato_pagamentos",
+      "statuses": {
+        "unavailable": 649,
+        "delivered": 100756,
+        "processing": 319,
+        "invoiced": 325,
+        "created": 5,
+        "approved": 2,
+        "canceled": 664,
+        "shipped": 1166
+      }
+    },
+    {
+      "reconciliation_orders": 99441,
+      "without_items": 775,
+      "without_payments": 1,
+      "compared": 98665,
+      "over_one_cent": 303,
+      "positive": 264,
+      "negative": 39,
+      "min_delta": "-51.62",
+      "max_delta": "182.81"
+    },
+    {
+      "divergent_status": "canceled",
+      "orders": 2
+    },
+    {
+      "divergent_status": "delivered",
+      "orders": 299
+    },
+    {
+      "divergent_status": "shipped",
+      "orders": 2
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+table dim_clientes
+	lineageTag: 64a14e65-e27d-4bf1-878e-2cb2df2bb440
+
+	column cliente_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 6190e5d4-7ebc-4980-bd01-b0338fe4a4dd
+		summarizeBy: none
+		sourceColumn: cliente_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column customer_unique_id
+		dataType: string
+		lineageTag: e85c6742-692d-4b43-8ac8-bd603510f31b
+		summarizeBy: none
+		sourceColumn: customer_unique_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column membro_tipo
+		dataType: string
+		lineageTag: d0126a4f-c485-40d5-b1e5-378c74775164
+		summarizeBy: none
+		sourceColumn: membro_tipo
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dim_clientes = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("localhost:5432", "inteligencia_receita_db"),
+				    gold_dim_clientes = Fonte{[Schema="gold",Item="dim_clientes"]}[Data],
+				    #"Outras Colunas Removidas" = Table.SelectColumns(gold_dim_clientes,{"cliente_sk", "customer_unique_id", "membro_tipo"})
+				in
+				    #"Outras Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

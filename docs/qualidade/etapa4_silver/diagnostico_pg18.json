@@ -1,0 +1,97 @@
+[
+  {
+    "schema_probe": true,
+    "constraint_types": [
+      {
+        "table": "olist_customers_dataset",
+        "kind": "n",
+        "count": 5
+      },
+      {
+        "table": "olist_customers_dataset",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "olist_geolocation_dataset",
+        "kind": "n",
+        "count": 5
+      },
+      {
+        "table": "olist_geolocation_dataset",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "olist_orders_dataset",
+        "kind": "n",
+        "count": 5
+      },
+      {
+        "table": "olist_orders_dataset",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "olist_order_items_dataset",
+        "kind": "n",
+        "count": 5
+      },
+      {
+        "table": "olist_order_items_dataset",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "olist_order_payments_dataset",
+        "kind": "n",
+        "count": 5
+      },
+      {
+        "table": "olist_order_payments_dataset",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "olist_order_reviews_dataset",
+        "kind": "n",
+        "count": 5
+      },
+      {
+        "table": "olist_order_reviews_dataset",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "olist_products_dataset",
+        "kind": "n",
+        "count": 5
+      },
+      {
+        "table": "olist_products_dataset",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "olist_sellers_dataset",
+        "kind": "n",
+        "count": 5
+      },
+      {
+        "table": "olist_sellers_dataset",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "product_category_name_translation",
+        "kind": "p",
+        "count": 1
+      },
+      {
+        "table": "product_category_name_translation",
+        "kind": "n",
+        "count": 5
+      }
+    ]
+  }
+]

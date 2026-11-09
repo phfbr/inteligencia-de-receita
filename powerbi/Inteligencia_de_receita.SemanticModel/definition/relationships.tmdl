@@ -1,0 +1,152 @@
+relationship 5c9fcb87-864f-4299-bf00-d960cb2e8dcd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: dim_calendario.dia
+	toColumn: LocalDateTable_53e0b85b-2daa-4696-ba3a-45e2d440419e.Date
+
+relationship c123b558-763f-49e7-87d0-2c9635a9dac0
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_itens_pedido.shipping_limit_date
+	toColumn: LocalDateTable_f764dfe3-a7cb-496f-8f47-8ccb5d465384.Date
+
+relationship 42261441-5041-40fd-9f40-80734f1c5674
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_itens_pedido.order_purchase_timestamp
+	toColumn: LocalDateTable_06ab91fb-58dc-49f6-90b9-1705d825fcfb.Date
+
+relationship 22210ede-8725-4588-a116-7f3063aaa707
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_pagamentos.order_purchase_timestamp
+	toColumn: LocalDateTable_8ed249dd-a3c5-4a6e-92d1-d34a8a8a3a9d.Date
+
+relationship 2ea1cde9-176b-46ae-b174-91811fe6d64a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_pedidos.order_purchase_timestamp
+	toColumn: LocalDateTable_fd6d5fea-1869-498a-b559-031605b29ccc.Date
+
+relationship a9dd547e-5f59-47d0-b1d8-f7830e66067d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_pedidos.order_approved_at
+	toColumn: LocalDateTable_cb60c6d3-23d5-4fd7-a5bd-06741ab19fbb.Date
+
+relationship f0acbef7-a10a-4fbf-a29b-3fcef648eeac
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_pedidos.order_delivered_carrier_date
+	toColumn: LocalDateTable_89683071-c5cb-40ec-8371-b8cb8de688a2.Date
+
+relationship 6794f9d3-8c0e-473c-bce1-ed1168720fdf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_pedidos.order_delivered_customer_date
+	toColumn: LocalDateTable_d7a772b9-c27c-400c-ae4f-bd1a6b45ec3a.Date
+
+relationship 5f566d34-b3d1-4db0-8f10-8ede8f476db3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: fato_pedidos.order_estimated_delivery_date
+	toColumn: LocalDateTable_5a970585-067e-4dad-8eed-69f512a8a6d4.Date
+
+relationship 3a099afc-81ae-4a09-5a91-0dd5155cdbf6
+	fromColumn: fato_pedidos.cliente_sk
+	toColumn: dim_clientes.cliente_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship f5a02eaf-6fea-3a38-69a1-c5306b9f8c68
+	fromColumn: fato_itens_pedido.cliente_sk
+	toColumn: dim_clientes.cliente_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 83d8673b-a4ec-9a93-1afa-e878cbeec4a9
+	fromColumn: fato_pagamentos.cliente_sk
+	toColumn: dim_clientes.cliente_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship ad3041c3-e7eb-cddc-6ec0-35a2ca124c63
+	fromColumn: fato_pedidos.localizacao_sk
+	toColumn: dim_localizacao.localizacao_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 92070cfd-ef1c-f9fe-d76d-c5164e4062cc
+	fromColumn: fato_itens_pedido.localizacao_sk
+	toColumn: dim_localizacao.localizacao_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 01fdd5fb-1c1c-3e79-a70f-a2ba296a70f1
+	fromColumn: fato_pagamentos.localizacao_sk
+	toColumn: dim_localizacao.localizacao_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 139c9bc5-c17d-14c1-143a-1bae88132bc3
+	fromColumn: fato_itens_pedido.produto_sk
+	toColumn: dim_produtos.produto_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 15a747fc-7e57-7dcf-3f69-b58d8ec3c8f1
+	fromColumn: fato_itens_pedido.vendedor_sk
+	toColumn: dim_vendedores.vendedor_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 81d276b4-b68f-9281-7aef-9e14bdcad63c
+	fromColumn: fato_pagamentos.forma_pagamento_sk
+	toColumn: dim_forma_pagamento.forma_pagamento_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 7c024412-e503-1342-f7ad-ad226a54eac7
+	fromColumn: fato_pedidos.data_compra_sk
+	toColumn: dim_calendario.data_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship ff2c9b59-6dce-afc2-6508-5df125f70eae
+	fromColumn: fato_itens_pedido.data_compra_sk
+	toColumn: dim_calendario.data_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 4b83da1f-c959-1124-42a6-bcfe1d208936
+	fromColumn: fato_pagamentos.data_compra_sk
+	toColumn: dim_calendario.data_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 02f9089d-919a-ce19-9f25-ae450cd57a16
+	isActive: false
+	fromColumn: fato_pedidos.data_aprovacao_sk
+	toColumn: dim_calendario.data_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 0b1de79f-99b4-d88c-eb0c-3654cd229a07
+	isActive: false
+	fromColumn: fato_pedidos.data_transportadora_sk
+	toColumn: dim_calendario.data_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 60caa30f-e9b9-8000-c783-f78cf3647c51
+	isActive: false
+	fromColumn: fato_pedidos.data_entrega_sk
+	toColumn: dim_calendario.data_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 3cf94a70-eeb9-74ea-b736-e7d477931071
+	isActive: false
+	fromColumn: fato_pedidos.data_previsao_entrega_sk
+	toColumn: dim_calendario.data_sk
+
+	annotation PBI_IsFromSource = FS
+
+relationship 3c42b15e-04e7-1603-a010-f82546e7f9d9
+	isActive: false
+	fromColumn: fato_itens_pedido.data_limite_envio_sk
+	toColumn: dim_calendario.data_sk
+
+	annotation PBI_IsFromSource = FS
+

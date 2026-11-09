@@ -1,0 +1,1334 @@
+[
+  {
+    "escopo": "delivered",
+    "product_category_name": "agro_industria_e_comercio",
+    "product_category_name_english": "agro_industry_and_commerce",
+    "linhas": 206,
+    "pedidos": 177,
+    "price": "70566.10",
+    "freight_value": "5637.20"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "alimentos",
+    "product_category_name_english": "food",
+    "linhas": 499,
+    "pedidos": 441,
+    "price": "28731.15",
+    "freight_value": "7063.53"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "alimentos_bebidas",
+    "product_category_name_english": "food_drink",
+    "linhas": 269,
+    "pedidos": 221,
+    "price": "14942.88",
+    "freight_value": "4394.89"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "artes",
+    "product_category_name_english": "art",
+    "linhas": 197,
+    "pedidos": 195,
+    "price": "23657.30",
+    "freight_value": "3828.23"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "artes_e_artesanato",
+    "product_category_name_english": "arts_and_craftmanship",
+    "linhas": 24,
+    "pedidos": 23,
+    "price": "1814.01",
+    "freight_value": "370.13"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "artigos_de_festas",
+    "product_category_name_english": "party_supplies",
+    "linhas": 42,
+    "pedidos": 38,
+    "price": "4465.19",
+    "freight_value": "820.19"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "artigos_de_natal",
+    "product_category_name_english": "christmas_supplies",
+    "linhas": 150,
+    "pedidos": 125,
+    "price": "8737.84",
+    "freight_value": "3190.91"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "audio",
+    "product_category_name_english": "audio",
+    "linhas": 362,
+    "pedidos": 348,
+    "price": "50570.60",
+    "freight_value": "5684.72"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "automotivo",
+    "product_category_name_english": "auto",
+    "linhas": 4140,
+    "pedidos": 3810,
+    "price": "578966.65",
+    "freight_value": "90488.10"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "bebes",
+    "product_category_name_english": "baby",
+    "linhas": 2982,
+    "pedidos": 2809,
+    "price": "400421.84",
+    "freight_value": "66305.81"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "bebidas",
+    "product_category_name_english": "drinks",
+    "linhas": 361,
+    "pedidos": 287,
+    "price": "21529.84",
+    "freight_value": "5441.27"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "beleza_saude",
+    "product_category_name_english": "health_beauty",
+    "linhas": 9465,
+    "pedidos": 8647,
+    "price": "1233131.72",
+    "freight_value": "178957.81"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "brinquedos",
+    "product_category_name_english": "toys",
+    "linhas": 4030,
+    "pedidos": 3804,
+    "price": "471286.48",
+    "freight_value": "75774.58"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "cama_mesa_banho",
+    "product_category_name_english": "bed_bath_table",
+    "linhas": 10953,
+    "pedidos": 9272,
+    "price": "1023434.76",
+    "freight_value": "201774.50"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "casa_conforto",
+    "product_category_name_english": "home_confort",
+    "linhas": 429,
+    "pedidos": 392,
+    "price": "58008.45",
+    "freight_value": "8429.77"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "casa_conforto_2",
+    "product_category_name_english": "home_comfort_2",
+    "linhas": 30,
+    "pedidos": 24,
+    "price": "760.27",
+    "freight_value": "410.31"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "casa_construcao",
+    "product_category_name_english": "home_construction",
+    "linhas": 596,
+    "pedidos": 483,
+    "price": "81407.57",
+    "freight_value": "13614.80"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "cds_dvds_musicais",
+    "product_category_name_english": "cds_dvds_musicals",
+    "linhas": 14,
+    "pedidos": 12,
+    "price": "730.00",
+    "freight_value": "224.99"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "cine_foto",
+    "product_category_name_english": "cine_photo",
+    "linhas": 70,
+    "pedidos": 63,
+    "price": "6674.47",
+    "freight_value": "1227.71"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "climatizacao",
+    "product_category_name_english": "air_conditioning",
+    "linhas": 289,
+    "pedidos": 246,
+    "price": "53323.56",
+    "freight_value": "6530.99"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "consoles_games",
+    "product_category_name_english": "consoles_games",
+    "linhas": 1089,
+    "pedidos": 1018,
+    "price": "148003.37",
+    "freight_value": "19094.36"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "construcao_ferramentas_construcao",
+    "product_category_name_english": "construction_tools_construction",
+    "linhas": 916,
+    "pedidos": 736,
+    "price": "142108.49",
+    "freight_value": "20273.52"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "construcao_ferramentas_ferramentas",
+    "product_category_name_english": "costruction_tools_tools",
+    "linhas": 103,
+    "pedidos": 97,
+    "price": "15903.95",
+    "freight_value": "2030.22"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "construcao_ferramentas_iluminacao",
+    "product_category_name_english": "construction_tools_lights",
+    "linhas": 301,
+    "pedidos": 242,
+    "price": "39957.00",
+    "freight_value": "7490.14"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "construcao_ferramentas_jardim",
+    "product_category_name_english": "costruction_tools_garden",
+    "linhas": 232,
+    "pedidos": 190,
+    "price": "25096.28",
+    "freight_value": "5187.66"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "construcao_ferramentas_seguranca",
+    "product_category_name_english": "construction_tools_safety",
+    "linhas": 183,
+    "pedidos": 159,
+    "price": "38773.22",
+    "freight_value": "3730.80"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "cool_stuff",
+    "product_category_name_english": "cool_stuff",
+    "linhas": 3718,
+    "pedidos": 3559,
+    "price": "610204.10",
+    "freight_value": "81476.79"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "dvds_blu_ray",
+    "product_category_name_english": "dvds_blu_ray",
+    "linhas": 61,
+    "pedidos": 56,
+    "price": "4542.59",
+    "freight_value": "1227.25"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "eletrodomesticos",
+    "product_category_name_english": "home_appliances",
+    "linhas": 754,
+    "pedidos": 747,
+    "price": "78832.48",
+    "freight_value": "14469.30"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "eletrodomesticos_2",
+    "product_category_name_english": "home_appliances_2",
+    "linhas": 231,
+    "pedidos": 227,
+    "price": "107953.95",
+    "freight_value": "10254.57"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "eletronicos",
+    "product_category_name_english": "electronics",
+    "linhas": 2729,
+    "pedidos": 2517,
+    "price": "155043.93",
+    "freight_value": "45679.16"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "eletroportateis",
+    "product_category_name_english": "small_appliances",
+    "linhas": 658,
+    "pedidos": 609,
+    "price": "182754.12",
+    "freight_value": "15354.35"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "esporte_lazer",
+    "product_category_name_english": "sports_leisure",
+    "linhas": 8431,
+    "pedidos": 7530,
+    "price": "954852.55",
+    "freight_value": "163404.36"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "fashion_bolsas_e_acessorios",
+    "product_category_name_english": "fashion_bags_accessories",
+    "linhas": 1985,
+    "pedidos": 1820,
+    "price": "149329.39",
+    "freight_value": "30558.90"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "fashion_calcados",
+    "product_category_name_english": "fashion_shoes",
+    "linhas": 257,
+    "pedidos": 235,
+    "price": "23001.46",
+    "freight_value": "4813.37"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "fashion_esporte",
+    "product_category_name_english": "fashion_sport",
+    "linhas": 29,
+    "pedidos": 26,
+    "price": "2094.52",
+    "freight_value": "563.03"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "fashion_roupa_feminina",
+    "product_category_name_english": "fashio_female_clothing",
+    "linhas": 45,
+    "pedidos": 36,
+    "price": "2634.94",
+    "freight_value": "583.50"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "fashion_roupa_infanto_juvenil",
+    "product_category_name_english": "fashion_childrens_clothes",
+    "linhas": 7,
+    "pedidos": 7,
+    "price": "519.95",
+    "freight_value": "78.72"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "fashion_roupa_masculina",
+    "product_category_name_english": "fashion_male_clothing",
+    "linhas": 125,
+    "pedidos": 106,
+    "price": "10452.33",
+    "freight_value": "2062.62"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "fashion_underwear_e_moda_praia",
+    "product_category_name_english": "fashion_underwear_beach",
+    "linhas": 127,
+    "pedidos": 117,
+    "price": "9305.95",
+    "freight_value": "1854.07"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "ferramentas_jardim",
+    "product_category_name_english": "garden_tools",
+    "linhas": 4268,
+    "pedidos": 3448,
+    "price": "470495.28",
+    "freight_value": "96650.40"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "flores",
+    "product_category_name_english": "flowers",
+    "linhas": 33,
+    "pedidos": 29,
+    "price": "1110.04",
+    "freight_value": "488.87"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "fraldas_higiene",
+    "product_category_name_english": "diapers_and_hygiene",
+    "linhas": 37,
+    "pedidos": 25,
+    "price": "1500.79",
+    "freight_value": "545.40"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "industria_comercio_e_negocios",
+    "product_category_name_english": "industry_commerce_and_business",
+    "linhas": 265,
+    "pedidos": 232,
+    "price": "38498.81",
+    "freight_value": "7580.53"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "informatica_acessorios",
+    "product_category_name_english": "computers_accessories",
+    "linhas": 7644,
+    "pedidos": 6530,
+    "price": "888724.61",
+    "freight_value": "143999.16"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "instrumentos_musicais",
+    "product_category_name_english": "musical_instruments",
+    "linhas": 651,
+    "pedidos": 611,
+    "price": "184315.74",
+    "freight_value": "17871.38"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "la_cuisine",
+    "product_category_name_english": "la_cuisine",
+    "linhas": 14,
+    "pedidos": 13,
+    "price": "2054.99",
+    "freight_value": "333.55"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "livros_importados",
+    "product_category_name_english": "books_imported",
+    "linhas": 57,
+    "pedidos": 50,
+    "price": "4418.86",
+    "freight_value": "732.08"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "livros_interesse_geral",
+    "product_category_name_english": "books_general_interest",
+    "linhas": 537,
+    "pedidos": 496,
+    "price": "45302.15",
+    "freight_value": "8880.39"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "livros_tecnicos",
+    "product_category_name_english": "books_technical",
+    "linhas": 263,
+    "pedidos": 256,
+    "price": "18702.23",
+    "freight_value": "4198.84"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "malas_acessorios",
+    "product_category_name_english": "luggage_accessories",
+    "linhas": 1077,
+    "pedidos": 1019,
+    "price": "138701.63",
+    "freight_value": "30076.49"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "market_place",
+    "product_category_name_english": "market_place",
+    "linhas": 305,
+    "pedidos": 274,
+    "price": "27795.77",
+    "freight_value": "5318.61"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "moveis_colchao_e_estofado",
+    "product_category_name_english": "furniture_mattress_and_upholstery",
+    "linhas": 37,
+    "pedidos": 37,
+    "price": "4323.38",
+    "freight_value": "1581.37"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "moveis_cozinha_area_de_servico_jantar_e_jardim",
+    "product_category_name_english": "kitchen_dining_laundry_garden_furniture",
+    "linhas": 274,
+    "pedidos": 241,
+    "price": "45531.98",
+    "freight_value": "11540.99"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "moveis_decoracao",
+    "product_category_name_english": "furniture_decor",
+    "linhas": 8160,
+    "pedidos": 6307,
+    "price": "711927.69",
+    "freight_value": "168402.23"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "moveis_escritorio",
+    "product_category_name_english": "office_furniture",
+    "linhas": 1668,
+    "pedidos": 1254,
+    "price": "268154.31",
+    "freight_value": "67057.05"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "moveis_quarto",
+    "product_category_name_english": "furniture_bedroom",
+    "linhas": 103,
+    "pedidos": 90,
+    "price": "19051.80",
+    "freight_value": "4327.42"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "moveis_sala",
+    "product_category_name_english": "furniture_living_room",
+    "linhas": 495,
+    "pedidos": 414,
+    "price": "67350.70",
+    "freight_value": "17694.37"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "musica",
+    "product_category_name_english": "music",
+    "linhas": 38,
+    "pedidos": 38,
+    "price": "6034.35",
+    "freight_value": "690.51"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "papelaria",
+    "product_category_name_english": "stationery",
+    "linhas": 2466,
+    "pedidos": 2264,
+    "price": "223788.69",
+    "freight_value": "45786.36"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "pc_gamer",
+    "product_category_name_english": null,
+    "linhas": 8,
+    "pedidos": 7,
+    "price": "1306.95",
+    "freight_value": "123.15"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "pcs",
+    "product_category_name_english": "computers",
+    "linhas": 199,
+    "pedidos": 177,
+    "price": "218684.14",
+    "freight_value": "9665.62"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "perfumaria",
+    "product_category_name_english": "perfumery",
+    "linhas": 3340,
+    "pedidos": 3086,
+    "price": "390144.65",
+    "freight_value": "53026.98"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "pet_shop",
+    "product_category_name_english": "pet_shop",
+    "linhas": 1924,
+    "pedidos": 1688,
+    "price": "211695.64",
+    "freight_value": "38918.56"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "portateis_casa_forno_e_cafe",
+    "product_category_name_english": "small_appliances_home_oven_and_coffee",
+    "linhas": 73,
+    "pedidos": 72,
+    "price": "46589.56",
+    "freight_value": "2656.34"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "portateis_cozinha_e_preparadores_de_alimentos",
+    "product_category_name_english": null,
+    "linhas": 14,
+    "pedidos": 13,
+    "price": "3933.63",
+    "freight_value": "294.42"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "relogios_presentes",
+    "product_category_name_english": "watches_gifts",
+    "linhas": 5859,
+    "pedidos": 5495,
+    "price": "1166176.98",
+    "freight_value": "98156.14"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "seguros_e_servicos",
+    "product_category_name_english": "security_and_services",
+    "linhas": 2,
+    "pedidos": 2,
+    "price": "283.29",
+    "freight_value": "41.22"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "sinalizacao_e_seguranca",
+    "product_category_name_english": "signaling_and_security",
+    "linhas": 197,
+    "pedidos": 138,
+    "price": "21315.05",
+    "freight_value": "6477.54"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "tablets_impressao_imagem",
+    "product_category_name_english": "tablets_printing_image",
+    "linhas": 83,
+    "pedidos": 79,
+    "price": "7528.41",
+    "freight_value": "1226.20"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "telefonia",
+    "product_category_name_english": "telephony",
+    "linhas": 4430,
+    "pedidos": 4093,
+    "price": "309860.23",
+    "freight_value": "69342.39"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "telefonia_fixa",
+    "product_category_name_english": "fixed_telephony",
+    "linhas": 255,
+    "pedidos": 212,
+    "price": "55315.21",
+    "freight_value": "4501.33"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": "utilidades_domesticas",
+    "product_category_name_english": "housewares",
+    "linhas": 6795,
+    "pedidos": 5743,
+    "price": "615628.69",
+    "freight_value": "142763.56"
+  },
+  {
+    "escopo": "delivered",
+    "product_category_name": null,
+    "product_category_name_english": null,
+    "linhas": 1537,
+    "pedidos": 1392,
+    "price": "170726.63",
+    "freight_value": "26969.06"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "agro_industria_e_comercio",
+    "product_category_name_english": "agro_industry_and_commerce",
+    "linhas": 212,
+    "pedidos": 182,
+    "price": "72530.47",
+    "freight_value": "5843.60"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "alimentos",
+    "product_category_name_english": "food",
+    "linhas": 510,
+    "pedidos": 450,
+    "price": "29393.41",
+    "freight_value": "7271.03"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "alimentos_bebidas",
+    "product_category_name_english": "food_drink",
+    "linhas": 278,
+    "pedidos": 227,
+    "price": "15179.48",
+    "freight_value": "4507.99"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "artes",
+    "product_category_name_english": "art",
+    "linhas": 209,
+    "pedidos": 202,
+    "price": "24202.64",
+    "freight_value": "4045.17"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "artes_e_artesanato",
+    "product_category_name_english": "arts_and_craftmanship",
+    "linhas": 24,
+    "pedidos": 23,
+    "price": "1814.01",
+    "freight_value": "370.13"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "artigos_de_festas",
+    "product_category_name_english": "party_supplies",
+    "linhas": 43,
+    "pedidos": 39,
+    "price": "4485.18",
+    "freight_value": "827.97"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "artigos_de_natal",
+    "product_category_name_english": "christmas_supplies",
+    "linhas": 153,
+    "pedidos": 128,
+    "price": "8800.82",
+    "freight_value": "3229.30"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "audio",
+    "product_category_name_english": "audio",
+    "linhas": 364,
+    "pedidos": 350,
+    "price": "50688.50",
+    "freight_value": "5710.44"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "automotivo",
+    "product_category_name_english": "auto",
+    "linhas": 4235,
+    "pedidos": 3897,
+    "price": "592720.11",
+    "freight_value": "92664.21"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "bebes",
+    "product_category_name_english": "baby",
+    "linhas": 3065,
+    "pedidos": 2885,
+    "price": "411764.89",
+    "freight_value": "68353.11"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "bebidas",
+    "product_category_name_english": "drinks",
+    "linhas": 379,
+    "pedidos": 297,
+    "price": "22428.70",
+    "freight_value": "5741.25"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "beleza_saude",
+    "product_category_name_english": "health_beauty",
+    "linhas": 9670,
+    "pedidos": 8836,
+    "price": "1258681.34",
+    "freight_value": "182566.73"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "brinquedos",
+    "product_category_name_english": "toys",
+    "linhas": 4117,
+    "pedidos": 3886,
+    "price": "483946.60",
+    "freight_value": "77425.95"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "cama_mesa_banho",
+    "product_category_name_english": "bed_bath_table",
+    "linhas": 11115,
+    "pedidos": 9417,
+    "price": "1036988.68",
+    "freight_value": "204693.04"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "casa_conforto",
+    "product_category_name_english": "home_confort",
+    "linhas": 434,
+    "pedidos": 397,
+    "price": "58572.04",
+    "freight_value": "8501.23"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "casa_conforto_2",
+    "product_category_name_english": "home_comfort_2",
+    "linhas": 30,
+    "pedidos": 24,
+    "price": "760.27",
+    "freight_value": "410.31"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "casa_construcao",
+    "product_category_name_english": "home_construction",
+    "linhas": 604,
+    "pedidos": 490,
+    "price": "83088.12",
+    "freight_value": "13832.24"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "cds_dvds_musicais",
+    "product_category_name_english": "cds_dvds_musicals",
+    "linhas": 14,
+    "pedidos": 12,
+    "price": "730.00",
+    "freight_value": "224.99"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "cine_foto",
+    "product_category_name_english": "cine_photo",
+    "linhas": 72,
+    "pedidos": 65,
+    "price": "6933.46",
+    "freight_value": "1256.20"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "climatizacao",
+    "product_category_name_english": "air_conditioning",
+    "linhas": 297,
+    "pedidos": 253,
+    "price": "55024.96",
+    "freight_value": "6749.23"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "consoles_games",
+    "product_category_name_english": "consoles_games",
+    "linhas": 1137,
+    "pedidos": 1062,
+    "price": "157465.22",
+    "freight_value": "19828.02"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "construcao_ferramentas_construcao",
+    "product_category_name_english": "construction_tools_construction",
+    "linhas": 929,
+    "pedidos": 748,
+    "price": "144677.59",
+    "freight_value": "20650.41"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "construcao_ferramentas_ferramentas",
+    "product_category_name_english": "costruction_tools_tools",
+    "linhas": 103,
+    "pedidos": 97,
+    "price": "15903.95",
+    "freight_value": "2030.22"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "construcao_ferramentas_iluminacao",
+    "product_category_name_english": "construction_tools_lights",
+    "linhas": 304,
+    "pedidos": 244,
+    "price": "41080.00",
+    "freight_value": "7583.80"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "construcao_ferramentas_jardim",
+    "product_category_name_english": "costruction_tools_garden",
+    "linhas": 238,
+    "pedidos": 194,
+    "price": "25715.89",
+    "freight_value": "5311.40"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "construcao_ferramentas_seguranca",
+    "product_category_name_english": "construction_tools_safety",
+    "linhas": 194,
+    "pedidos": 167,
+    "price": "40544.52",
+    "freight_value": "3919.10"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "cool_stuff",
+    "product_category_name_english": "cool_stuff",
+    "linhas": 3796,
+    "pedidos": 3632,
+    "price": "635290.85",
+    "freight_value": "84039.10"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "dvds_blu_ray",
+    "product_category_name_english": "dvds_blu_ray",
+    "linhas": 64,
+    "pedidos": 59,
+    "price": "5999.39",
+    "freight_value": "1288.74"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "eletrodomesticos",
+    "product_category_name_english": "home_appliances",
+    "linhas": 771,
+    "pedidos": 764,
+    "price": "80171.53",
+    "freight_value": "14818.90"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "eletrodomesticos_2",
+    "product_category_name_english": "home_appliances_2",
+    "linhas": 238,
+    "pedidos": 234,
+    "price": "113317.74",
+    "freight_value": "10600.18"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "eletronicos",
+    "product_category_name_english": "electronics",
+    "linhas": 2767,
+    "pedidos": 2550,
+    "price": "160246.74",
+    "freight_value": "46578.32"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "eletroportateis",
+    "product_category_name_english": "small_appliances",
+    "linhas": 679,
+    "pedidos": 630,
+    "price": "190648.58",
+    "freight_value": "16020.25"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "esporte_lazer",
+    "product_category_name_english": "sports_leisure",
+    "linhas": 8641,
+    "pedidos": 7720,
+    "price": "988048.97",
+    "freight_value": "168607.51"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "fashion_bolsas_e_acessorios",
+    "product_category_name_english": "fashion_bags_accessories",
+    "linhas": 2031,
+    "pedidos": 1864,
+    "price": "152823.54",
+    "freight_value": "31450.00"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "fashion_calcados",
+    "product_category_name_english": "fashion_shoes",
+    "linhas": 262,
+    "pedidos": 240,
+    "price": "23562.77",
+    "freight_value": "4918.87"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "fashion_esporte",
+    "product_category_name_english": "fashion_sport",
+    "linhas": 30,
+    "pedidos": 27,
+    "price": "2119.51",
+    "freight_value": "578.13"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "fashion_roupa_feminina",
+    "product_category_name_english": "fashio_female_clothing",
+    "linhas": 48,
+    "pedidos": 39,
+    "price": "2803.64",
+    "freight_value": "621.75"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "fashion_roupa_infanto_juvenil",
+    "product_category_name_english": "fashion_childrens_clothes",
+    "linhas": 8,
+    "pedidos": 8,
+    "price": "569.85",
+    "freight_value": "95.51"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "fashion_roupa_masculina",
+    "product_category_name_english": "fashion_male_clothing",
+    "linhas": 132,
+    "pedidos": 112,
+    "price": "10797.82",
+    "freight_value": "2152.41"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "fashion_underwear_e_moda_praia",
+    "product_category_name_english": "fashion_underwear_beach",
+    "linhas": 131,
+    "pedidos": 121,
+    "price": "9541.55",
+    "freight_value": "1916.19"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "ferramentas_jardim",
+    "product_category_name_english": "garden_tools",
+    "linhas": 4347,
+    "pedidos": 3518,
+    "price": "485256.46",
+    "freight_value": "98962.75"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "flores",
+    "product_category_name_english": "flowers",
+    "linhas": 33,
+    "pedidos": 29,
+    "price": "1110.04",
+    "freight_value": "488.87"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "fraldas_higiene",
+    "product_category_name_english": "diapers_and_hygiene",
+    "linhas": 39,
+    "pedidos": 27,
+    "price": "1567.59",
+    "freight_value": "573.68"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "industria_comercio_e_negocios",
+    "product_category_name_english": "industry_commerce_and_business",
+    "linhas": 268,
+    "pedidos": 235,
+    "price": "39669.61",
+    "freight_value": "7884.68"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "informatica_acessorios",
+    "product_category_name_english": "computers_accessories",
+    "linhas": 7827,
+    "pedidos": 6689,
+    "price": "911954.32",
+    "freight_value": "147318.08"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "instrumentos_musicais",
+    "product_category_name_english": "musical_instruments",
+    "linhas": 680,
+    "pedidos": 628,
+    "price": "191498.88",
+    "freight_value": "18638.49"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "la_cuisine",
+    "product_category_name_english": "la_cuisine",
+    "linhas": 14,
+    "pedidos": 13,
+    "price": "2054.99",
+    "freight_value": "333.55"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "livros_importados",
+    "product_category_name_english": "books_imported",
+    "linhas": 60,
+    "pedidos": 53,
+    "price": "4639.85",
+    "freight_value": "769.85"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "livros_interesse_geral",
+    "product_category_name_english": "books_general_interest",
+    "linhas": 553,
+    "pedidos": 512,
+    "price": "46856.88",
+    "freight_value": "9195.52"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "livros_tecnicos",
+    "product_category_name_english": "books_technical",
+    "linhas": 267,
+    "pedidos": 260,
+    "price": "19096.06",
+    "freight_value": "4283.06"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "malas_acessorios",
+    "product_category_name_english": "luggage_accessories",
+    "linhas": 1092,
+    "pedidos": 1034,
+    "price": "140429.98",
+    "freight_value": "30445.23"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "market_place",
+    "product_category_name_english": "market_place",
+    "linhas": 311,
+    "pedidos": 280,
+    "price": "28378.47",
+    "freight_value": "5456.06"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "moveis_colchao_e_estofado",
+    "product_category_name_english": "furniture_mattress_and_upholstery",
+    "linhas": 38,
+    "pedidos": 38,
+    "price": "4368.08",
+    "freight_value": "1630.46"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "moveis_cozinha_area_de_servico_jantar_e_jardim",
+    "product_category_name_english": "kitchen_dining_laundry_garden_furniture",
+    "linhas": 281,
+    "pedidos": 248,
+    "price": "46328.37",
+    "freight_value": "11999.43"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "moveis_decoracao",
+    "product_category_name_english": "furniture_decor",
+    "linhas": 8334,
+    "pedidos": 6449,
+    "price": "729762.49",
+    "freight_value": "172749.30"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "moveis_escritorio",
+    "product_category_name_english": "office_furniture",
+    "linhas": 1691,
+    "pedidos": 1273,
+    "price": "273960.70",
+    "freight_value": "68571.95"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "moveis_quarto",
+    "product_category_name_english": "furniture_bedroom",
+    "linhas": 109,
+    "pedidos": 95,
+    "price": "20028.78",
+    "freight_value": "4632.23"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "moveis_sala",
+    "product_category_name_english": "furniture_living_room",
+    "linhas": 503,
+    "pedidos": 422,
+    "price": "68916.56",
+    "freight_value": "17968.17"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "musica",
+    "product_category_name_english": "music",
+    "linhas": 38,
+    "pedidos": 38,
+    "price": "6034.35",
+    "freight_value": "690.51"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "papelaria",
+    "product_category_name_english": "stationery",
+    "linhas": 2517,
+    "pedidos": 2311,
+    "price": "230943.23",
+    "freight_value": "46798.48"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "pc_gamer",
+    "product_category_name_english": null,
+    "linhas": 9,
+    "pedidos": 8,
+    "price": "1545.95",
+    "freight_value": "133.57"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "pcs",
+    "product_category_name_english": "computers",
+    "linhas": 203,
+    "pedidos": 181,
+    "price": "222963.13",
+    "freight_value": "9836.30"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "perfumaria",
+    "product_category_name_english": "perfumery",
+    "linhas": 3419,
+    "pedidos": 3162,
+    "price": "399124.87",
+    "freight_value": "54213.84"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "pet_shop",
+    "product_category_name_english": "pet_shop",
+    "linhas": 1947,
+    "pedidos": 1710,
+    "price": "214315.41",
+    "freight_value": "39561.24"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "portateis_casa_forno_e_cafe",
+    "product_category_name_english": "small_appliances_home_oven_and_coffee",
+    "linhas": 76,
+    "pedidos": 75,
+    "price": "47445.71",
+    "freight_value": "2747.86"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "portateis_cozinha_e_preparadores_de_alimentos",
+    "product_category_name_english": null,
+    "linhas": 15,
+    "pedidos": 14,
+    "price": "3968.53",
+    "freight_value": "309.76"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "relogios_presentes",
+    "product_category_name_english": "watches_gifts",
+    "linhas": 5991,
+    "pedidos": 5624,
+    "price": "1205005.68",
+    "freight_value": "100535.93"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "seguros_e_servicos",
+    "product_category_name_english": "security_and_services",
+    "linhas": 2,
+    "pedidos": 2,
+    "price": "283.29",
+    "freight_value": "41.22"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "sinalizacao_e_seguranca",
+    "product_category_name_english": "signaling_and_security",
+    "linhas": 199,
+    "pedidos": 140,
+    "price": "21509.23",
+    "freight_value": "6507.82"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "tablets_impressao_imagem",
+    "product_category_name_english": "tablets_printing_image",
+    "linhas": 83,
+    "pedidos": 79,
+    "price": "7528.41",
+    "freight_value": "1226.20"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "telefonia",
+    "product_category_name_english": "telephony",
+    "linhas": 4545,
+    "pedidos": 4199,
+    "price": "323667.53",
+    "freight_value": "71215.79"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "telefonia_fixa",
+    "product_category_name_english": "fixed_telephony",
+    "linhas": 264,
+    "pedidos": 217,
+    "price": "59583.00",
+    "freight_value": "4637.81"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": "utilidades_domesticas",
+    "product_category_name_english": "housewares",
+    "linhas": 6964,
+    "pedidos": 5884,
+    "price": "632248.66",
+    "freight_value": "146149.11"
+  },
+  {
+    "escopo": "geral",
+    "product_category_name": null,
+    "product_category_name_english": null,
+    "linhas": 1603,
+    "pedidos": 1451,
+    "price": "179535.28",
+    "freight_value": "28169.81"
+  }
+]

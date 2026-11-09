@@ -1,0 +1,23 @@
+{
+  "fim_utc": "2026-11-08T19:57:37.958595+00:00",
+  "consultas": 15,
+  "testes": 78,
+  "falhas": [],
+  "sql_sha256": {
+    "01_kpis.sql": "230f6ef9ce6077d58bb3ff875bcb58602d16003dca8b767bb5dea58c974eff6e",
+    "02_status.sql": "572681fcaafd9def855817c5371a3088b389fef42a1a7080e298fe34a10e06b0",
+    "03_meses.sql": "dcba589edc810cc9ca7691e049fc92d13742617b6fa25bca39b814b5985d1069",
+    "04_categorias.sql": "d9496b3dcc496870a1aa53416b94b0e9098ecdbeefe2a48e3096c8c2ba3e4ced",
+    "05_vendedores.sql": "75be9f3125f5d30287bb892eed4b4151e70cc7775171b478531862fe3a073d9c",
+    "06_metodos.sql": "bc9531c3cb65e630eb9daa697e0b0029d202b604b0602f56252ccce737e16755",
+    "07_reconciliacao.sql": "2a9b2d8e21a3e303c8b0ac3e32b9fd7cc6d6685e5126670880acee90509d570b",
+    "08_diferencas_pedido.sql": "574becd3c4ea4fd6304a5cba3dab9029ae53014de5d68f4f69a974a08edaf9dc",
+    "09_fatos.sql": "43619ce53b6e45287f941ac9b3bdd3e9f2a08d11ddaea3ecfe1937ea16556a97",
+    "10_contexto.sql": "04e9cd97b0c34fbb91081600ff8c2584dd10396193fb7ff042d36b1ee2e9cd0c",
+    "11_geral_itens.sql": "7190953124a7682ccb27ec95d16d06199e3ac6db51e3fc8239c0ee7022552cff",
+    "11_geral_pagamentos.sql": "8dc5da37d471f6a90ae8c73b09f3734c4f9930c4b221839a90901529b968ad69",
+    "11_geral_pedidos.sql": "30dbf35a3264a6ac91de841bd09163638392bceb6af77dd37f2c11f0586bb3cb",
+    "12_cardinalidades.sql": "55efdc7b1bb35bbfb2e897d6fd219c150db9ba216a8df317619f8659ddb43fa4",
+    "13_datas.sql": "1fa710dbdc2b6552076e48ced327592d7a2fe433a85d90c11ea44dec0a657074"
+  }
+}

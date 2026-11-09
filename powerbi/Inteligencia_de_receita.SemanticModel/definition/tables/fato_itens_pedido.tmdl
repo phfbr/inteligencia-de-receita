@@ -1,0 +1,168 @@
+table fato_itens_pedido
+	lineageTag: 7ab7c7d2-47e6-499d-9609-afdb901f396f
+
+	column order_id
+		dataType: string
+		lineageTag: 4052bb23-ba2e-4a69-923c-b762a376f2a6
+		summarizeBy: none
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_item_id
+		dataType: string
+		lineageTag: f16e975a-863e-4b44-a121-7b8db0ca1032
+		summarizeBy: none
+		sourceColumn: order_item_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column product_id
+		dataType: string
+		lineageTag: af7dcc22-79a9-42ac-bfc6-bba9d139b094
+		summarizeBy: none
+		sourceColumn: product_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column seller_id
+		dataType: string
+		lineageTag: a3cde7e9-01cb-499b-86c4-e3f4dd60ab77
+		summarizeBy: none
+		sourceColumn: seller_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column shipping_limit_date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 57af7bff-a340-4320-97a3-1a79a9768bdd
+		summarizeBy: none
+		sourceColumn: shipping_limit_date
+
+		variation Variation
+			isDefault
+			relationship: c123b558-763f-49e7-87d0-2c9635a9dac0
+			defaultHierarchy: LocalDateTable_f764dfe3-a7cb-496f-8f47-8ccb5d465384.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column price
+		dataType: decimal
+		lineageTag: c6fe467d-0ffa-4b90-9da3-d87b6b136e66
+		summarizeBy: sum
+		sourceColumn: price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column freight_value
+		dataType: decimal
+		lineageTag: cff971dd-be07-4c61-b6bc-a606f365fbd2
+		summarizeBy: sum
+		sourceColumn: freight_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column customer_id
+		dataType: string
+		lineageTag: 6c32cd57-ebc1-4a52-adb5-750870141e96
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_status
+		dataType: string
+		lineageTag: 9c6f1ed9-7619-4ba2-a012-80be55705b28
+		summarizeBy: none
+		sourceColumn: order_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_purchase_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 35a05638-cb33-4d91-a241-305c02584d08
+		summarizeBy: none
+		sourceColumn: order_purchase_timestamp
+
+		variation Variation
+			isDefault
+			relationship: 42261441-5041-40fd-9f40-80734f1c5674
+			defaultHierarchy: LocalDateTable_06ab91fb-58dc-49f6-90b9-1705d825fcfb.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 67878e90-14e5-4a27-9924-1653b89d7ad8
+		summarizeBy: none
+		sourceColumn: cliente_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column localizacao_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: dc11156b-360c-40ad-b969-43f3548caa1a
+		summarizeBy: none
+		sourceColumn: localizacao_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column produto_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 367d8ab0-7bcb-412d-9e6a-43501fd6457c
+		summarizeBy: none
+		sourceColumn: produto_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column vendedor_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 9cd31793-a302-47b1-ad95-66e1d7493fbd
+		summarizeBy: none
+		sourceColumn: vendedor_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_compra_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: e19453c8-cbf0-43e5-bf22-9957ddd83f64
+		summarizeBy: none
+		sourceColumn: data_compra_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_limite_envio_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: d5266abb-4c83-42fe-a21a-d214a418ddf8
+		summarizeBy: sum
+		sourceColumn: data_limite_envio_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_itens_pedido = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("localhost:5432", "inteligencia_receita_db"),
+				    gold_fato_itens_pedido = Fonte{[Schema="gold",Item="fato_itens_pedido"]}[Data],
+				    #"Tipo Alterado" = Table.TransformColumnTypes(gold_fato_itens_pedido,{{"price", Currency.Type}, {"freight_value", Currency.Type}}),
+				    #"Outras Colunas Removidas" = Table.SelectColumns(#"Tipo Alterado",{"order_id", "order_item_id", "product_id", "seller_id", "shipping_limit_date", "price", "freight_value", "customer_id", "order_status", "order_purchase_timestamp", "cliente_sk", "localizacao_sk", "produto_sk", "vendedor_sk", "data_compra_sk", "data_limite_envio_sk"})
+				in
+				    #"Outras Colunas Removidas"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

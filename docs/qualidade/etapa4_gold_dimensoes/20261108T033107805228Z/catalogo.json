@@ -1,0 +1,464 @@
+[
+  {
+    "objects": [
+      {
+        "name": "dim_calendario",
+        "kind": "r",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_calendario_nk",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_calendario_pkey",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_clientes",
+        "kind": "r",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_clientes_nk",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_clientes_pkey",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_forma_pagamento",
+        "kind": "r",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_forma_pagamento_nk",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_forma_pagamento_pkey",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_localizacao",
+        "kind": "r",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_localizacao_nk",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_localizacao_pkey",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_produtos",
+        "kind": "r",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_produtos_nk",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_produtos_pkey",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_vendedores",
+        "kind": "r",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_vendedores_nk",
+        "kind": "i",
+        "owner": "postgres"
+      },
+      {
+        "name": "dim_vendedores_pkey",
+        "kind": "i",
+        "owner": "postgres"
+      }
+    ]
+  },
+  {
+    "columns": [
+      {
+        "table": "dim_calendario",
+        "name": "data_sk",
+        "type": "bigint",
+        "not_null": true
+      },
+      {
+        "table": "dim_calendario",
+        "name": "dia",
+        "type": "date",
+        "not_null": false
+      },
+      {
+        "table": "dim_calendario",
+        "name": "ano",
+        "type": "integer",
+        "not_null": false
+      },
+      {
+        "table": "dim_calendario",
+        "name": "mes",
+        "type": "integer",
+        "not_null": false
+      },
+      {
+        "table": "dim_calendario",
+        "name": "dia_mes",
+        "type": "integer",
+        "not_null": false
+      },
+      {
+        "table": "dim_calendario",
+        "name": "membro_tipo",
+        "type": "text",
+        "not_null": true
+      },
+      {
+        "table": "dim_clientes",
+        "name": "cliente_sk",
+        "type": "bigint",
+        "not_null": true
+      },
+      {
+        "table": "dim_clientes",
+        "name": "customer_unique_id",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_clientes",
+        "name": "membro_tipo",
+        "type": "text",
+        "not_null": true
+      },
+      {
+        "table": "dim_forma_pagamento",
+        "name": "forma_pagamento_sk",
+        "type": "bigint",
+        "not_null": true
+      },
+      {
+        "table": "dim_forma_pagamento",
+        "name": "payment_type",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_forma_pagamento",
+        "name": "membro_tipo",
+        "type": "text",
+        "not_null": true
+      },
+      {
+        "table": "dim_localizacao",
+        "name": "localizacao_sk",
+        "type": "bigint",
+        "not_null": true
+      },
+      {
+        "table": "dim_localizacao",
+        "name": "customer_zip_code_prefix",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_localizacao",
+        "name": "customer_city",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_localizacao",
+        "name": "customer_state",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_localizacao",
+        "name": "membro_tipo",
+        "type": "text",
+        "not_null": true
+      },
+      {
+        "table": "dim_produtos",
+        "name": "produto_sk",
+        "type": "bigint",
+        "not_null": true
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_id",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_category_name",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_name_lenght",
+        "type": "numeric",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_description_lenght",
+        "type": "numeric",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_photos_qty",
+        "type": "numeric",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_weight_g",
+        "type": "numeric",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_length_cm",
+        "type": "numeric",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_height_cm",
+        "type": "numeric",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_width_cm",
+        "type": "numeric",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "product_category_name_english",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_produtos",
+        "name": "membro_tipo",
+        "type": "text",
+        "not_null": true
+      },
+      {
+        "table": "dim_vendedores",
+        "name": "vendedor_sk",
+        "type": "bigint",
+        "not_null": true
+      },
+      {
+        "table": "dim_vendedores",
+        "name": "seller_id",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_vendedores",
+        "name": "seller_zip_code_prefix",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_vendedores",
+        "name": "seller_city",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_vendedores",
+        "name": "seller_state",
+        "type": "text",
+        "not_null": false
+      },
+      {
+        "table": "dim_vendedores",
+        "name": "membro_tipo",
+        "type": "text",
+        "not_null": true
+      }
+    ]
+  },
+  {
+    "constraints": [
+      {
+        "table": "dim_calendario",
+        "kind": "c",
+        "definition": "CHECK ((((data_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (dia IS NULL) AND (ano IS NULL) AND (mes IS NULL) AND (dia_mes IS NULL)) OR ((data_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (dia IS NULL) AND (ano IS NULL) AND (mes IS NULL) AND (dia_mes IS NULL)) OR ((data_sk > 0) AND (membro_tipo = 'regular'::text) AND (dia IS NOT NULL))))"
+      },
+      {
+        "table": "dim_calendario",
+        "kind": "n",
+        "definition": "NOT NULL data_sk"
+      },
+      {
+        "table": "dim_calendario",
+        "kind": "n",
+        "definition": "NOT NULL membro_tipo"
+      },
+      {
+        "table": "dim_calendario",
+        "kind": "p",
+        "definition": "PRIMARY KEY (data_sk)"
+      },
+      {
+        "table": "dim_calendario",
+        "kind": "u",
+        "definition": "UNIQUE (dia)"
+      },
+      {
+        "table": "dim_clientes",
+        "kind": "c",
+        "definition": "CHECK ((((cliente_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (customer_unique_id IS NULL)) OR ((cliente_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (customer_unique_id IS NULL)) OR ((cliente_sk > 0) AND (membro_tipo = 'regular'::text) AND (customer_unique_id IS NOT NULL))))"
+      },
+      {
+        "table": "dim_clientes",
+        "kind": "n",
+        "definition": "NOT NULL cliente_sk"
+      },
+      {
+        "table": "dim_clientes",
+        "kind": "n",
+        "definition": "NOT NULL membro_tipo"
+      },
+      {
+        "table": "dim_clientes",
+        "kind": "p",
+        "definition": "PRIMARY KEY (cliente_sk)"
+      },
+      {
+        "table": "dim_clientes",
+        "kind": "u",
+        "definition": "UNIQUE (customer_unique_id)"
+      },
+      {
+        "table": "dim_forma_pagamento",
+        "kind": "c",
+        "definition": "CHECK ((((forma_pagamento_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (payment_type IS NULL)) OR ((forma_pagamento_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (payment_type IS NULL)) OR ((forma_pagamento_sk > 0) AND (membro_tipo = 'regular'::text) AND (payment_type IS NOT NULL))))"
+      },
+      {
+        "table": "dim_forma_pagamento",
+        "kind": "n",
+        "definition": "NOT NULL forma_pagamento_sk"
+      },
+      {
+        "table": "dim_forma_pagamento",
+        "kind": "n",
+        "definition": "NOT NULL membro_tipo"
+      },
+      {
+        "table": "dim_forma_pagamento",
+        "kind": "p",
+        "definition": "PRIMARY KEY (forma_pagamento_sk)"
+      },
+      {
+        "table": "dim_forma_pagamento",
+        "kind": "u",
+        "definition": "UNIQUE (payment_type)"
+      },
+      {
+        "table": "dim_localizacao",
+        "kind": "c",
+        "definition": "CHECK ((((localizacao_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (customer_zip_code_prefix IS NULL) AND (customer_city IS NULL) AND (customer_state IS NULL)) OR ((localizacao_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (customer_zip_code_prefix IS NULL) AND (customer_city IS NULL) AND (customer_state IS NULL)) OR ((localizacao_sk > 0) AND (membro_tipo = 'regular'::text) AND (customer_zip_code_prefix IS NOT NULL) AND (customer_city IS NOT NULL) AND (customer_state IS NOT NULL))))"
+      },
+      {
+        "table": "dim_localizacao",
+        "kind": "n",
+        "definition": "NOT NULL localizacao_sk"
+      },
+      {
+        "table": "dim_localizacao",
+        "kind": "n",
+        "definition": "NOT NULL membro_tipo"
+      },
+      {
+        "table": "dim_localizacao",
+        "kind": "p",
+        "definition": "PRIMARY KEY (localizacao_sk)"
+      },
+      {
+        "table": "dim_localizacao",
+        "kind": "u",
+        "definition": "UNIQUE (customer_zip_code_prefix, customer_city, customer_state)"
+      },
+      {
+        "table": "dim_produtos",
+        "kind": "c",
+        "definition": "CHECK ((((produto_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (product_id IS NULL) AND (product_category_name IS NULL) AND (product_name_lenght IS NULL) AND (product_description_lenght IS NULL) AND (product_photos_qty IS NULL) AND (product_weight_g IS NULL) AND (product_length_cm IS NULL) AND (product_height_cm IS NULL) AND (product_width_cm IS NULL) AND (product_category_name_english IS NULL)) OR ((produto_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (product_id IS NULL) AND (product_category_name IS NULL) AND (product_name_lenght IS NULL) AND (product_description_lenght IS NULL) AND (product_photos_qty IS NULL) AND (product_weight_g IS NULL) AND (product_length_cm IS NULL) AND (product_height_cm IS NULL) AND (product_width_cm IS NULL) AND (product_category_name_english IS NULL)) OR ((produto_sk > 0) AND (membro_tipo = 'regular'::text) AND (product_id IS NOT NULL))))"
+      },
+      {
+        "table": "dim_produtos",
+        "kind": "n",
+        "definition": "NOT NULL membro_tipo"
+      },
+      {
+        "table": "dim_produtos",
+        "kind": "n",
+        "definition": "NOT NULL produto_sk"
+      },
+      {
+        "table": "dim_produtos",
+        "kind": "p",
+        "definition": "PRIMARY KEY (produto_sk)"
+      },
+      {
+        "table": "dim_produtos",
+        "kind": "u",
+        "definition": "UNIQUE (product_id)"
+      },
+      {
+        "table": "dim_vendedores",
+        "kind": "c",
+        "definition": "CHECK ((((vendedor_sk = '-1'::integer) AND (membro_tipo = 'nao_informado'::text) AND (seller_id IS NULL) AND (seller_zip_code_prefix IS NULL) AND (seller_city IS NULL) AND (seller_state IS NULL)) OR ((vendedor_sk = '-2'::integer) AND (membro_tipo = 'referencia_nao_encontrada'::text) AND (seller_id IS NULL) AND (seller_zip_code_prefix IS NULL) AND (seller_city IS NULL) AND (seller_state IS NULL)) OR ((vendedor_sk > 0) AND (membro_tipo = 'regular'::text) AND (seller_id IS NOT NULL))))"
+      },
+      {
+        "table": "dim_vendedores",
+        "kind": "n",
+        "definition": "NOT NULL membro_tipo"
+      },
+      {
+        "table": "dim_vendedores",
+        "kind": "n",
+        "definition": "NOT NULL vendedor_sk"
+      },
+      {
+        "table": "dim_vendedores",
+        "kind": "p",
+        "definition": "PRIMARY KEY (vendedor_sk)"
+      },
+      {
+        "table": "dim_vendedores",
+        "kind": "u",
+        "definition": "UNIQUE (seller_id)"
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "divergencias_maiores_001": 64,
+  "coincidem_id_e_delta_diagnostico": 64,
+  "sem_itens": 236,
+  "coincidem_id_status_diagnostico": 236,
+  "pagamentos_sem_itens": "47956.61",
+  "diferenca_global": "48376.98",
+  "diferenca_comparaveis": "420.37",
+  "positivas_maiores_001": 56,
+  "negativas_menores_menos001": 8,
+  "diferencas_nao_zero_ate_001": 45,
+  "sem_itens_por_status": {
+    "unavailable": 204,
+    "canceled": 31,
+    "created": 1
+  },
+  "divergencias_por_status": {
+    "delivered": 62,
+    "shipped": 2
+  }
+}

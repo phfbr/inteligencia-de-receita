@@ -1,0 +1,151 @@
+{
+  "status": "verified",
+  "counts": {
+    "fato_pedidos": 99441,
+    "fato_itens_pedido": 112650,
+    "fato_pagamentos": 103886
+  },
+  "total_control_rows": 315977,
+  "grains": {
+    "fato_pedidos": [
+      "order_id"
+    ],
+    "fato_itens_pedido": [
+      "order_id",
+      "order_item_id"
+    ],
+    "fato_pagamentos": [
+      "order_id",
+      "payment_sequential"
+    ]
+  },
+  "physical_foreign_keys": 17,
+  "foreign_keys_only_dimensions": true,
+  "physical_columns": 43,
+  "physical_not_null": 22,
+  "local_tests": {
+    "total": 13,
+    "failures": 0,
+    "errors": 0
+  },
+  "physical_constraint_rejection_cases_per_cycle": 23,
+  "physical_test_cycles": 3,
+  "preservation": {
+    "idempotence": true,
+    "rollback_confirmed": true,
+    "dimensions_preserved": true,
+    "upstream_catalog_preserved": true,
+    "silver_preserved": true,
+    "bronze_preserved": true
+  },
+  "reconciliation": {
+    "reconciliation_orders": 99441,
+    "without_items": 775,
+    "without_payments": 1,
+    "compared": 98665,
+    "over_one_cent": 303,
+    "positive": 264,
+    "negative": 39,
+    "min_delta": "-51.62",
+    "max_delta": "182.81"
+  },
+  "money": {
+    "fato_pedidos": {},
+    "fato_itens_pedido": {
+      "price": "13591643.70",
+      "freight_value": "2251909.54"
+    },
+    "fato_pagamentos": {
+      "payment_value": "16008872.12"
+    }
+  },
+  "fk_members": {
+    "fato_pedidos": {
+      "cliente_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "localizacao_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "data_compra_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "data_aprovacao_sk": {
+        "nao_informado": 160,
+        "referencia_nao_encontrada": 0
+      },
+      "data_transportadora_sk": {
+        "nao_informado": 1783,
+        "referencia_nao_encontrada": 0
+      },
+      "data_entrega_sk": {
+        "nao_informado": 2965,
+        "referencia_nao_encontrada": 0
+      },
+      "data_previsao_entrega_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      }
+    },
+    "fato_itens_pedido": {
+      "cliente_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "localizacao_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "produto_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "vendedor_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "data_compra_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "data_limite_envio_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      }
+    },
+    "fato_pagamentos": {
+      "cliente_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "localizacao_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "forma_pagamento_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      },
+      "data_compra_sk": {
+        "nao_informado": 0,
+        "referencia_nao_encontrada": 0
+      }
+    }
+  },
+  "upstream_evidence_sha256": {
+    "silver": "c9f365bdd989124a57184e1c7ab60cd83960c6eaea938c7c4263811da16cc981",
+    "dimensions": "5ea7cdeb910ba8e49e290c3d21ff13ca46bbdce07b4208bcc552e9b34ebaa0e8",
+    "dimension_catalog": "34629f98dfaf68cb9957cb1fc2ead59cd0dbc43cd8f16ec87dce1c890b523ff7"
+  },
+  "artifact_sha256": {
+    "scripts\\gold_fatos.py": "f5a02222ba1f04b7e79b58eb9fcc8da697e5ccedad2b0792a97b5029019f8f50",
+    "scripts\\executar_gold_fatos.ps1": "b1537feee7918355eece8fcc2796d7e0691e5ca3a52e2141bff3941f72ea3a4a",
+    "sql\\gold\\003_fatos.sql": "2883fb3230c3cb39aa01f9b8b8a1046d8555ff3fa7f701ade11661184b71fc3d",
+    "sql\\gold\\004_carga_fatos.sql": "72913017dd828dccc56147fd914fcad5c6f230d4ee1109d7e25bfee20f1b7ddb",
+    "sql\\validacoes\\gold_fatos.sql": "7e5c38e22785477b6f260b454f5b0491fe9da334b2b4b36847c81737eb088f8f",
+    "tests\\test_gold_fatos.py": "1aef643ef5047719abc48b707cfcdda074a634f52a4c68a7d7af8018e95d527d"
+  }
+}

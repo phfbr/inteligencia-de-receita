@@ -1,0 +1,44 @@
+{
+  "status": "verified",
+  "database": "inteligencia_receita_db",
+  "server_version": "18.6",
+  "counts": {
+    "olist_customers_dataset": 99441,
+    "olist_geolocation_dataset": 1000163,
+    "olist_orders_dataset": 99441,
+    "olist_order_items_dataset": 112650,
+    "olist_order_payments_dataset": 103886,
+    "olist_order_reviews_dataset": 99224,
+    "olist_products_dataset": 32951,
+    "olist_sellers_dataset": 3095,
+    "product_category_name_translation": 71
+  },
+  "total_rows": 1550922,
+  "tests": {
+    "total": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "idempotence_confirmed": true,
+  "rollback_confirmed": true,
+  "bronze_hashes_preserved": true,
+  "nulls_types_keys_and_values_match": true,
+  "monetary_totals": {
+    "price": "13591643.70",
+    "freight_value": "2251909.54",
+    "payment_value": "16008872.12"
+  },
+  "known_reference_exceptions": [
+    {
+      "reference": "products.product_category_name->translation.product_category_name",
+      "orphans": 13
+    }
+  ],
+  "reconciliation": {
+    "reconciliation_compared": 98665,
+    "over_one_cent": 303,
+    "positive": 264,
+    "negative": 39
+  }
+}

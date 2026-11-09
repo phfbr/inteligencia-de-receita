@@ -1,0 +1,30 @@
+{
+  "status": "blocked",
+  "database_objects_created": 0,
+  "database_counts_observed": false,
+  "tests": {
+    "exit_code": 0,
+    "total": 20,
+    "passed": 19,
+    "skipped_integration": 1
+  },
+  "source_files": 9,
+  "source_rows": 1550922,
+  "sha256_match_profiling": true,
+  "all_conversion_errors": 0,
+  "nulls_and_candidate_keys_match_profiling": true,
+  "independent_decimal_totals": {
+    "price": "13591643.70",
+    "freight_value": "2251909.54",
+    "payment_value": "16008872.12"
+  },
+  "sql_generation_matches_files": true,
+  "postgresql_sql_execution": "not_executed",
+  "requirements_changed": false,
+  "artifact_sha256": {
+    "scripts\\silver.py": "be4367e46eb91afa8a49bea53f44b5edeea4c64c9af27a8447e2dd0e3d67d10b",
+    "sql\\silver\\001_estrutura.sql": "45eb2fedfa1b302b51cf5e8c52812ac36f1362631d753066be81fd1a206bfd70",
+    "sql\\validacoes\\silver.sql": "72e0ef19076f0650b7e0d90904810697f052e8d7501810c43fc06325936bd7f7",
+    "tests\\test_silver.py": "6778157710d61d689d985170c08c3d39582e576337102e068c43a275291f316a"
+  }
+}

@@ -1,0 +1,10 @@
+﻿escopo,order_status,linhas,pedidos
+delivered,delivered,96478,96478
+geral,approved,2,2
+geral,canceled,625,625
+geral,created,5,5
+geral,delivered,96478,96478
+geral,invoiced,314,314
+geral,processing,301,301
+geral,shipped,1107,1107
+geral,unavailable,609,609

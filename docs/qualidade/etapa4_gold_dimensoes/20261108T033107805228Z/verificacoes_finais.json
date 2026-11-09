@@ -1,0 +1,98 @@
+{
+  "status": "verified",
+  "dimensions": {
+    "dim_clientes": {
+      "dimension": "dim_clientes",
+      "rows": 96098,
+      "regular": 96096,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "f6ff05c04a87d734ff0b2f933665cc7e62b3ad0b6f1459f466d39ef4e094d21c"
+    },
+    "dim_produtos": {
+      "dimension": "dim_produtos",
+      "rows": 32953,
+      "regular": 32951,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "ddc394330f6a2c1fa7044c08cd7b0ed515439fa0feb8cb860cabcc34c106e7cb"
+    },
+    "dim_vendedores": {
+      "dimension": "dim_vendedores",
+      "rows": 3097,
+      "regular": 3095,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "9cd1fb10c74c867835d4498b31bb5933b9033d548d7229f409cbb23858b11681"
+    },
+    "dim_calendario": {
+      "dimension": "dim_calendario",
+      "rows": 1316,
+      "regular": 1314,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "9169db24f31ef5396bc9246a981f8921f6b81cb9fcb30205fa4faf75d776b3bb"
+    },
+    "dim_localizacao": {
+      "dimension": "dim_localizacao",
+      "rows": 15036,
+      "regular": 15034,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "7c311f339cfb46bd6eb1751ba85bd472a8e6ca05874a6e7989f911b31f7de952"
+    },
+    "dim_forma_pagamento": {
+      "dimension": "dim_forma_pagamento",
+      "rows": 7,
+      "regular": 5,
+      "nao_informado": 1,
+      "referencia_nao_encontrada": 1,
+      "fingerprint": "fd689e8d32ef12ce1cec24a413b8b7158ad699e45d947434517d28d4687249b8"
+    }
+  },
+  "total_regular": 148495,
+  "total_members": 148507,
+  "calendar": {
+    "calendar_min": "2016-09-04",
+    "calendar_max": "2020-04-09",
+    "observed_distinct_days": 720
+  },
+  "local_tests": {
+    "total": 10,
+    "failures": 0,
+    "errors": 0
+  },
+  "resolution_paths": 17,
+  "unresolved_references": 0,
+  "real_constraint_tests_passed": true,
+  "idempotence": true,
+  "rollback_confirmed": true,
+  "silver_preserved": true,
+  "bronze_sha256_preserved": true,
+  "catalog": {
+    "tables": 6,
+    "indexes": 12,
+    "columns": 35,
+    "constraints": 30
+  },
+  "upstream_evidence_sha256": "c9f365bdd989124a57184e1c7ab60cd83960c6eaea938c7c4263811da16cc981",
+  "source_sha256": {
+    "customers": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
+    "geolocation": "b514f6fc991b9566aeba02aa5d67e2c3630f034b60a0e05aa0d082a3b66d88d6",
+    "orders": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+    "items": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+    "payments": "4f713964f2815dbbaa40b9488268c55aac3627bfce5aa96cf58d1f3616de3cc0",
+    "reviews": "012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7",
+    "products": "3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc",
+    "sellers": "1f643d2b950373b85735e7794b20986f528d7a000432e7c6f9bcbb44d0846a0e",
+    "translation": "a81f0d1f27b27e7293f761bc79e3ce8f348ee39c4b3ed3e49bde38f478586278"
+  },
+  "artifacts": {
+    "scripts\\gold_dimensoes.py": "725aa130ceceaefed7d24e00b111afd8e9fc19af43535f170bc4bfc88b0a318e",
+    "scripts\\executar_gold_dimensoes.ps1": "cfc183d3ef8f899dd9087a9c5f2b4a90c5473b86920e8f1410bd62df1aa9766b",
+    "sql\\gold\\001_dimensoes.sql": "48f1cca7d015174315742f45232fbe7c9346039a5c26d4b0190e88d36f3bcde2",
+    "sql\\gold\\002_carga_dimensoes.sql": "fcf62afb1ca4ce7d2908991d6961f98b1b102e75e09e8ad312fbb8b5606060d1",
+    "sql\\validacoes\\gold_dimensoes.sql": "308d11396466317b3a48be76e6bc3979e9e8de8ce26bff04eaab6e17a9717f8c",
+    "tests\\test_gold_dimensoes.py": "47d99777f85fd049ff3e3a60e7fdd2572390b0394c3d10317c50e5dc36f4bb6e"
+  }
+}

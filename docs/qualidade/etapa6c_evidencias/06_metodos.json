@@ -1,0 +1,58 @@
+[
+  {
+    "forma_pagamento_sk": -2,
+    "payment_type": null,
+    "membro_tipo": "referencia_nao_encontrada",
+    "registros": 0,
+    "pedidos": 0,
+    "payment_value": null
+  },
+  {
+    "forma_pagamento_sk": -1,
+    "payment_type": null,
+    "membro_tipo": "nao_informado",
+    "registros": 0,
+    "pedidos": 0,
+    "payment_value": null
+  },
+  {
+    "forma_pagamento_sk": 1,
+    "payment_type": "boleto",
+    "membro_tipo": "regular",
+    "registros": 3680,
+    "pedidos": 3680,
+    "payment_value": "500491.47"
+  },
+  {
+    "forma_pagamento_sk": 2,
+    "payment_type": "credit_card",
+    "membro_tipo": "regular",
+    "registros": 13584,
+    "pedidos": 13529,
+    "payment_value": "1972255.69"
+  },
+  {
+    "forma_pagamento_sk": 3,
+    "payment_type": "debit_card",
+    "membro_tipo": "regular",
+    "registros": 212,
+    "pedidos": 212,
+    "payment_value": "20328.54"
+  },
+  {
+    "forma_pagamento_sk": 4,
+    "payment_type": "not_defined",
+    "membro_tipo": "regular",
+    "registros": 0,
+    "pedidos": 0,
+    "payment_value": null
+  },
+  {
+    "forma_pagamento_sk": 5,
+    "payment_type": "voucher",
+    "membro_tipo": "regular",
+    "registros": 1359,
+    "pedidos": 798,
+    "payment_value": "68787.21"
+  }
+]

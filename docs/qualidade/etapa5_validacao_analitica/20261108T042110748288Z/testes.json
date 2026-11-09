@@ -1,0 +1,522 @@
+[
+  {
+    "teste": "reconciliacao_exata_20_analises",
+    "ok": true
+  },
+  {
+    "teste": "joins_dimensionais_sem_multiplicacao",
+    "ok": true
+  },
+  {
+    "teste": "todos_papeis_temporais",
+    "ok": true
+  },
+  {
+    "teste": "pedidos_status_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pedidos_mensal_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pedidos_uf_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pedidos_cidade_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pedidos_status_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pedidos_mensal_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pedidos_uf_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pedidos_cidade_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_mensal_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_mensal_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_mensal_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_produto_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_produto_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_produto_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_categoria_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_categoria_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_categoria_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_vendedor_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_vendedor_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_vendedor_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_uf_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_uf_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_uf_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_cidade_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_cidade_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_cidade_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_mensal_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_mensal_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_mensal_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_produto_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_produto_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_produto_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_categoria_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_categoria_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_categoria_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_vendedor_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_vendedor_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_vendedor_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_uf_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_uf_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_uf_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "itens_cidade_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "itens_cidade_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "itens_cidade_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_mensal_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_mensal_delivered_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_forma_status_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_forma_status_delivered_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_uf_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_uf_delivered_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_cidade_delivered_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_cidade_delivered_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_mensal_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_mensal_geral_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_forma_status_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_forma_status_geral_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_uf_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_uf_geral_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_cidade_geral_linhas",
+    "ok": true
+  },
+  {
+    "teste": "pagamentos_cidade_geral_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "RN07_numerador",
+    "ok": true
+  },
+  {
+    "teste": "RN07_denominador",
+    "ok": true
+  },
+  {
+    "teste": "RN07_subconjunto",
+    "ok": true
+  },
+  {
+    "teste": "clientes_cobertura",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_pedidos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_sem_itens",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_sem_pagamentos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_comparaveis",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_divergencias",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_positivas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_negativas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_delivered_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_pedidos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_sem_itens",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_sem_pagamentos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_comparaveis",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_divergencias",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_positivas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_negativas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_delivered_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_pedidos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_sem_itens",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_sem_pagamentos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_comparaveis",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_divergencias",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_positivas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_negativas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_price",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_delivered_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_pedidos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_sem_itens",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_sem_pagamentos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_comparaveis",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_divergencias",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_positivas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_negativas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_status_geral_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_pedidos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_sem_itens",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_sem_pagamentos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_comparaveis",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_divergencias",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_positivas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_negativas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_mes_geral_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_pedidos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_sem_itens",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_sem_pagamentos",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_comparaveis",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_divergencias",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_positivas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_negativas",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_price",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_freight_value",
+    "ok": true
+  },
+  {
+    "teste": "reconciliacao_uf_geral_payment_value",
+    "ok": true
+  },
+  {
+    "teste": "conteudo_estrutura_antes_depois",
+    "ok": true
+  },
+  {
+    "teste": "bronze_sha256_preservado",
+    "ok": true
+  },
+  {
+    "teste": "nove_objetos_gold_iguais_evidencia_4C",
+    "ok": true
+  }
+]

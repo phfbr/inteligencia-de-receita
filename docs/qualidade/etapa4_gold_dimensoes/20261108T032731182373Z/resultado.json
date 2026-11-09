@@ -1,0 +1,53 @@
+{
+  "status": "inspected_readonly",
+  "mode": "inspect",
+  "started_utc": "2026-11-08T03:27:31.183325+00:00",
+  "errors": [],
+  "runs": {},
+  "preflight": [
+    {
+      "database": "inteligencia_receita_db",
+      "version": "18.6",
+      "encoding": "UTF8",
+      "isolated": true
+    },
+    {
+      "dimension": "dim_clientes",
+      "source_distinct": 96096
+    },
+    {
+      "dimension": "dim_produtos",
+      "source_distinct": 32951
+    },
+    {
+      "dimension": "dim_vendedores",
+      "source_distinct": 3095
+    },
+    {
+      "dimension": "dim_calendario",
+      "source_distinct": 1314
+    },
+    {
+      "dimension": "dim_localizacao",
+      "source_distinct": 15034
+    },
+    {
+      "dimension": "dim_forma_pagamento",
+      "source_distinct": 5
+    },
+    {
+      "calendar_min": "2016-09-04",
+      "calendar_max": "2020-04-09",
+      "observed_distinct_days": 720
+    },
+    {
+      "products_category_null": 610,
+      "products_translation_missing": 13
+    },
+    {
+      "partial_locations": 0
+    }
+  ],
+  "bronze_preserved": true,
+  "finished_utc": "2026-11-08T03:27:45.822602+00:00"
+}

@@ -1,0 +1,258 @@
+[
+  {
+    "escopo": "delivered",
+    "payment_type": "boleto",
+    "order_status": "delivered",
+    "linhas": 19191,
+    "pedidos": 19191,
+    "payment_value": "2769932.58"
+  },
+  {
+    "escopo": "delivered",
+    "payment_type": "credit_card",
+    "order_status": "delivered",
+    "linhas": 74586,
+    "pedidos": 74304,
+    "payment_value": "12101094.88"
+  },
+  {
+    "escopo": "delivered",
+    "payment_type": "debit_card",
+    "order_status": "delivered",
+    "linhas": 1486,
+    "pedidos": 1485,
+    "payment_value": "208421.12"
+  },
+  {
+    "escopo": "delivered",
+    "payment_type": "voucher",
+    "order_status": "delivered",
+    "linhas": 5493,
+    "pedidos": 3679,
+    "payment_value": "343013.19"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "boleto",
+    "order_status": "canceled",
+    "linhas": 95,
+    "pedidos": 95,
+    "payment_value": "17504.10"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "boleto",
+    "order_status": "created",
+    "linhas": 2,
+    "pedidos": 2,
+    "payment_value": "175.44"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "boleto",
+    "order_status": "delivered",
+    "linhas": 19191,
+    "pedidos": 19191,
+    "payment_value": "2769932.58"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "boleto",
+    "order_status": "invoiced",
+    "linhas": 67,
+    "pedidos": 67,
+    "payment_value": "15330.82"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "boleto",
+    "order_status": "processing",
+    "linhas": 70,
+    "pedidos": 70,
+    "payment_value": "17135.76"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "boleto",
+    "order_status": "shipped",
+    "linhas": 209,
+    "pedidos": 209,
+    "payment_value": "24227.70"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "boleto",
+    "order_status": "unavailable",
+    "linhas": 150,
+    "pedidos": 150,
+    "payment_value": "25054.87"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "credit_card",
+    "order_status": "approved",
+    "linhas": 2,
+    "pedidos": 2,
+    "payment_value": "241.08"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "credit_card",
+    "order_status": "canceled",
+    "linhas": 444,
+    "pedidos": 444,
+    "payment_value": "97375.31"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "credit_card",
+    "order_status": "created",
+    "linhas": 3,
+    "pedidos": 3,
+    "payment_value": "512.66"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "credit_card",
+    "order_status": "delivered",
+    "linhas": 74586,
+    "pedidos": 74304,
+    "payment_value": "12101094.88"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "credit_card",
+    "order_status": "invoiced",
+    "linhas": 239,
+    "pedidos": 239,
+    "payment_value": "51094.13"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "credit_card",
+    "order_status": "processing",
+    "linhas": 224,
+    "pedidos": 222,
+    "payment_value": "50904.01"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "credit_card",
+    "order_status": "shipped",
+    "linhas": 851,
+    "pedidos": 848,
+    "payment_value": "146195.80"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "credit_card",
+    "order_status": "unavailable",
+    "linhas": 446,
+    "pedidos": 443,
+    "payment_value": "94666.32"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "debit_card",
+    "order_status": "canceled",
+    "linhas": 7,
+    "pedidos": 7,
+    "payment_value": "2711.27"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "debit_card",
+    "order_status": "delivered",
+    "linhas": 1486,
+    "pedidos": 1485,
+    "payment_value": "208421.12"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "debit_card",
+    "order_status": "invoiced",
+    "linhas": 6,
+    "pedidos": 6,
+    "payment_value": "986.04"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "debit_card",
+    "order_status": "processing",
+    "linhas": 2,
+    "pedidos": 2,
+    "payment_value": "349.79"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "debit_card",
+    "order_status": "shipped",
+    "linhas": 22,
+    "pedidos": 22,
+    "payment_value": "2660.80"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "debit_card",
+    "order_status": "unavailable",
+    "linhas": 6,
+    "pedidos": 6,
+    "payment_value": "2860.77"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "not_defined",
+    "order_status": "canceled",
+    "linhas": 3,
+    "pedidos": 3,
+    "payment_value": "0.00"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "voucher",
+    "order_status": "canceled",
+    "linhas": 115,
+    "pedidos": 94,
+    "payment_value": "25664.92"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "voucher",
+    "order_status": "delivered",
+    "linhas": 5493,
+    "pedidos": 3679,
+    "payment_value": "343013.19"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "voucher",
+    "order_status": "invoiced",
+    "linhas": 13,
+    "pedidos": 11,
+    "payment_value": "1727.00"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "voucher",
+    "order_status": "processing",
+    "linhas": 23,
+    "pedidos": 11,
+    "payment_value": "1004.55"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "voucher",
+    "order_status": "shipped",
+    "linhas": 84,
+    "pedidos": 44,
+    "payment_value": "4129.66"
+  },
+  {
+    "escopo": "geral",
+    "payment_type": "voucher",
+    "order_status": "unavailable",
+    "linhas": 47,
+    "pedidos": 27,
+    "payment_value": "3897.55"
+  }
+]

@@ -1,0 +1,290 @@
+[
+  {
+    "escopo": "delivered",
+    "mes": "2016-09-01",
+    "linhas": 1,
+    "pedidos": 1
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2016-10-01",
+    "linhas": 265,
+    "pedidos": 265
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2016-12-01",
+    "linhas": 1,
+    "pedidos": 1
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-01-01",
+    "linhas": 750,
+    "pedidos": 750
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-02-01",
+    "linhas": 1653,
+    "pedidos": 1653
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-03-01",
+    "linhas": 2546,
+    "pedidos": 2546
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-04-01",
+    "linhas": 2303,
+    "pedidos": 2303
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-05-01",
+    "linhas": 3546,
+    "pedidos": 3546
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-06-01",
+    "linhas": 3135,
+    "pedidos": 3135
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-07-01",
+    "linhas": 3872,
+    "pedidos": 3872
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-08-01",
+    "linhas": 4193,
+    "pedidos": 4193
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-09-01",
+    "linhas": 4150,
+    "pedidos": 4150
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-10-01",
+    "linhas": 4478,
+    "pedidos": 4478
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-11-01",
+    "linhas": 7289,
+    "pedidos": 7289
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2017-12-01",
+    "linhas": 5513,
+    "pedidos": 5513
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-01-01",
+    "linhas": 7069,
+    "pedidos": 7069
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-02-01",
+    "linhas": 6555,
+    "pedidos": 6555
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-03-01",
+    "linhas": 7003,
+    "pedidos": 7003
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-04-01",
+    "linhas": 6798,
+    "pedidos": 6798
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-05-01",
+    "linhas": 6749,
+    "pedidos": 6749
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-06-01",
+    "linhas": 6099,
+    "pedidos": 6099
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-07-01",
+    "linhas": 6159,
+    "pedidos": 6159
+  },
+  {
+    "escopo": "delivered",
+    "mes": "2018-08-01",
+    "linhas": 6351,
+    "pedidos": 6351
+  },
+  {
+    "escopo": "geral",
+    "mes": "2016-09-01",
+    "linhas": 4,
+    "pedidos": 4
+  },
+  {
+    "escopo": "geral",
+    "mes": "2016-10-01",
+    "linhas": 324,
+    "pedidos": 324
+  },
+  {
+    "escopo": "geral",
+    "mes": "2016-12-01",
+    "linhas": 1,
+    "pedidos": 1
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-01-01",
+    "linhas": 800,
+    "pedidos": 800
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-02-01",
+    "linhas": 1780,
+    "pedidos": 1780
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-03-01",
+    "linhas": 2682,
+    "pedidos": 2682
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-04-01",
+    "linhas": 2404,
+    "pedidos": 2404
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-05-01",
+    "linhas": 3700,
+    "pedidos": 3700
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-06-01",
+    "linhas": 3245,
+    "pedidos": 3245
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-07-01",
+    "linhas": 4026,
+    "pedidos": 4026
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-08-01",
+    "linhas": 4331,
+    "pedidos": 4331
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-09-01",
+    "linhas": 4285,
+    "pedidos": 4285
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-10-01",
+    "linhas": 4631,
+    "pedidos": 4631
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-11-01",
+    "linhas": 7544,
+    "pedidos": 7544
+  },
+  {
+    "escopo": "geral",
+    "mes": "2017-12-01",
+    "linhas": 5673,
+    "pedidos": 5673
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-01-01",
+    "linhas": 7269,
+    "pedidos": 7269
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-02-01",
+    "linhas": 6728,
+    "pedidos": 6728
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-03-01",
+    "linhas": 7211,
+    "pedidos": 7211
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-04-01",
+    "linhas": 6939,
+    "pedidos": 6939
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-05-01",
+    "linhas": 6873,
+    "pedidos": 6873
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-06-01",
+    "linhas": 6167,
+    "pedidos": 6167
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-07-01",
+    "linhas": 6292,
+    "pedidos": 6292
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-08-01",
+    "linhas": 6512,
+    "pedidos": 6512
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-09-01",
+    "linhas": 16,
+    "pedidos": 16
+  },
+  {
+    "escopo": "geral",
+    "mes": "2018-10-01",
+    "linhas": 4,
+    "pedidos": 4
+  }
+]

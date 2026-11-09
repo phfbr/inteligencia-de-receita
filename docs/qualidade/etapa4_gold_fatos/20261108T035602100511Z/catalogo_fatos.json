@@ -1,0 +1,600 @@
+{
+  "columns": [
+    {
+      "table": "fato_itens_pedido",
+      "name": "order_id",
+      "type": "text",
+      "not_null": true
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "order_item_id",
+      "type": "text",
+      "not_null": true
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "product_id",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "seller_id",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "shipping_limit_date",
+      "type": "timestamp without time zone",
+      "not_null": false
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "price",
+      "type": "numeric",
+      "not_null": false
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "freight_value",
+      "type": "numeric",
+      "not_null": false
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "customer_id",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "order_status",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "order_purchase_timestamp",
+      "type": "timestamp without time zone",
+      "not_null": false
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "cliente_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "localizacao_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "produto_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "vendedor_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "data_compra_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "data_limite_envio_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "order_id",
+      "type": "text",
+      "not_null": true
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "payment_sequential",
+      "type": "text",
+      "not_null": true
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "payment_type",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "payment_installments",
+      "type": "numeric",
+      "not_null": false
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "payment_value",
+      "type": "numeric",
+      "not_null": false
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "customer_id",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "order_status",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "order_purchase_timestamp",
+      "type": "timestamp without time zone",
+      "not_null": false
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "cliente_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "localizacao_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "forma_pagamento_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "data_compra_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "order_id",
+      "type": "text",
+      "not_null": true
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "customer_id",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "order_status",
+      "type": "text",
+      "not_null": false
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "order_purchase_timestamp",
+      "type": "timestamp without time zone",
+      "not_null": false
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "order_approved_at",
+      "type": "timestamp without time zone",
+      "not_null": false
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "order_delivered_carrier_date",
+      "type": "timestamp without time zone",
+      "not_null": false
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "order_delivered_customer_date",
+      "type": "timestamp without time zone",
+      "not_null": false
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "order_estimated_delivery_date",
+      "type": "timestamp without time zone",
+      "not_null": false
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "cliente_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "localizacao_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "data_compra_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "data_aprovacao_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "data_transportadora_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "data_entrega_sk",
+      "type": "bigint",
+      "not_null": true
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "data_previsao_entrega_sk",
+      "type": "bigint",
+      "not_null": true
+    }
+  ],
+  "constraints": [
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_cliente_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL cliente_sk"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_data_compra_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL data_compra_sk"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_data_limite_envio_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL data_limite_envio_sk"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_localizacao_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL localizacao_sk"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_order_id_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL order_id"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_order_item_id_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL order_item_id"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_pkey",
+      "kind": "p",
+      "target": null,
+      "validated": true,
+      "definition": "PRIMARY KEY (order_id, order_item_id)"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_produto_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL produto_sk"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fato_itens_pedido_vendedor_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL vendedor_sk"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fip_cliente_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_clientes",
+      "validated": true,
+      "definition": "FOREIGN KEY (cliente_sk) REFERENCES gold.dim_clientes(cliente_sk)"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fip_data_compra_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_calendario",
+      "validated": true,
+      "definition": "FOREIGN KEY (data_compra_sk) REFERENCES gold.dim_calendario(data_sk)"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fip_data_limite_envio_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_calendario",
+      "validated": true,
+      "definition": "FOREIGN KEY (data_limite_envio_sk) REFERENCES gold.dim_calendario(data_sk)"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fip_localizacao_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_localizacao",
+      "validated": true,
+      "definition": "FOREIGN KEY (localizacao_sk) REFERENCES gold.dim_localizacao(localizacao_sk)"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fip_produto_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_produtos",
+      "validated": true,
+      "definition": "FOREIGN KEY (produto_sk) REFERENCES gold.dim_produtos(produto_sk)"
+    },
+    {
+      "table": "fato_itens_pedido",
+      "name": "fip_vendedor_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_vendedores",
+      "validated": true,
+      "definition": "FOREIGN KEY (vendedor_sk) REFERENCES gold.dim_vendedores(vendedor_sk)"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fato_pagamentos_cliente_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL cliente_sk"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fato_pagamentos_data_compra_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL data_compra_sk"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fato_pagamentos_forma_pagamento_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL forma_pagamento_sk"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fato_pagamentos_localizacao_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL localizacao_sk"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fato_pagamentos_order_id_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL order_id"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fato_pagamentos_payment_sequential_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL payment_sequential"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fato_pagamentos_pkey",
+      "kind": "p",
+      "target": null,
+      "validated": true,
+      "definition": "PRIMARY KEY (order_id, payment_sequential)"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fpg_cliente_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_clientes",
+      "validated": true,
+      "definition": "FOREIGN KEY (cliente_sk) REFERENCES gold.dim_clientes(cliente_sk)"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fpg_data_compra_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_calendario",
+      "validated": true,
+      "definition": "FOREIGN KEY (data_compra_sk) REFERENCES gold.dim_calendario(data_sk)"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fpg_forma_pagamento_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_forma_pagamento",
+      "validated": true,
+      "definition": "FOREIGN KEY (forma_pagamento_sk) REFERENCES gold.dim_forma_pagamento(forma_pagamento_sk)"
+    },
+    {
+      "table": "fato_pagamentos",
+      "name": "fpg_localizacao_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_localizacao",
+      "validated": true,
+      "definition": "FOREIGN KEY (localizacao_sk) REFERENCES gold.dim_localizacao(localizacao_sk)"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_cliente_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL cliente_sk"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_data_aprovacao_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL data_aprovacao_sk"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_data_compra_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL data_compra_sk"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_data_entrega_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL data_entrega_sk"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_data_previsao_entrega_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL data_previsao_entrega_sk"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_data_transportadora_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL data_transportadora_sk"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_localizacao_sk_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL localizacao_sk"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_order_id_not_null",
+      "kind": "n",
+      "target": null,
+      "validated": true,
+      "definition": "NOT NULL order_id"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fato_pedidos_pkey",
+      "kind": "p",
+      "target": null,
+      "validated": true,
+      "definition": "PRIMARY KEY (order_id)"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fp_cliente_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_clientes",
+      "validated": true,
+      "definition": "FOREIGN KEY (cliente_sk) REFERENCES gold.dim_clientes(cliente_sk)"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fp_data_aprovacao_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_calendario",
+      "validated": true,
+      "definition": "FOREIGN KEY (data_aprovacao_sk) REFERENCES gold.dim_calendario(data_sk)"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fp_data_compra_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_calendario",
+      "validated": true,
+      "definition": "FOREIGN KEY (data_compra_sk) REFERENCES gold.dim_calendario(data_sk)"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fp_data_entrega_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_calendario",
+      "validated": true,
+      "definition": "FOREIGN KEY (data_entrega_sk) REFERENCES gold.dim_calendario(data_sk)"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fp_data_previsao_entrega_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_calendario",
+      "validated": true,
+      "definition": "FOREIGN KEY (data_previsao_entrega_sk) REFERENCES gold.dim_calendario(data_sk)"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fp_data_transportadora_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_calendario",
+      "validated": true,
+      "definition": "FOREIGN KEY (data_transportadora_sk) REFERENCES gold.dim_calendario(data_sk)"
+    },
+    {
+      "table": "fato_pedidos",
+      "name": "fp_localizacao_sk_fk",
+      "kind": "f",
+      "target": "gold.dim_localizacao",
+      "validated": true,
+      "definition": "FOREIGN KEY (localizacao_sk) REFERENCES gold.dim_localizacao(localizacao_sk)"
+    }
+  ]
+}

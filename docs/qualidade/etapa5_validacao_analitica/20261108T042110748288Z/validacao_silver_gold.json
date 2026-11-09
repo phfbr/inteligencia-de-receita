@@ -1,0 +1,82 @@
+[
+  {
+    "analise": "pedidos_resumo",
+    "diferencas": 0
+  },
+  {
+    "analise": "pedidos_status",
+    "diferencas": 0
+  },
+  {
+    "analise": "pedidos_mensal",
+    "diferencas": 0
+  },
+  {
+    "analise": "pedidos_uf",
+    "diferencas": 0
+  },
+  {
+    "analise": "pedidos_cidade",
+    "diferencas": 0
+  },
+  {
+    "analise": "itens_resumo",
+    "diferencas": 0
+  },
+  {
+    "analise": "itens_mensal",
+    "diferencas": 0
+  },
+  {
+    "analise": "itens_produto",
+    "diferencas": 0
+  },
+  {
+    "analise": "itens_categoria",
+    "diferencas": 0
+  },
+  {
+    "analise": "itens_vendedor",
+    "diferencas": 0
+  },
+  {
+    "analise": "itens_uf",
+    "diferencas": 0
+  },
+  {
+    "analise": "itens_cidade",
+    "diferencas": 0
+  },
+  {
+    "analise": "pagamentos_resumo",
+    "diferencas": 0
+  },
+  {
+    "analise": "pagamentos_mensal",
+    "diferencas": 0
+  },
+  {
+    "analise": "pagamentos_forma_status",
+    "diferencas": 0
+  },
+  {
+    "analise": "pagamentos_uf",
+    "diferencas": 0
+  },
+  {
+    "analise": "pagamentos_cidade",
+    "diferencas": 0
+  },
+  {
+    "analise": "clientes_pedidos",
+    "diferencas": 0
+  },
+  {
+    "analise": "clientes_recompra",
+    "diferencas": 0
+  },
+  {
+    "analise": "reconciliacao_pedido_niveis",
+    "diferencas": 0
+  }
+]

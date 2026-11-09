@@ -1,0 +1,680 @@
+{
+  "keys": {
+    "orders": {
+      "order_id": {
+        "rows": 99441,
+        "distinct": 99441,
+        "empty_rows": 0,
+        "duplicate_excess": 0,
+        "duplicate_groups": 0,
+        "max_multiplicity": 1
+      },
+      "customer_id": {
+        "rows": 99441,
+        "distinct": 99441,
+        "empty_rows": 0,
+        "duplicate_excess": 0,
+        "duplicate_groups": 0,
+        "max_multiplicity": 1
+      }
+    },
+    "items": {
+      "order_id + order_item_id": {
+        "rows": 112650,
+        "distinct": 112650,
+        "empty_rows": 0,
+        "duplicate_excess": 0,
+        "duplicate_groups": 0,
+        "max_multiplicity": 1
+      }
+    },
+    "payments": {
+      "order_id + payment_sequential": {
+        "rows": 103886,
+        "distinct": 103886,
+        "empty_rows": 0,
+        "duplicate_excess": 0,
+        "duplicate_groups": 0,
+        "max_multiplicity": 1
+      }
+    },
+    "customers": {
+      "customer_id": {
+        "rows": 99441,
+        "distinct": 99441,
+        "empty_rows": 0,
+        "duplicate_excess": 0,
+        "duplicate_groups": 0,
+        "max_multiplicity": 1
+      },
+      "customer_unique_id": {
+        "rows": 99441,
+        "distinct": 96096,
+        "empty_rows": 0,
+        "duplicate_excess": 3345,
+        "duplicate_groups": 2997,
+        "max_multiplicity": 17
+      }
+    }
+  },
+  "references": {
+    "items.order_id": {
+      "empty_rows": 0,
+      "orphan_rows": 0,
+      "orphan_distinct": 0
+    },
+    "payments.order_id": {
+      "empty_rows": 0,
+      "orphan_rows": 0,
+      "orphan_distinct": 0
+    },
+    "orders.customer_id": {
+      "empty_rows": 0,
+      "orphan_rows": 0,
+      "orphan_distinct": 0
+    }
+  },
+  "status": {
+    "approved": {
+      "orders": 2,
+      "with_items": 2,
+      "without_items": 0,
+      "with_payments": 2,
+      "without_payments": 0,
+      "with_both": 2,
+      "without_both": 0,
+      "order_purchase_timestamp_present": 2,
+      "order_approved_at_present": 2,
+      "order_delivered_carrier_date_present": 0,
+      "order_delivered_customer_date_present": 0,
+      "order_estimated_delivery_date_present": 2,
+      "both_actual_delivery_dates": 0,
+      "actual_customer_delivery_without_items": 0,
+      "actual_customer_delivery_without_payments": 0
+    },
+    "canceled": {
+      "orders": 625,
+      "with_items": 461,
+      "without_items": 164,
+      "with_payments": 625,
+      "without_payments": 0,
+      "with_both": 461,
+      "without_both": 0,
+      "order_purchase_timestamp_present": 625,
+      "order_approved_at_present": 484,
+      "order_delivered_carrier_date_present": 75,
+      "order_delivered_customer_date_present": 6,
+      "order_estimated_delivery_date_present": 625,
+      "both_actual_delivery_dates": 6,
+      "actual_customer_delivery_without_items": 0,
+      "actual_customer_delivery_without_payments": 0
+    },
+    "created": {
+      "orders": 5,
+      "with_items": 0,
+      "without_items": 5,
+      "with_payments": 5,
+      "without_payments": 0,
+      "with_both": 0,
+      "without_both": 0,
+      "order_purchase_timestamp_present": 5,
+      "order_approved_at_present": 0,
+      "order_delivered_carrier_date_present": 0,
+      "order_delivered_customer_date_present": 0,
+      "order_estimated_delivery_date_present": 5,
+      "both_actual_delivery_dates": 0,
+      "actual_customer_delivery_without_items": 0,
+      "actual_customer_delivery_without_payments": 0
+    },
+    "delivered": {
+      "orders": 96478,
+      "with_items": 96478,
+      "without_items": 0,
+      "with_payments": 96477,
+      "without_payments": 1,
+      "with_both": 96477,
+      "without_both": 0,
+      "order_purchase_timestamp_present": 96478,
+      "order_approved_at_present": 96464,
+      "order_delivered_carrier_date_present": 96476,
+      "order_delivered_customer_date_present": 96470,
+      "order_estimated_delivery_date_present": 96478,
+      "both_actual_delivery_dates": 96469,
+      "actual_customer_delivery_without_items": 0,
+      "actual_customer_delivery_without_payments": 1
+    },
+    "invoiced": {
+      "orders": 314,
+      "with_items": 312,
+      "without_items": 2,
+      "with_payments": 314,
+      "without_payments": 0,
+      "with_both": 312,
+      "without_both": 0,
+      "order_purchase_timestamp_present": 314,
+      "order_approved_at_present": 314,
+      "order_delivered_carrier_date_present": 0,
+      "order_delivered_customer_date_present": 0,
+      "order_estimated_delivery_date_present": 314,
+      "both_actual_delivery_dates": 0,
+      "actual_customer_delivery_without_items": 0,
+      "actual_customer_delivery_without_payments": 0
+    },
+    "processing": {
+      "orders": 301,
+      "with_items": 301,
+      "without_items": 0,
+      "with_payments": 301,
+      "without_payments": 0,
+      "with_both": 301,
+      "without_both": 0,
+      "order_purchase_timestamp_present": 301,
+      "order_approved_at_present": 301,
+      "order_delivered_carrier_date_present": 0,
+      "order_delivered_customer_date_present": 0,
+      "order_estimated_delivery_date_present": 301,
+      "both_actual_delivery_dates": 0,
+      "actual_customer_delivery_without_items": 0,
+      "actual_customer_delivery_without_payments": 0
+    },
+    "shipped": {
+      "orders": 1107,
+      "with_items": 1106,
+      "without_items": 1,
+      "with_payments": 1107,
+      "without_payments": 0,
+      "with_both": 1106,
+      "without_both": 0,
+      "order_purchase_timestamp_present": 1107,
+      "order_approved_at_present": 1107,
+      "order_delivered_carrier_date_present": 1107,
+      "order_delivered_customer_date_present": 0,
+      "order_estimated_delivery_date_present": 1107,
+      "both_actual_delivery_dates": 0,
+      "actual_customer_delivery_without_items": 0,
+      "actual_customer_delivery_without_payments": 0
+    },
+    "unavailable": {
+      "orders": 609,
+      "with_items": 6,
+      "without_items": 603,
+      "with_payments": 609,
+      "without_payments": 0,
+      "with_both": 6,
+      "without_both": 0,
+      "order_purchase_timestamp_present": 609,
+      "order_approved_at_present": 609,
+      "order_delivered_carrier_date_present": 0,
+      "order_delivered_customer_date_present": 0,
+      "order_estimated_delivery_date_present": 609,
+      "both_actual_delivery_dates": 0,
+      "actual_customer_delivery_without_items": 0,
+      "actual_customer_delivery_without_payments": 0
+    }
+  },
+  "missing": {
+    "without_items": 775,
+    "without_payments": 1,
+    "without_either": 776
+  },
+  "reconciliation": {
+    "compared": 98665,
+    "exact_zero": 98089,
+    "nonzero_at_most_one_cent": 273,
+    "divergent": 303,
+    "positive": 264,
+    "negative": 39,
+    "min_delta": "-51.62",
+    "max_delta": "182.81",
+    "diagnostic_delta_sum": "2871.06",
+    "cross": [
+      {
+        "status": "canceled",
+        "magnitude": "(1,10]",
+        "sign": "positive",
+        "orders": 1
+      },
+      {
+        "status": "canceled",
+        "magnitude": "(10,50]",
+        "sign": "positive",
+        "orders": 1
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(0.01,0.10]",
+        "sign": "negative",
+        "orders": 21
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(0.01,0.10]",
+        "sign": "positive",
+        "orders": 23
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(0.10,1]",
+        "sign": "negative",
+        "orders": 1
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(0.10,1]",
+        "sign": "positive",
+        "orders": 8
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(1,10]",
+        "sign": "negative",
+        "orders": 10
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(1,10]",
+        "sign": "positive",
+        "orders": 139
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(10,50]",
+        "sign": "negative",
+        "orders": 6
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(10,50]",
+        "sign": "positive",
+        "orders": 83
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(50,100]",
+        "sign": "negative",
+        "orders": 1
+      },
+      {
+        "status": "delivered",
+        "magnitude": "(50,100]",
+        "sign": "positive",
+        "orders": 4
+      },
+      {
+        "status": "delivered",
+        "magnitude": ">100",
+        "sign": "positive",
+        "orders": 3
+      },
+      {
+        "status": "shipped",
+        "magnitude": "(0.10,1]",
+        "sign": "positive",
+        "orders": 1
+      },
+      {
+        "status": "shipped",
+        "magnitude": "(1,10]",
+        "sign": "positive",
+        "orders": 1
+      }
+    ]
+  },
+  "customers": {
+    "mapped_unique_ids": 96096,
+    "unmapped_orders": [],
+    "multiple_order_customers": 2997,
+    "orders_in_multiple_groups": 6342,
+    "status": {
+      "canceled": {
+        "customers_with_status": 83,
+        "orders": 92,
+        "customers_with_at_least_two_of_status": 8
+      },
+      "created": {
+        "customers_with_status": 1,
+        "orders": 1,
+        "customers_with_at_least_two_of_status": 0
+      },
+      "delivered": {
+        "customers_with_status": 2979,
+        "orders": 6099,
+        "customers_with_at_least_two_of_status": 2801
+      },
+      "invoiced": {
+        "customers_with_status": 16,
+        "orders": 16,
+        "customers_with_at_least_two_of_status": 0
+      },
+      "processing": {
+        "customers_with_status": 15,
+        "orders": 15,
+        "customers_with_at_least_two_of_status": 0
+      },
+      "shipped": {
+        "customers_with_status": 68,
+        "orders": 75,
+        "customers_with_at_least_two_of_status": 7
+      },
+      "unavailable": {
+        "customers_with_status": 39,
+        "orders": 44,
+        "customers_with_at_least_two_of_status": 5
+      }
+    },
+    "status_combinations": [
+      {
+        "statuses": [
+          "canceled"
+        ],
+        "customers": 3
+      },
+      {
+        "statuses": [
+          "canceled",
+          "delivered"
+        ],
+        "customers": 77
+      },
+      {
+        "statuses": [
+          "canceled",
+          "shipped"
+        ],
+        "customers": 3
+      },
+      {
+        "statuses": [
+          "created",
+          "delivered"
+        ],
+        "customers": 1
+      },
+      {
+        "statuses": [
+          "delivered"
+        ],
+        "customers": 2780
+      },
+      {
+        "statuses": [
+          "delivered",
+          "invoiced"
+        ],
+        "customers": 16
+      },
+      {
+        "statuses": [
+          "delivered",
+          "processing"
+        ],
+        "customers": 14
+      },
+      {
+        "statuses": [
+          "delivered",
+          "shipped"
+        ],
+        "customers": 58
+      },
+      {
+        "statuses": [
+          "delivered",
+          "shipped",
+          "unavailable"
+        ],
+        "customers": 1
+      },
+      {
+        "statuses": [
+          "delivered",
+          "unavailable"
+        ],
+        "customers": 32
+      },
+      {
+        "statuses": [
+          "processing",
+          "unavailable"
+        ],
+        "customers": 1
+      },
+      {
+        "statuses": [
+          "shipped"
+        ],
+        "customers": 6
+      },
+      {
+        "statuses": [
+          "unavailable"
+        ],
+        "customers": 5
+      }
+    ],
+    "all_delivered": 2780,
+    "at_least_two_delivered": 2801,
+    "with_any_nondelivered": 217,
+    "same_timestamp_customers": 290,
+    "equal_timestamp_unordered_pairs": 294,
+    "same_calendar_day_customers": 923,
+    "multiple_calendar_days_customers": 2149,
+    "customers_with_missing_purchase_dates": 0,
+    "positive_gap_at_most_60s_customers": 485,
+    "positive_gap_at_most_1h_customers": 610,
+    "positive_gap_at_most_24h_customers": 678,
+    "adjacent_timing": {
+      "adjacent_pairs": 3345,
+      "equal_timestamp": 292,
+      "positive_at_most_60s": 492,
+      "positive_at_most_1h": 628,
+      "positive_at_most_24h": 707
+    },
+    "transitions": [
+      {
+        "earlier_status": "canceled",
+        "later_status": "canceled",
+        "chronology": "later_timestamp",
+        "pairs": 9
+      },
+      {
+        "earlier_status": "canceled",
+        "later_status": "delivered",
+        "chronology": "equal_timestamp",
+        "pairs": 3
+      },
+      {
+        "earlier_status": "canceled",
+        "later_status": "delivered",
+        "chronology": "later_timestamp",
+        "pairs": 30
+      },
+      {
+        "earlier_status": "canceled",
+        "later_status": "shipped",
+        "chronology": "later_timestamp",
+        "pairs": 1
+      },
+      {
+        "earlier_status": "created",
+        "later_status": "delivered",
+        "chronology": "later_timestamp",
+        "pairs": 1
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "canceled",
+        "chronology": "equal_timestamp",
+        "pairs": 2
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "canceled",
+        "chronology": "later_timestamp",
+        "pairs": 48
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "delivered",
+        "chronology": "equal_timestamp",
+        "pairs": 267
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "delivered",
+        "chronology": "later_timestamp",
+        "pairs": 2841
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "invoiced",
+        "chronology": "later_timestamp",
+        "pairs": 6
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "processing",
+        "chronology": "equal_timestamp",
+        "pairs": 2
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "processing",
+        "chronology": "later_timestamp",
+        "pairs": 4
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "shipped",
+        "chronology": "equal_timestamp",
+        "pairs": 6
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "shipped",
+        "chronology": "later_timestamp",
+        "pairs": 15
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "unavailable",
+        "chronology": "equal_timestamp",
+        "pairs": 1
+      },
+      {
+        "earlier_status": "delivered",
+        "later_status": "unavailable",
+        "chronology": "later_timestamp",
+        "pairs": 14
+      },
+      {
+        "earlier_status": "invoiced",
+        "later_status": "delivered",
+        "chronology": "equal_timestamp",
+        "pairs": 1
+      },
+      {
+        "earlier_status": "invoiced",
+        "later_status": "delivered",
+        "chronology": "later_timestamp",
+        "pairs": 9
+      },
+      {
+        "earlier_status": "processing",
+        "later_status": "delivered",
+        "chronology": "later_timestamp",
+        "pairs": 10
+      },
+      {
+        "earlier_status": "shipped",
+        "later_status": "canceled",
+        "chronology": "later_timestamp",
+        "pairs": 2
+      },
+      {
+        "earlier_status": "shipped",
+        "later_status": "delivered",
+        "chronology": "equal_timestamp",
+        "pairs": 6
+      },
+      {
+        "earlier_status": "shipped",
+        "later_status": "delivered",
+        "chronology": "later_timestamp",
+        "pairs": 33
+      },
+      {
+        "earlier_status": "shipped",
+        "later_status": "shipped",
+        "chronology": "equal_timestamp",
+        "pairs": 1
+      },
+      {
+        "earlier_status": "shipped",
+        "later_status": "shipped",
+        "chronology": "later_timestamp",
+        "pairs": 6
+      },
+      {
+        "earlier_status": "unavailable",
+        "later_status": "delivered",
+        "chronology": "equal_timestamp",
+        "pairs": 1
+      },
+      {
+        "earlier_status": "unavailable",
+        "later_status": "delivered",
+        "chronology": "later_timestamp",
+        "pairs": 20
+      },
+      {
+        "earlier_status": "unavailable",
+        "later_status": "processing",
+        "chronology": "later_timestamp",
+        "pairs": 1
+      },
+      {
+        "earlier_status": "unavailable",
+        "later_status": "unavailable",
+        "chronology": "equal_timestamp",
+        "pairs": 2
+      },
+      {
+        "earlier_status": "unavailable",
+        "later_status": "unavailable",
+        "chronology": "later_timestamp",
+        "pairs": 3
+      }
+    ]
+  },
+  "execution": {
+    "started_utc": "2026-11-08T01:53:33.274676+00:00",
+    "finished_utc": "2026-11-08T01:53:36.516323+00:00",
+    "python": "3.14.7",
+    "source_sha256_before": {
+      "customers": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
+      "geolocation": "b514f6fc991b9566aeba02aa5d67e2c3630f034b60a0e05aa0d082a3b66d88d6",
+      "orders": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+      "items": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+      "payments": "4f713964f2815dbbaa40b9488268c55aac3627bfce5aa96cf58d1f3616de3cc0",
+      "reviews": "012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7",
+      "products": "3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc",
+      "sellers": "1f643d2b950373b85735e7794b20986f528d7a000432e7c6f9bcbb44d0846a0e",
+      "translation": "a81f0d1f27b27e7293f761bc79e3ce8f348ee39c4b3ed3e49bde38f478586278"
+    },
+    "source_sha256_after": {
+      "customers": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
+      "geolocation": "b514f6fc991b9566aeba02aa5d67e2c3630f034b60a0e05aa0d082a3b66d88d6",
+      "orders": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+      "items": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+      "payments": "4f713964f2815dbbaa40b9488268c55aac3627bfce5aa96cf58d1f3616de3cc0",
+      "reviews": "012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7",
+      "products": "3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc",
+      "sellers": "1f643d2b950373b85735e7794b20986f528d7a000432e7c6f9bcbb44d0846a0e",
+      "translation": "a81f0d1f27b27e7293f761bc79e3ce8f348ee39c4b3ed3e49bde38f478586278"
+    },
+    "profiling_sha256": "0b79219e3c9dee6fd039d0b31ddeadb4a8fbb6c8bc9ab268ecf1642cb29f9f4a",
+    "script_sha256": "ed950c9a77934fac68ff979a30d86dcc911f9ac13781f5bc789caa4941d1acfd",
+    "errors": []
+  }
+}

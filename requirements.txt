@@ -1,0 +1,1 @@
+# Dependências Python serão definidas após o planejamento técnico.

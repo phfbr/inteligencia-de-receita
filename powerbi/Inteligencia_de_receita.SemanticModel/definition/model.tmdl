@@ -1,0 +1,41 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	valueFilterBehavior: independent
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["dim_calendario","dim_clientes","dim_forma_pagamento","dim_localizacao","dim_produtos","dim_vendedores","fato_itens_pedido","fato_pagamentos","fato_pedidos","Medidas"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table dim_calendario
+ref table DateTableTemplate_f37a6467-f7d3-4b84-aedc-81dea0707175
+ref table LocalDateTable_53e0b85b-2daa-4696-ba3a-45e2d440419e
+ref table dim_clientes
+ref table dim_forma_pagamento
+ref table dim_localizacao
+ref table dim_produtos
+ref table dim_vendedores
+ref table fato_itens_pedido
+ref table LocalDateTable_f764dfe3-a7cb-496f-8f47-8ccb5d465384
+ref table LocalDateTable_06ab91fb-58dc-49f6-90b9-1705d825fcfb
+ref table fato_pagamentos
+ref table LocalDateTable_8ed249dd-a3c5-4a6e-92d1-d34a8a8a3a9d
+ref table fato_pedidos
+ref table LocalDateTable_fd6d5fea-1869-498a-b559-031605b29ccc
+ref table LocalDateTable_cb60c6d3-23d5-4fd7-a5bd-06741ab19fbb
+ref table LocalDateTable_89683071-c5cb-40ec-8371-b8cb8de688a2
+ref table LocalDateTable_d7a772b9-c27c-400c-ae4f-bd1a6b45ec3a
+ref table LocalDateTable_5a970585-067e-4dad-8eed-69f512a8a6d4
+ref table Medidas
+ref table 'Faixas Concentração'
+ref table 'Faixas Frequencia'
+ref table 'Faixas Perfil Recompra'
+
+ref cultureInfo pt-BR
+

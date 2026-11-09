@@ -1,0 +1,26 @@
+[
+  {
+    "fato": "fato_pagamentos",
+    "linhas": 18835,
+    "pedidos": 17760,
+    "price": null,
+    "freight_value": null,
+    "payment_value": "2561862.91"
+  },
+  {
+    "fato": "fato_pedidos",
+    "linhas": 17760,
+    "pedidos": 17760,
+    "price": null,
+    "freight_value": null,
+    "payment_value": null
+  },
+  {
+    "fato": "fato_itens_pedido",
+    "linhas": 20044,
+    "pedidos": 17524,
+    "price": "2212487.00",
+    "freight_value": "300998.93",
+    "payment_value": null
+  }
+]

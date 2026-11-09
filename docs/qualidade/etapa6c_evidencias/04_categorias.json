@@ -1,0 +1,570 @@
+[
+  {
+    "posicao": 1,
+    "membro_tipo": "regular",
+    "product_category_name": "cama_mesa_banho",
+    "itens": 2230,
+    "price": "207464.77",
+    "freight_value": "32000.56"
+  },
+  {
+    "posicao": 2,
+    "membro_tipo": "regular",
+    "product_category_name": "relogios_presentes",
+    "itens": 896,
+    "price": "180111.08",
+    "freight_value": "11054.18"
+  },
+  {
+    "posicao": 3,
+    "membro_tipo": "regular",
+    "product_category_name": "esporte_lazer",
+    "itens": 1639,
+    "price": "170477.61",
+    "freight_value": "25241.30"
+  },
+  {
+    "posicao": 4,
+    "membro_tipo": "regular",
+    "product_category_name": "beleza_saude",
+    "itens": 1399,
+    "price": "157210.18",
+    "freight_value": "18778.07"
+  },
+  {
+    "posicao": 5,
+    "membro_tipo": "regular",
+    "product_category_name": "informatica_acessorios",
+    "itens": 1164,
+    "price": "138375.16",
+    "freight_value": "16992.52"
+  },
+  {
+    "posicao": 6,
+    "membro_tipo": "regular",
+    "product_category_name": "moveis_decoracao",
+    "itens": 1777,
+    "price": "135928.99",
+    "freight_value": "27651.32"
+  },
+  {
+    "posicao": 7,
+    "membro_tipo": "regular",
+    "product_category_name": "cool_stuff",
+    "itens": 792,
+    "price": "129062.19",
+    "freight_value": "13138.80"
+  },
+  {
+    "posicao": 8,
+    "membro_tipo": "regular",
+    "product_category_name": "brinquedos",
+    "itens": 1004,
+    "price": "107636.68",
+    "freight_value": "14754.14"
+  },
+  {
+    "posicao": 9,
+    "membro_tipo": "regular",
+    "product_category_name": "utilidades_domesticas",
+    "itens": 1337,
+    "price": "97221.41",
+    "freight_value": "20743.53"
+  },
+  {
+    "posicao": 10,
+    "membro_tipo": "regular",
+    "product_category_name": "automotivo",
+    "itens": 633,
+    "price": "87592.37",
+    "freight_value": "9976.85"
+  },
+  {
+    "posicao": 11,
+    "membro_tipo": "regular",
+    "product_category_name": "perfumaria",
+    "itens": 681,
+    "price": "85157.59",
+    "freight_value": "8406.19"
+  },
+  {
+    "posicao": 12,
+    "membro_tipo": "regular",
+    "product_category_name": "ferramentas_jardim",
+    "itens": 821,
+    "price": "82144.61",
+    "freight_value": "14639.39"
+  },
+  {
+    "posicao": 13,
+    "membro_tipo": "regular",
+    "product_category_name": "bebes",
+    "itens": 506,
+    "price": "53518.47",
+    "freight_value": "8081.83"
+  },
+  {
+    "posicao": 14,
+    "membro_tipo": "regular",
+    "product_category_name": "moveis_escritorio",
+    "itens": 293,
+    "price": "45979.09",
+    "freight_value": "7700.71"
+  },
+  {
+    "posicao": 15,
+    "membro_tipo": "regular",
+    "product_category_name": "telefonia",
+    "itens": 738,
+    "price": "44437.14",
+    "freight_value": "8233.80"
+  },
+  {
+    "posicao": 16,
+    "membro_tipo": "regular",
+    "product_category_name": null,
+    "itens": 389,
+    "price": "39772.13",
+    "freight_value": "5142.13"
+  },
+  {
+    "posicao": 17,
+    "membro_tipo": "regular",
+    "product_category_name": "pcs",
+    "itens": 31,
+    "price": "39762.35",
+    "freight_value": "1327.67"
+  },
+  {
+    "posicao": 18,
+    "membro_tipo": "regular",
+    "product_category_name": "eletroportateis",
+    "itens": 137,
+    "price": "38388.11",
+    "freight_value": "2657.57"
+  },
+  {
+    "posicao": 19,
+    "membro_tipo": "regular",
+    "product_category_name": "consoles_games",
+    "itens": 309,
+    "price": "36997.32",
+    "freight_value": "3996.02"
+  },
+  {
+    "posicao": 20,
+    "membro_tipo": "regular",
+    "product_category_name": "papelaria",
+    "itens": 369,
+    "price": "33088.89",
+    "freight_value": "5325.46"
+  },
+  {
+    "posicao": 21,
+    "membro_tipo": "regular",
+    "product_category_name": "malas_acessorios",
+    "itens": 239,
+    "price": "31128.68",
+    "freight_value": "5510.48"
+  },
+  {
+    "posicao": 22,
+    "membro_tipo": "regular",
+    "product_category_name": "fashion_bolsas_e_acessorios",
+    "itens": 468,
+    "price": "29310.69",
+    "freight_value": "5259.39"
+  },
+  {
+    "posicao": 23,
+    "membro_tipo": "regular",
+    "product_category_name": "pet_shop",
+    "itens": 321,
+    "price": "29297.22",
+    "freight_value": "4710.42"
+  },
+  {
+    "posicao": 24,
+    "membro_tipo": "regular",
+    "product_category_name": "instrumentos_musicais",
+    "itens": 95,
+    "price": "26746.90",
+    "freight_value": "1627.28"
+  },
+  {
+    "posicao": 25,
+    "membro_tipo": "regular",
+    "product_category_name": "eletronicos",
+    "itens": 320,
+    "price": "18970.63",
+    "freight_value": "3838.58"
+  },
+  {
+    "posicao": 26,
+    "membro_tipo": "regular",
+    "product_category_name": "casa_conforto",
+    "itens": 123,
+    "price": "16250.22",
+    "freight_value": "1984.16"
+  },
+  {
+    "posicao": 27,
+    "membro_tipo": "regular",
+    "product_category_name": "moveis_sala",
+    "itens": 107,
+    "price": "11929.17",
+    "freight_value": "2817.02"
+  },
+  {
+    "posicao": 28,
+    "membro_tipo": "regular",
+    "product_category_name": "climatizacao",
+    "itens": 61,
+    "price": "11123.72",
+    "freight_value": "1107.11"
+  },
+  {
+    "posicao": 29,
+    "membro_tipo": "regular",
+    "product_category_name": "eletrodomesticos_2",
+    "itens": 36,
+    "price": "8470.97",
+    "freight_value": "1173.44"
+  },
+  {
+    "posicao": 30,
+    "membro_tipo": "regular",
+    "product_category_name": "moveis_cozinha_area_de_servico_jantar_e_jardim",
+    "itens": 54,
+    "price": "8004.42",
+    "freight_value": "1820.01"
+  },
+  {
+    "posicao": 31,
+    "membro_tipo": "regular",
+    "product_category_name": "agro_industria_e_comercio",
+    "itens": 20,
+    "price": "7793.56",
+    "freight_value": "380.41"
+  },
+  {
+    "posicao": 32,
+    "membro_tipo": "regular",
+    "product_category_name": "eletrodomesticos",
+    "itens": 98,
+    "price": "7762.03",
+    "freight_value": "1255.21"
+  },
+  {
+    "posicao": 33,
+    "membro_tipo": "regular",
+    "product_category_name": "artes",
+    "itens": 18,
+    "price": "7390.54",
+    "freight_value": "496.31"
+  },
+  {
+    "posicao": 34,
+    "membro_tipo": "regular",
+    "product_category_name": "casa_construcao",
+    "itens": 52,
+    "price": "7155.75",
+    "freight_value": "911.21"
+  },
+  {
+    "posicao": 35,
+    "membro_tipo": "regular",
+    "product_category_name": "telefonia_fixa",
+    "itens": 59,
+    "price": "6529.23",
+    "freight_value": "667.17"
+  },
+  {
+    "posicao": 36,
+    "membro_tipo": "regular",
+    "product_category_name": "market_place",
+    "itens": 70,
+    "price": "6429.52",
+    "freight_value": "889.26"
+  },
+  {
+    "posicao": 37,
+    "membro_tipo": "regular",
+    "product_category_name": "audio",
+    "itens": 69,
+    "price": "6425.48",
+    "freight_value": "708.04"
+  },
+  {
+    "posicao": 38,
+    "membro_tipo": "regular",
+    "product_category_name": "livros_interesse_geral",
+    "itens": 83,
+    "price": "6044.20",
+    "freight_value": "1169.11"
+  },
+  {
+    "posicao": 39,
+    "membro_tipo": "regular",
+    "product_category_name": "fashion_calcados",
+    "itens": 70,
+    "price": "4805.52",
+    "freight_value": "986.29"
+  },
+  {
+    "posicao": 40,
+    "membro_tipo": "regular",
+    "product_category_name": "industria_comercio_e_negocios",
+    "itens": 14,
+    "price": "4046.35",
+    "freight_value": "313.59"
+  },
+  {
+    "posicao": 41,
+    "membro_tipo": "regular",
+    "product_category_name": "construcao_ferramentas_seguranca",
+    "itens": 14,
+    "price": "3836.93",
+    "freight_value": "212.54"
+  },
+  {
+    "posicao": 42,
+    "membro_tipo": "regular",
+    "product_category_name": "dvds_blu_ray",
+    "itens": 12,
+    "price": "3700.10",
+    "freight_value": "245.58"
+  },
+  {
+    "posicao": 43,
+    "membro_tipo": "regular",
+    "product_category_name": "moveis_quarto",
+    "itens": 15,
+    "price": "3698.77",
+    "freight_value": "484.96"
+  },
+  {
+    "posicao": 44,
+    "membro_tipo": "regular",
+    "product_category_name": "alimentos",
+    "itens": 57,
+    "price": "3622.55",
+    "freight_value": "707.92"
+  },
+  {
+    "posicao": 45,
+    "membro_tipo": "regular",
+    "product_category_name": "construcao_ferramentas_construcao",
+    "itens": 43,
+    "price": "3528.52",
+    "freight_value": "660.78"
+  },
+  {
+    "posicao": 46,
+    "membro_tipo": "regular",
+    "product_category_name": "fashion_roupa_masculina",
+    "itens": 45,
+    "price": "3511.68",
+    "freight_value": "545.02"
+  },
+  {
+    "posicao": 47,
+    "membro_tipo": "regular",
+    "product_category_name": "construcao_ferramentas_ferramentas",
+    "itens": 10,
+    "price": "3278.40",
+    "freight_value": "173.98"
+  },
+  {
+    "posicao": 48,
+    "membro_tipo": "regular",
+    "product_category_name": "alimentos_bebidas",
+    "itens": 60,
+    "price": "2765.79",
+    "freight_value": "857.47"
+  },
+  {
+    "posicao": 49,
+    "membro_tipo": "regular",
+    "product_category_name": "fashion_underwear_e_moda_praia",
+    "itens": 36,
+    "price": "2387.45",
+    "freight_value": "403.67"
+  },
+  {
+    "posicao": 50,
+    "membro_tipo": "regular",
+    "product_category_name": "bebidas",
+    "itens": 50,
+    "price": "2237.42",
+    "freight_value": "567.07"
+  },
+  {
+    "posicao": 51,
+    "membro_tipo": "regular",
+    "product_category_name": "livros_tecnicos",
+    "itens": 16,
+    "price": "2103.60",
+    "freight_value": "221.27"
+  },
+  {
+    "posicao": 52,
+    "membro_tipo": "regular",
+    "product_category_name": "construcao_ferramentas_jardim",
+    "itens": 26,
+    "price": "1708.88",
+    "freight_value": "445.74"
+  },
+  {
+    "posicao": 53,
+    "membro_tipo": "regular",
+    "product_category_name": "tablets_impressao_imagem",
+    "itens": 18,
+    "price": "1607.40",
+    "freight_value": "174.11"
+  },
+  {
+    "posicao": 54,
+    "membro_tipo": "regular",
+    "product_category_name": "sinalizacao_e_seguranca",
+    "itens": 21,
+    "price": "1272.49",
+    "freight_value": "337.94"
+  },
+  {
+    "posicao": 55,
+    "membro_tipo": "regular",
+    "product_category_name": "fashion_roupa_feminina",
+    "itens": 14,
+    "price": "897.29",
+    "freight_value": "155.83"
+  },
+  {
+    "posicao": 56,
+    "membro_tipo": "regular",
+    "product_category_name": "construcao_ferramentas_iluminacao",
+    "itens": 4,
+    "price": "817.00",
+    "freight_value": "105.67"
+  },
+  {
+    "posicao": 57,
+    "membro_tipo": "regular",
+    "product_category_name": "fashion_esporte",
+    "itens": 9,
+    "price": "720.10",
+    "freight_value": "125.76"
+  },
+  {
+    "posicao": 58,
+    "membro_tipo": "regular",
+    "product_category_name": "artigos_de_festas",
+    "itens": 5,
+    "price": "674.99",
+    "freight_value": "66.23"
+  },
+  {
+    "posicao": 59,
+    "membro_tipo": "regular",
+    "product_category_name": "moveis_colchao_e_estofado",
+    "itens": 7,
+    "price": "643.80",
+    "freight_value": "289.01"
+  },
+  {
+    "posicao": 60,
+    "membro_tipo": "regular",
+    "product_category_name": "artigos_de_natal",
+    "itens": 19,
+    "price": "632.07",
+    "freight_value": "195.21"
+  },
+  {
+    "posicao": 61,
+    "membro_tipo": "regular",
+    "product_category_name": "livros_importados",
+    "itens": 8,
+    "price": "598.00",
+    "freight_value": "73.61"
+  },
+  {
+    "posicao": 62,
+    "membro_tipo": "regular",
+    "product_category_name": "musica",
+    "itens": 3,
+    "price": "463.80",
+    "freight_value": "52.49"
+  },
+  {
+    "posicao": 63,
+    "membro_tipo": "regular",
+    "product_category_name": "casa_conforto_2",
+    "itens": 9,
+    "price": "370.19",
+    "freight_value": "105.44"
+  },
+  {
+    "posicao": 64,
+    "membro_tipo": "regular",
+    "product_category_name": "cds_dvds_musicais",
+    "itens": 6,
+    "price": "350.00",
+    "freight_value": "59.64"
+  },
+  {
+    "posicao": 65,
+    "membro_tipo": "regular",
+    "product_category_name": "la_cuisine",
+    "itens": 3,
+    "price": "337.00",
+    "freight_value": "71.33"
+  },
+  {
+    "posicao": 66,
+    "membro_tipo": "regular",
+    "product_category_name": "cine_foto",
+    "itens": 3,
+    "price": "207.00",
+    "freight_value": "96.35"
+  },
+  {
+    "posicao": 67,
+    "membro_tipo": "regular",
+    "product_category_name": "fashion_roupa_infanto_juvenil",
+    "itens": 2,
+    "price": "149.99",
+    "freight_value": "23.06"
+  },
+  {
+    "posicao": 68,
+    "membro_tipo": "regular",
+    "product_category_name": "pc_gamer",
+    "itens": 1,
+    "price": "129.99",
+    "freight_value": "8.16"
+  },
+  {
+    "posicao": 69,
+    "membro_tipo": "regular",
+    "product_category_name": "flores",
+    "itens": 2,
+    "price": "109.80",
+    "freight_value": "18.06"
+  },
+  {
+    "posicao": 70,
+    "membro_tipo": "regular",
+    "product_category_name": "portateis_casa_forno_e_cafe",
+    "itens": 2,
+    "price": "109.06",
+    "freight_value": "24.80"
+  },
+  {
+    "posicao": 71,
+    "membro_tipo": "regular",
+    "product_category_name": "fraldas_higiene",
+    "itens": 2,
+    "price": "76.00",
+    "freight_value": "23.70"
+  }
+]

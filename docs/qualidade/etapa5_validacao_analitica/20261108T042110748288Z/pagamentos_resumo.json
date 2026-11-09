@@ -1,0 +1,14 @@
+[
+  {
+    "escopo": "delivered",
+    "linhas": 100756,
+    "pedidos": 96477,
+    "payment_value": "15422461.77"
+  },
+  {
+    "escopo": "geral",
+    "linhas": 103886,
+    "pedidos": 99440,
+    "payment_value": "16008872.12"
+  }
+]

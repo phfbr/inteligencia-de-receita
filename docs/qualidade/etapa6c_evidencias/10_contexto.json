@@ -1,0 +1,14 @@
+[
+  {
+    "fato": "fato_itens_pedido",
+    "contexto_divergente": 0,
+    "fora_escopo": 0,
+    "faltando_escopo": 0
+  },
+  {
+    "fato": "fato_pagamentos",
+    "contexto_divergente": 0,
+    "fora_escopo": 0,
+    "faltando_escopo": 0
+  }
+]

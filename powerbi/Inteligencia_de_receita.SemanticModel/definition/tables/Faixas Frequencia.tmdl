@@ -1,0 +1,60 @@
+table 'Faixas Frequencia'
+	lineageTag: 37824d83-aefc-4834-ab2e-a8eec8aff8d3
+
+	column Faixa
+		lineageTag: 6524b781-f7f4-498a-8a6a-e56591fab85d
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Faixa]
+		sortByColumn: Ordem
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordem
+		formatString: 0
+		lineageTag: 4c1b73c9-570e-4145-b4ce-32e24a10b250
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Ordem]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Minimo
+		formatString: 0
+		lineageTag: f3e712f1-4ac4-4e4d-9aba-d1b42dd58144
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Minimo]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Maximo
+		formatString: 0
+		lineageTag: 41abf57a-e10a-42cd-b0b6-bdbeb9e04146
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Maximo]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Faixas Frequencia' = calculated
+		mode: import
+		source = ```
+				
+				DATATABLE (
+				    "Faixa", STRING,
+				    "Ordem", INTEGER,
+				    "Minimo", INTEGER,
+				    "Maximo", INTEGER,
+				    {
+				        { "1 pedido", 1, 1, 1 },
+				        { "2 pedidos", 2, 2, 2 },
+				        { "3 pedidos", 3, 3, 3 },
+				        { "4+ pedidos", 4, 4, 999999 }
+				    }
+				)
+				
+				```
+
+	annotation PBI_Id = 80588dd80c2645cabd037c1d0c5894a2
+

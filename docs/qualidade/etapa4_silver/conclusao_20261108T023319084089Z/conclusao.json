@@ -1,0 +1,47 @@
+{
+  "started_utc": "2026-11-08T02:33:19.084639+00:00",
+  "database": "inteligencia_receita_db",
+  "status": "failed",
+  "errors": [
+    "Testes não concluídos integralmente; consultar evidências, sem declarar carga validada."
+  ],
+  "environment": {
+    "configured": {
+      "PGHOST": true,
+      "PGPORT": true,
+      "PGDATABASE": true,
+      "PGUSER": true,
+      "OLIST_PROJECT_DATABASE": true
+    },
+    "explicit_credential_present": true,
+    "psql_available": true,
+    "blockers": []
+  },
+  "isolation": {
+    "before": {
+      "database": "inteligencia_receita_db",
+      "user": "postgres",
+      "owner": "postgres",
+      "server_version": "18.6",
+      "server_encoding": "UTF8",
+      "marker_missing": true,
+      "marker_matches": false,
+      "user_relations": []
+    },
+    "database_comment_initialized": true,
+    "confirmed": [
+      {
+        "connection": "verified",
+        "project_exclusive": true,
+        "server_version": "18.6"
+      }
+    ]
+  },
+  "tests": {
+    "total": 24,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "finished_utc": "2026-11-08T02:34:30.827596+00:00"
+}

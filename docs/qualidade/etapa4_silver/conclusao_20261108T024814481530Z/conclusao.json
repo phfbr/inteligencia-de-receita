@@ -1,0 +1,1036 @@
+{
+  "started_utc": "2026-11-08T02:48:14.482056+00:00",
+  "database": "inteligencia_receita_db",
+  "status": "completed_verified",
+  "errors": [],
+  "environment": {
+    "configured": {
+      "PGHOST": true,
+      "PGPORT": true,
+      "PGDATABASE": true,
+      "PGUSER": true,
+      "OLIST_PROJECT_DATABASE": true
+    },
+    "explicit_credential_present": true,
+    "psql_available": true,
+    "blockers": []
+  },
+  "isolation": {
+    "before": {
+      "database": "inteligencia_receita_db",
+      "user": "postgres",
+      "owner": "postgres",
+      "server_version": "18.6",
+      "server_encoding": "UTF8",
+      "marker_missing": false,
+      "marker_matches": true,
+      "user_relations": [
+        {
+          "schema": "silver",
+          "name": "olist_customers_dataset",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_customers_dataset_pkey",
+          "kind": "i"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_geolocation_dataset",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_geolocation_dataset_pkey",
+          "kind": "i"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_items_dataset",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_items_dataset_pkey",
+          "kind": "i"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_payments_dataset",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_payments_dataset_pkey",
+          "kind": "i"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_reviews_dataset",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_order_reviews_dataset_pkey",
+          "kind": "i"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_orders_dataset",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_orders_dataset_pkey",
+          "kind": "i"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_products_dataset",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_products_dataset_pkey",
+          "kind": "i"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_sellers_dataset",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "olist_sellers_dataset_pkey",
+          "kind": "i"
+        },
+        {
+          "schema": "silver",
+          "name": "product_category_name_translation",
+          "kind": "r"
+        },
+        {
+          "schema": "silver",
+          "name": "product_category_name_translation_pkey",
+          "kind": "i"
+        }
+      ]
+    },
+    "database_comment_initialized": false,
+    "confirmed": [
+      {
+        "connection": "verified",
+        "project_exclusive": true,
+        "server_version": "18.6"
+      }
+    ]
+  },
+  "tests": {
+    "total": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "runs": {
+    "first": "committed",
+    "second": "committed",
+    "rollback": "failed",
+    "verify": "verified_readonly"
+  },
+  "idempotence_confirmed": true,
+  "rollback_confirmed": true,
+  "database_results": [
+    {
+      "table": "olist_customers_dataset",
+      "rows": 99441,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_geolocation_dataset",
+      "rows": 1000163,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_orders_dataset",
+      "rows": 99441,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_order_items_dataset",
+      "rows": 112650,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_order_payments_dataset",
+      "rows": 103886,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_order_reviews_dataset",
+      "rows": 99224,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_products_dataset",
+      "rows": 32951,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "olist_sellers_dataset",
+      "rows": 3095,
+      "conversion_error_rows": 0
+    },
+    {
+      "table": "product_category_name_translation",
+      "rows": 71,
+      "conversion_error_rows": 0
+    },
+    {
+      "reference": "orders.customer_id->customers.customer_id",
+      "orphans": 0
+    },
+    {
+      "reference": "items.order_id->orders.order_id",
+      "orphans": 0
+    },
+    {
+      "reference": "payments.order_id->orders.order_id",
+      "orphans": 0
+    },
+    {
+      "reference": "reviews.order_id->orders.order_id",
+      "orphans": 0
+    },
+    {
+      "reference": "items.product_id->products.product_id",
+      "orphans": 0
+    },
+    {
+      "reference": "items.seller_id->sellers.seller_id",
+      "orphans": 0
+    },
+    {
+      "reference": "products.product_category_name->translation.product_category_name",
+      "orphans": 13
+    },
+    {
+      "reconciliation_compared": 98665,
+      "over_one_cent": 303,
+      "positive": 264,
+      "negative": 39
+    }
+  ],
+  "source_hashes": {
+    "customers": "983a422239e1712ded753b3bf9ecf47dc73f144d306029dcfa99e70a226883d2",
+    "geolocation": "b514f6fc991b9566aeba02aa5d67e2c3630f034b60a0e05aa0d082a3b66d88d6",
+    "orders": "8df58ef3d2d7e9944010f7beecd9b75367f5588ec6e3c91cec19ae3345ef9ecf",
+    "items": "0bc4d068c4fe38cbb01bd90e8746e3c613fe7b4baef75fab7b0e329701c3e279",
+    "payments": "4f713964f2815dbbaa40b9488268c55aac3627bfce5aa96cf58d1f3616de3cc0",
+    "reviews": "012b61c7593e34f51fa614efdf802b9c7056ce6aae5307ddb93236e7cfc797d7",
+    "products": "3e6569628a17fbc75fd206ee357b59e20364b9afa90f5b6cd5b4d624c58aa9cc",
+    "sellers": "1f643d2b950373b85735e7794b20986f528d7a000432e7c6f9bcbb44d0846a0e",
+    "translation": "a81f0d1f27b27e7293f761bc79e3ce8f348ee39c4b3ed3e49bde38f478586278"
+  },
+  "detailed_database_results": [
+    {
+      "entity": "customers",
+      "rows": 99441,
+      "nulls": {
+        "customer_id": 0,
+        "customer_unique_id": 0,
+        "customer_zip_code_prefix": 0,
+        "customer_city": 0,
+        "customer_state": 0
+      },
+      "numeric_sums": {}
+    },
+    {
+      "entity": "customers",
+      "key": "customer_id",
+      "distinct": 99441,
+      "duplicate_excess": 0
+    },
+    {
+      "entity": "customers",
+      "key": "customer_unique_id",
+      "distinct": 96096,
+      "duplicate_excess": 3345
+    },
+    {
+      "entity": "geolocation",
+      "rows": 1000163,
+      "nulls": {
+        "geolocation_zip_code_prefix": 0,
+        "geolocation_lat": 0,
+        "geolocation_lng": 0,
+        "geolocation_city": 0,
+        "geolocation_state": 0
+      },
+      "numeric_sums": {
+        "geolocation_lat": "-21179604.62330835284495411131",
+        "geolocation_lng": "-46398102.9791710881177625"
+      }
+    },
+    {
+      "entity": "geolocation",
+      "key": "geolocation_zip_code_prefix",
+      "distinct": 19015,
+      "duplicate_excess": 981148
+    },
+    {
+      "entity": "orders",
+      "rows": 99441,
+      "nulls": {
+        "order_id": 0,
+        "customer_id": 0,
+        "order_status": 0,
+        "order_purchase_timestamp": 0,
+        "order_approved_at": 160,
+        "order_delivered_carrier_date": 1783,
+        "order_delivered_customer_date": 2965,
+        "order_estimated_delivery_date": 0
+      },
+      "numeric_sums": {}
+    },
+    {
+      "entity": "orders",
+      "key": "order_id",
+      "distinct": 99441,
+      "duplicate_excess": 0
+    },
+    {
+      "entity": "orders",
+      "key": "customer_id",
+      "distinct": 99441,
+      "duplicate_excess": 0
+    },
+    {
+      "entity": "items",
+      "rows": 112650,
+      "nulls": {
+        "order_id": 0,
+        "order_item_id": 0,
+        "product_id": 0,
+        "seller_id": 0,
+        "shipping_limit_date": 0,
+        "price": 0,
+        "freight_value": 0
+      },
+      "numeric_sums": {
+        "price": "13591643.70",
+        "freight_value": "2251909.54"
+      }
+    },
+    {
+      "entity": "items",
+      "key": "order_id + order_item_id",
+      "distinct": 112650,
+      "duplicate_excess": 0
+    },
+    {
+      "entity": "payments",
+      "rows": 103886,
+      "nulls": {
+        "order_id": 0,
+        "payment_sequential": 0,
+        "payment_type": 0,
+        "payment_installments": 0,
+        "payment_value": 0
+      },
+      "numeric_sums": {
+        "payment_installments": "296423",
+        "payment_value": "16008872.12"
+      }
+    },
+    {
+      "entity": "payments",
+      "key": "order_id + payment_sequential",
+      "distinct": 103886,
+      "duplicate_excess": 0
+    },
+    {
+      "entity": "reviews",
+      "rows": 99224,
+      "nulls": {
+        "review_id": 0,
+        "order_id": 0,
+        "review_score": 0,
+        "review_comment_title": 87656,
+        "review_comment_message": 58247,
+        "review_creation_date": 0,
+        "review_answer_timestamp": 0
+      },
+      "numeric_sums": {
+        "review_score": "405471"
+      }
+    },
+    {
+      "entity": "reviews",
+      "key": "review_id",
+      "distinct": 98410,
+      "duplicate_excess": 814
+    },
+    {
+      "entity": "reviews",
+      "key": "order_id",
+      "distinct": 98673,
+      "duplicate_excess": 551
+    },
+    {
+      "entity": "reviews",
+      "key": "review_id + order_id",
+      "distinct": 99224,
+      "duplicate_excess": 0
+    },
+    {
+      "entity": "products",
+      "rows": 32951,
+      "nulls": {
+        "product_id": 0,
+        "product_category_name": 610,
+        "product_name_lenght": 610,
+        "product_description_lenght": 610,
+        "product_photos_qty": 610,
+        "product_weight_g": 2,
+        "product_length_cm": 2,
+        "product_height_cm": 2,
+        "product_width_cm": 2
+      },
+      "numeric_sums": {
+        "product_name_lenght": "1567793",
+        "product_description_lenght": "24950929",
+        "product_photos_qty": "70794",
+        "product_weight_g": "75007492",
+        "product_length_cm": "1015326",
+        "product_height_cm": "558079",
+        "product_width_cm": "764309"
+      }
+    },
+    {
+      "entity": "products",
+      "key": "product_id",
+      "distinct": 32951,
+      "duplicate_excess": 0
+    },
+    {
+      "entity": "sellers",
+      "rows": 3095,
+      "nulls": {
+        "seller_id": 0,
+        "seller_zip_code_prefix": 0,
+        "seller_city": 0,
+        "seller_state": 0
+      },
+      "numeric_sums": {}
+    },
+    {
+      "entity": "sellers",
+      "key": "seller_id",
+      "distinct": 3095,
+      "duplicate_excess": 0
+    },
+    {
+      "entity": "translation",
+      "rows": 71,
+      "nulls": {
+        "product_category_name": 0,
+        "product_category_name_english": 0
+      },
+      "numeric_sums": {}
+    },
+    {
+      "entity": "translation",
+      "key": "product_category_name",
+      "distinct": 71,
+      "duplicate_excess": 0
+    },
+    {
+      "columns": [
+        {
+          "table": "olist_customers_dataset",
+          "column": "customer_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "customer_unique_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "customer_zip_code_prefix",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "customer_city",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "customer_state",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_customers_dataset",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "geolocation_zip_code_prefix",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "geolocation_lat",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "geolocation_lng",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "geolocation_city",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "geolocation_state",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_geolocation_dataset",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "order_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "order_item_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "product_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "seller_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "shipping_limit_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "price",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "freight_value",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_items_dataset",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "order_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "payment_sequential",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "payment_type",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "payment_installments",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "payment_value",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_payments_dataset",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "review_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "order_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "review_score",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "review_comment_title",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "review_comment_message",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "review_creation_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "review_answer_timestamp",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_order_reviews_dataset",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "order_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "customer_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "order_status",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "order_purchase_timestamp",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "order_approved_at",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "order_delivered_carrier_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "order_delivered_customer_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "order_estimated_delivery_date",
+          "type": "timestamp without time zone",
+          "not_null": false
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_orders_dataset",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_category_name",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_name_lenght",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_description_lenght",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_photos_qty",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_weight_g",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_length_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_height_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "product_width_cm",
+          "type": "numeric",
+          "not_null": false
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_products_dataset",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "seller_id",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "seller_zip_code_prefix",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "seller_city",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "seller_state",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "olist_sellers_dataset",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "product_category_name_translation",
+          "column": "product_category_name",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "product_category_name_translation",
+          "column": "product_category_name_english",
+          "type": "text",
+          "not_null": false
+        },
+        {
+          "table": "product_category_name_translation",
+          "column": "_source_file",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "product_category_name_translation",
+          "column": "_source_sha256",
+          "type": "text",
+          "not_null": true
+        },
+        {
+          "table": "product_category_name_translation",
+          "column": "_source_row",
+          "type": "bigint",
+          "not_null": true
+        },
+        {
+          "table": "product_category_name_translation",
+          "column": "_raw_record",
+          "type": "jsonb",
+          "not_null": true
+        },
+        {
+          "table": "product_category_name_translation",
+          "column": "_conversion_errors",
+          "type": "jsonb",
+          "not_null": true
+        }
+      ]
+    }
+  ],
+  "finished_utc": "2026-11-08T02:56:21.664415+00:00"
+}

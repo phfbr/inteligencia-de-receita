@@ -1,0 +1,23 @@
+[
+  {
+    "fato": "fato_pagamentos",
+    "origem": 103886,
+    "apos_joins": 103886,
+    "graos": 103886,
+    "fk_ausente": 0
+  },
+  {
+    "fato": "fato_pedidos",
+    "origem": 99441,
+    "apos_joins": 99441,
+    "graos": 99441,
+    "fk_ausente": 0
+  },
+  {
+    "fato": "fato_itens_pedido",
+    "origem": 112650,
+    "apos_joins": 112650,
+    "graos": 112650,
+    "fk_ausente": 0
+  }
+]

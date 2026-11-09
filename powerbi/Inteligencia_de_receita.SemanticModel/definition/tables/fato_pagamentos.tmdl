@@ -1,0 +1,189 @@
+table fato_pagamentos
+	lineageTag: ab7a40df-baac-4f1e-880b-157df7acb75b
+
+	column order_id
+		dataType: string
+		lineageTag: 9b4b68f9-c4bb-40ea-8ca3-af16ffa2b7b4
+		summarizeBy: none
+		sourceColumn: order_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_sequential
+		dataType: string
+		lineageTag: 576c7795-9431-41a3-a584-3ae08588adc0
+		summarizeBy: none
+		sourceColumn: payment_sequential
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_type
+		dataType: string
+		lineageTag: b40874f7-81dd-462e-bb5e-6e1e154d0cc7
+		summarizeBy: none
+		sourceColumn: payment_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_installments
+		dataType: double
+		formatString: #,0.00
+		lineageTag: ac8bb168-459c-47b5-bbd0-aa6be5806c04
+		summarizeBy: sum
+		sourceColumn: payment_installments
+
+		annotation SummarizationSetBy = Automatic
+
+	column payment_value
+		dataType: decimal
+		lineageTag: 27ab7080-5d2f-4ead-8f64-3fd528aa19e2
+		summarizeBy: sum
+		sourceColumn: payment_value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column customer_id
+		dataType: string
+		lineageTag: f7e11085-0584-4c81-9309-c2199e6a6db5
+		summarizeBy: none
+		sourceColumn: customer_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_status
+		dataType: string
+		lineageTag: 5aa1bcfc-f67b-49e2-8182-3936044b51d3
+		summarizeBy: none
+		sourceColumn: order_status
+
+		annotation SummarizationSetBy = Automatic
+
+	column order_purchase_timestamp
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: b22fb8ad-0e64-4a25-87cb-b7e9c23fdc8f
+		summarizeBy: none
+		sourceColumn: order_purchase_timestamp
+
+		variation Variation
+			isDefault
+			relationship: 22210ede-8725-4588-a116-7f3063aaa707
+			defaultHierarchy: LocalDateTable_8ed249dd-a3c5-4a6e-92d1-d34a8a8a3a9d.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+	column cliente_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 90209847-7b07-4427-953f-dba6f01cf1a0
+		summarizeBy: none
+		sourceColumn: cliente_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column localizacao_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: d09ae90c-2434-46df-908a-ac433834ee3a
+		summarizeBy: none
+		sourceColumn: localizacao_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column forma_pagamento_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: 5547d2a6-947d-4323-a2ae-0de3a469c3ad
+		summarizeBy: none
+		sourceColumn: forma_pagamento_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column data_compra_sk
+		dataType: int64
+		formatString: 0
+		lineageTag: ad61f3a3-cee4-4610-8fef-84227f107259
+		summarizeBy: none
+		sourceColumn: data_compra_sk
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Tipo Pagamento PT' = ```
+			
+			SWITCH (
+			    fato_pagamentos[payment_type],
+			    "credit_card", "Cartão de crédito",
+			    "boleto", "Boleto",
+			    "voucher", "Voucher",
+			    "debit_card", "Cartão de débito",
+			    "not_defined", "Não definido",
+			    fato_pagamentos[payment_type]
+			)
+			
+			```
+		lineageTag: c191ef56-4379-48d8-aa30-96bfe9b33af6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Faixa de Parcelamento' = ```
+			
+			VAR Parcelas = fato_pagamentos[payment_installments]
+			RETURN
+			    SWITCH (
+			        TRUE (),
+			        ISBLANK ( Parcelas ), "Não informado",
+			        Parcelas = 0, "0 parcelas",
+			        Parcelas = 1, "1 parcela",
+			        Parcelas <= 3, "2–3 parcelas",
+			        Parcelas <= 6, "4–6 parcelas",
+			        Parcelas <= 10, "7–10 parcelas",
+			        "11+ parcelas"
+			    )
+			
+			```
+		lineageTag: e24827b0-2b5f-45ea-82b3-98630d4eeb18
+		summarizeBy: none
+		sortByColumn: 'Ordem Faixa Parcelamento'
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ordem Faixa Parcelamento' = ```
+			
+			SWITCH (
+			    TRUE (),
+			    ISBLANK ( fato_pagamentos[payment_installments] ), 7,
+			    fato_pagamentos[payment_installments] = 0, 1,
+			    fato_pagamentos[payment_installments] = 1, 2,
+			    fato_pagamentos[payment_installments] <= 3, 3,
+			    fato_pagamentos[payment_installments] <= 6, 4,
+			    fato_pagamentos[payment_installments] <= 10, 5,
+			    6
+			)
+			
+			```
+		formatString: 0
+		lineageTag: abe63355-3fa9-459d-b4a7-a3c095b48f75
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition fato_pagamentos = m
+		mode: import
+		source =
+				let
+				    Fonte = PostgreSQL.Database("localhost:5432", "inteligencia_receita_db"),
+				    gold_fato_pagamentos = Fonte{[Schema="gold",Item="fato_pagamentos"]}[Data],
+				    #"Outras Colunas Removidas" = Table.SelectColumns(gold_fato_pagamentos,{"data_compra_sk", "forma_pagamento_sk", "localizacao_sk", "cliente_sk", "order_purchase_timestamp", "order_status", "customer_id", "payment_value", "payment_installments", "payment_type", "payment_sequential", "order_id"}),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(#"Outras Colunas Removidas",{{"payment_value", Currency.Type}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navegação
+

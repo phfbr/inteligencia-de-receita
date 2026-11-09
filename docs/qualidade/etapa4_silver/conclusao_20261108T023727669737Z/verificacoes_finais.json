@@ -1,0 +1,40 @@
+{
+  "database": "inteligencia_receita_db",
+  "server_version": "18.6",
+  "counts": {
+    "olist_customers_dataset": 99441,
+    "olist_geolocation_dataset": 1000163,
+    "olist_orders_dataset": 99441,
+    "olist_order_items_dataset": 112650,
+    "olist_order_payments_dataset": 103886,
+    "olist_order_reviews_dataset": 99224,
+    "olist_products_dataset": 32951,
+    "olist_sellers_dataset": 3095,
+    "product_category_name_translation": 71
+  },
+  "total_rows": 1550922,
+  "tests": {
+    "total": 25,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "idempotence_confirmed": true,
+  "rollback_confirmed": true,
+  "bronze_sha256_unchanged": true,
+  "typed_values_nulls_and_numeric_totals_match": true,
+  "catalog_columns": 97,
+  "existing_validation_sql_unchanged": true,
+  "business_rules_changed": false,
+  "artifact_sha256": {
+    "scripts\\silver.py": "bd71ec76fa9598e8ad56d62a46bee7f4181bf0a528bdc4bafaead75201a96a15",
+    "scripts\\concluir_silver.py": "605a33dc2261b2a714c07e8a3f27e0b5685a61fc9ddf098eeaac9a02e38e892e",
+    "scripts\\concluir_silver.ps1": "460ecb78047fb4a1b9405c675f1f9f688fa9d641d6687afaeed198b816211cc0",
+    "tests\\test_silver.py": "12d0399bb6b1ebaa7b358f811fd9e3b573800643f96170a0d7fe89753f3f8ed0",
+    "sql\\silver\\001_estrutura.sql": "14794b867a2931ca43072290893ad00ce37a35d45a22e05fd1bd4ed5fb32f51c",
+    "sql\\validacoes\\silver.sql": "72e0ef19076f0650b7e0d90904810697f052e8d7501810c43fc06325936bd7f7",
+    "docs\\modelagem\\modelo_dimensional.md": "74813690d6c9091b5bc4efb3fd523441eccdfed98ceba5133d37ed7c954e6475",
+    "docs\\regras_negocio\\regras.md": "a768c51c728657889b5720cab01655a3206003a812a485ca9b247ce87f93f7e9",
+    "requirements.txt": "d5d7e3fa4928251ed0a6e1b2cdd689acf99c6193fe188192ec0de899bd85af26"
+  }
+}

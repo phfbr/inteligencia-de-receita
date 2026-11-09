@@ -1,0 +1,434 @@
+[
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "AC",
+    "linhas": 83,
+    "pedidos": 80,
+    "payment_value": "19586.25"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "AL",
+    "linhas": 411,
+    "pedidos": 397,
+    "payment_value": "94195.79"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "AM",
+    "linhas": 151,
+    "pedidos": 145,
+    "payment_value": "27596.18"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "AP",
+    "linhas": 69,
+    "pedidos": 67,
+    "payment_value": "16141.81"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "BA",
+    "linhas": 3483,
+    "pedidos": 3256,
+    "payment_value": "591270.60"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "CE",
+    "linhas": 1341,
+    "pedidos": 1279,
+    "payment_value": "266463.97"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "DF",
+    "linhas": 2142,
+    "pedidos": 2080,
+    "payment_value": "346146.17"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "ES",
+    "linhas": 2068,
+    "pedidos": 1995,
+    "payment_value": "317682.65"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "GO",
+    "linhas": 2047,
+    "pedidos": 1957,
+    "payment_value": "334294.22"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "MA",
+    "linhas": 735,
+    "pedidos": 717,
+    "payment_value": "147807.29"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "MG",
+    "linhas": 11804,
+    "pedidos": 11354,
+    "payment_value": "1819277.61"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "MS",
+    "linhas": 722,
+    "pedidos": 701,
+    "payment_value": "134421.54"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "MT",
+    "linhas": 909,
+    "pedidos": 886,
+    "payment_value": "181441.72"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PA",
+    "linhas": 981,
+    "pedidos": 946,
+    "payment_value": "212027.55"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PB",
+    "linhas": 551,
+    "pedidos": 517,
+    "payment_value": "137834.65"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PE",
+    "linhas": 1667,
+    "pedidos": 1593,
+    "payment_value": "309074.59"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PI",
+    "linhas": 504,
+    "pedidos": 476,
+    "payment_value": "105272.17"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "PR",
+    "linhas": 5129,
+    "pedidos": 4923,
+    "payment_value": "781919.55"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RJ",
+    "linhas": 13004,
+    "pedidos": 12350,
+    "payment_value": "2055690.45"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RN",
+    "linhas": 511,
+    "pedidos": 474,
+    "payment_value": "100728.30"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RO",
+    "linhas": 251,
+    "pedidos": 243,
+    "payment_value": "56975.70"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RR",
+    "linhas": 41,
+    "pedidos": 41,
+    "payment_value": "9039.52"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "RS",
+    "linhas": 5544,
+    "pedidos": 5345,
+    "payment_value": "861802.40"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "SC",
+    "linhas": 3661,
+    "pedidos": 3546,
+    "payment_value": "595208.40"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "SE",
+    "linhas": 344,
+    "pedidos": 335,
+    "payment_value": "70289.13"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "SP",
+    "linhas": 42308,
+    "pedidos": 40500,
+    "payment_value": "5770266.19"
+  },
+  {
+    "escopo": "delivered",
+    "localizacao_tipo": "regular",
+    "uf": "TO",
+    "linhas": 295,
+    "pedidos": 274,
+    "payment_value": "60007.37"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "AC",
+    "linhas": 84,
+    "pedidos": 81,
+    "payment_value": "19680.62"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "AL",
+    "linhas": 427,
+    "pedidos": 413,
+    "payment_value": "96962.06"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "AM",
+    "linhas": 154,
+    "pedidos": 148,
+    "payment_value": "27966.93"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "AP",
+    "linhas": 70,
+    "pedidos": 68,
+    "payment_value": "16262.80"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "BA",
+    "linhas": 3610,
+    "pedidos": 3380,
+    "payment_value": "616645.82"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "CE",
+    "linhas": 1398,
+    "pedidos": 1336,
+    "payment_value": "279464.03"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "DF",
+    "linhas": 2204,
+    "pedidos": 2140,
+    "payment_value": "355141.08"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "ES",
+    "linhas": 2107,
+    "pedidos": 2033,
+    "payment_value": "325967.55"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "GO",
+    "linhas": 2112,
+    "pedidos": 2020,
+    "payment_value": "350092.31"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "MA",
+    "linhas": 767,
+    "pedidos": 747,
+    "payment_value": "152523.02"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "MG",
+    "linhas": 12102,
+    "pedidos": 11635,
+    "payment_value": "1872257.26"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "MS",
+    "linhas": 736,
+    "pedidos": 715,
+    "payment_value": "137534.84"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "MT",
+    "linhas": 958,
+    "pedidos": 907,
+    "payment_value": "187029.29"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PA",
+    "linhas": 1011,
+    "pedidos": 975,
+    "payment_value": "218295.85"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PB",
+    "linhas": 570,
+    "pedidos": 536,
+    "payment_value": "141545.72"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PE",
+    "linhas": 1728,
+    "pedidos": 1652,
+    "payment_value": "324850.44"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PI",
+    "linhas": 524,
+    "pedidos": 495,
+    "payment_value": "108523.97"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "PR",
+    "linhas": 5262,
+    "pedidos": 5045,
+    "payment_value": "811156.38"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RJ",
+    "linhas": 13527,
+    "pedidos": 12852,
+    "payment_value": "2144379.69"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RN",
+    "linhas": 522,
+    "pedidos": 485,
+    "payment_value": "102718.13"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RO",
+    "linhas": 261,
+    "pedidos": 253,
+    "payment_value": "60866.20"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RR",
+    "linhas": 46,
+    "pedidos": 46,
+    "payment_value": "10064.62"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "RS",
+    "linhas": 5668,
+    "pedidos": 5466,
+    "payment_value": "890898.54"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "SC",
+    "linhas": 3754,
+    "pedidos": 3637,
+    "payment_value": "623086.43"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "SE",
+    "linhas": 361,
+    "pedidos": 350,
+    "payment_value": "75246.25"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "SP",
+    "linhas": 43622,
+    "pedidos": 41745,
+    "payment_value": "5998226.96"
+  },
+  {
+    "escopo": "geral",
+    "localizacao_tipo": "regular",
+    "uf": "TO",
+    "linhas": 301,
+    "pedidos": 280,
+    "payment_value": "61485.33"
+  }
+]
